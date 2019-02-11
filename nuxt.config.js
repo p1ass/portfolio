@@ -27,7 +27,7 @@ module.exports = {
         content: 'https://naoki-kishi.netlify.com/'
       },
       {
-        name: 'og:url',
+        name: 'og:image',
         content: 'https://naoki-kishi.netlify.com/og.png'
       }
     ],
