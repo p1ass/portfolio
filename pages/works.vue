@@ -45,7 +45,7 @@ export default {
           name: 'Portfolio Site',
           content:
             '今までフロントエンドの勉強をしたことがなかったので、勉強のために作成しました。デザインはiPhoneのApp StoreのようなドロップシャドウやInstagramのアイコンのようなグラデーションを意識しました。',
-          link: 'https://github.com/naoki-kishi/naoki-kishi.github.io'
+          link: 'https://github.com/naoki-kishi/portfolio'
         },
         {
           name: 'KU休講情報Bot',

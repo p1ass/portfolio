@@ -2,7 +2,7 @@
 
 ## Abstract
 ポートフォリオサイトです。
-[naoki-kishi.github.io](https://naoki-kishi.github.io)
+[https://naoki-kishi.netlify.com](https://naoki-kishi.netlify.com)
 
 ## Languages
 - HTML5
