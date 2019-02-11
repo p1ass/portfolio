@@ -1,55 +1,46 @@
 <template>
   <div>
-    <nuxt />
+    <myHeader />
+    <transition name="page-fade" mode="out-in">
+      <nuxt />
+    </transition>
   </div>
 </template>
 
+<script>
+import myHeader from '@/components/myHeader'
+import WebFont from 'webfontloader'
+
+WebFont.load({
+  custom: {
+    families: ['Noto Sans JP'],
+    urls: ['https://fonts.googleapis.com/css?family=Noto+Sans+JP']
+  }
+})
+
+export default {
+  components: {
+    myHeader
+  }
+}
+</script>
+
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+  font-family: 'Noto Sans JP';
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+body {
+  margin: 0px;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.3s ease;
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.page-fade-enter,
+.page-fade-leave-to {
+  opacity: 0;
 }
 </style>

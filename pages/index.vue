@@ -1,72 +1,141 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My portfolio
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
+  <article class="hello">
+    <h1>{{ msg }}</h1>
+
+    <div class="share">
+      <h3>Share</h3>
+
+      <div class="share-buttons">
+        <a href="http://twitter.com/share?url=https://naoki-kishi.github.io&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank">
+          <div class="button fa fa-twitter" />
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
+        <a href="http://www.facebook.com/sharer.php?u=https://naoki-kishi.github.io" target="_blank">
+          <div class="button fa fa-facebook" />
         </a>
       </div>
     </div>
-  </section>
+  </article>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  name: 'Top',
+  head() {
+    return {
+      title: `Naoki Kishi's Portfolio`,
+      titleTemplete: ``
+    }
+  },
+
+  data() {
+    return {
+      msg: "Welcome to Naoki Kishi's Portfolio Site"
+    }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+<!-- Add 'scoped' attribute to limit CSS to this component only -->
+<style lang='scss' scoped>
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import '@/assets/styles/_color.scss';
+
+.hello {
+  height: 93vh;
+  position: relative;
+  background: linear-gradient(to left, $main-color-1 0%, $main-color-2 100%);
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+h1 {
+  padding-top: 40vh;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: white;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 200px;
+}
+
+.share {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+}
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 20px;
+  margin-top: 0px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: darken(white, 10%);
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.fa {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  line-height: 100px;
 }
 
-.links {
-  padding-top: 15px;
+/* タブレット */
+@media (max-width: 1000px) {
+  .hello {
+    height: 88vh;
+  }
+  h1 {
+    padding-top: 30vh;
+    font-size: 40px;
+  }
+}
+/* スマートフォン */
+@media (max-width: 670px) {
+  .hello {
+    height: 82vh;
+    background: linear-gradient(
+      to bottom,
+      $main-color-1 0%,
+      $main-color-2 100%
+    );
+  }
+
+  .share {
+    position: relative;
+  }
+  h1 {
+    padding-top: 10vh;
+    font-size: 30px;
+  }
+
+  h3 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .button {
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+  }
+
+  .fa {
+    line-height: 70px;
+  }
 }
 </style>

@@ -7,7 +7,8 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: `Naoki Kishi's Portfolio`,
+    titleTemplate: `%s | Naoki Kishi's Portfolio`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +35,13 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/pwa'],
+  modules: [
+    [
+      'nuxt-sass-resources-loader',
+      ['@/assets/styles/_colors.scss', '@/assets/styles/_mixins.scss']
+    ],
+    '@nuxtjs/pwa'
+  ],
 
   /*
   ** Build configuration

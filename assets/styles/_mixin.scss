@@ -1,0 +1,46 @@
+@import 'color';
+
+@mixin box-shadow{
+  box-shadow: 0px 0px 20px 0px $box-shadow-color;
+}
+
+@mixin box($width, $height) {
+  width: $width,;
+  height: $height;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  border-radius: 30px;
+  position: relative;
+}
+
+@mixin box-smartphone($width,$height){
+  width: $width;
+  height:$height;
+}
+
+@mixin box-title{
+  font-weight: normal;
+  padding : 10px 30px;
+  margin : 10px 0;
+  display: inline-block;
+}
+
+@mixin box-content{
+  text-align: left;
+  margin: 0 20px;
+  word-break:break-all;
+  color : $text-color;
+}
+
+@mixin box-sub-content{
+  font-weight: normal;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  margin: 20px;
+  color : $text-color;
+  word-break:break-all;
+}

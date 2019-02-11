@@ -1,22 +1,20 @@
-# portfolio
+# Naoki Kishi's Portfolio
 
-> My portfolio
+## Abstract
+ポートフォリオサイトです。
+[naoki-kishi.github.io](https://naoki-kishi.github.io)
 
-## Build Setup
+## Languages
+- HTML5
+- CSS & SCSS
+- JavaScript (ES6)
+- Vue.js
 
-``` bash
-# install dependencies
-$ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
+## Build
 ```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+git clone https://github.com/naoki-kishi/naoki-kishi.github.io.git
+cd naoki-kishi.github.io
+cd vue_project
+npm run build
+```
