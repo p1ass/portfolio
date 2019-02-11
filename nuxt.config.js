@@ -57,7 +57,13 @@ module.exports = {
       'nuxt-sass-resources-loader',
       ['@/assets/styles/_colors.scss', '@/assets/styles/_mixins.scss']
     ],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-127036212-5'
+      }
+    ]
   ],
 
   /*
