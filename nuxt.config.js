@@ -1,5 +1,3 @@
-const pkg = require('./package')
-
 module.exports = {
   mode: 'spa',
 
@@ -12,7 +10,26 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Naoki Kishiのポートフォリオサイトです'
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@plus_kyoto' },
+      { name: 'og:title', content: `Naoki Kishi's Portfolio Site` },
+      {
+        name: 'og:description',
+        content: 'Naoki Kishiのポートフォリオサイトです'
+      },
+      {
+        name: 'og:url',
+        content: 'https://naoki-kishi.netlify.com/'
+      },
+      {
+        name: 'og:url',
+        content: 'https://naoki-kishi.netlify.com/og.png'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
