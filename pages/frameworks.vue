@@ -37,19 +37,19 @@ export default {
           name: 'Vue.js / Nuxt.js',
           content:
             'ポートフォリオサイト作成のために勉強しました。.vueファイルを用いた単一コンポーネントやVue Routerを使ったSPAの実装を行いました。また、えもじっくの作成にはNuxt.jsを使いました。',
-          term: '1ヶ月'
+          term: '4ヶ月'
         },
         {
           name: 'AWS',
           content:
             'EC2やECS、RDS、Lambda、CloudFront、Route53、RekognitionといったAWSの主要なサービスを使用したことがあります。',
-          term: '3ヶ月'
+          term: '6ヶ月'
         },
         {
           name: 'Firebase',
           content:
             'Firebase Authenticationを使用したログイン機能の実装やJWTを使ったサーバーサイドとの連携の実装をしました。また、Cloud Firestoreを用いたデータベースの構築も行いました。',
-          term: '3ヶ月'
+          term: '6ヶ月'
         },
         {
           name: 'GitHub',
