@@ -4,61 +4,16 @@
     <div class="self-introduction">
       <table>
         <tbody>
-          <tr>
-            <th>Name</th>
-            <td>岸 直輝 (Naoki Kishi)</td>
-          </tr>
-          <tr>
-            <th>University</th>
-            <td>京都大学 工学部 電気電子工学科</td>
-          </tr>
-          <tr>
-            <th>Birthday</th>
-            <td>1998/11/24</td>
-          </tr>
-          <tr>
-            <th>GitHub</th>
-            <td>
-              <a href="https://github.com/naoki-kishi" target="_blank">
-                naoki-kishi
+          <tr v-for="(contact, index) in contacts" :key="index">
+            <th>{{ contact.key }}</th>
+            <td v-if="contact.url">
+              <a :href="contact.url" target="_blank" rel="noopener noreferrer">
+                {{ contact.value }}
               </a>
             </td>
-          </tr>
-          <tr>
-            <th>Qiita</th>
-            <td>
-              <a href="https://qiita.com/plus_kyoto" target="_blank">
-                plus_kyoto
-              </a>
+            <td v-else>
+              {{ contact.value }}
             </td>
-          </tr>
-          <tr>
-            <th>Facebook</th>
-            <td>
-              <a href="https://www.facebook.com/naokikishi.kyoto" target="_blank">
-                岸 直輝
-              </a>
-            </td>
-          </tr>
-          <tr /></tr><tr>
-            <th>Twitter</th>
-            <td>
-              <a href="https://twitter.com/plus_kyoto" target="_blank">
-                @plus_kyoto
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th>Blog</th>
-            <td>
-              <a href="https://plus-blog.hatenablog.com" target="_blank">
-                一人前のエンジニアになれますか？
-              </a>
-            </td>
-          </tr>
-          <tr>
-            <th>Mail</th>
-            <td>naokikishi.kyoto[at]gmail.com</td>
           </tr>
         </tbody>
       </table>
@@ -78,6 +33,42 @@ export default {
   },
   components: {
     pageTitle
+  },
+
+  data() {
+    return {
+      contacts: [
+        { key: 'Name', value: '岸 直輝 (Naoki Kishi)', url: '' },
+        { key: 'University', value: '京都大学 工学部 電気電子工学科', url: '' },
+        { key: 'Birthday', value: '1998/11/24', url: '' },
+        {
+          key: 'GitHub',
+          value: 'naoki-kishi',
+          url: 'https://github.com/naoki-kishi'
+        },
+        {
+          key: 'Qiita',
+          value: 'plus_kyoto',
+          url: 'https://qiita.com/plus_kyoto'
+        },
+        {
+          key: 'Facebook',
+          value: '岸 直輝',
+          url: 'https://www.facebook.com/naokikishi.kyoto'
+        },
+        {
+          key: 'Twitter',
+          value: '@plus_kyoto',
+          url: 'https://twitter.com/plus_kyoto'
+        },
+        {
+          key: 'Blog',
+          value: '一人前のエンジニアになれますか？',
+          url: 'https://plus-blog.hatenablog.com'
+        },
+        { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
+      ]
+    }
   }
 }
 </script>

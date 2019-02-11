@@ -23,7 +23,7 @@ export default {
   head() {
     return {
       title: `Naoki Kishi's Portfolio`,
-      titleTemplete: ``
+      titleTemplate: ``
     }
   },
 
