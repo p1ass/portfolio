@@ -2,7 +2,7 @@
 
 ## Abstract
 ポートフォリオサイトです。
-[https://naoki-kishi.netlify.com](https://naoki-kishi.netlify.com)
+[https://naoki.dev/](https://naoki.dev/)
 
 ## Languages
 - HTML5
@@ -13,8 +13,8 @@
 
 ## Build
 ```
-git clone https://github.com/naoki-kishi/naoki-kishi.github.io.git
-cd naoki-kishi.github.io
+git clone https://github.com/naoki-kishi/portfolio.git
+cd portfolio
 cd vue_project
 npm run build
 ```

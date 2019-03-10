@@ -24,11 +24,11 @@ module.exports = {
       },
       {
         name: 'og:url',
-        content: 'https://naoki-kishi.netlify.com/'
+        content: 'https://naoki.dev/'
       },
       {
         name: 'og:image',
-        content: 'https://naoki-kishi.netlify.com/og.png'
+        content: 'https://naoki.dev/og.png'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

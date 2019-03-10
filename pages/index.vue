@@ -6,10 +6,10 @@
       <h3>Share</h3>
 
       <div class="share-buttons">
-        <a href="http://twitter.com/share?url=https://naoki-kishi.netlify.com&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank">
+        <a href="http://twitter.com/share?url=https://naoki.dev/&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank">
           <div class="button fa fa-twitter" />
         </a>
-        <a href="http://www.facebook.com/sharer.php?u=https://naoki-kishi.netlify.com" target="_blank">
+        <a href="http://www.facebook.com/sharer.php?u=https://naoki.dev/" target="_blank">
           <div class="button fa fa-facebook" />
         </a>
       </div>
