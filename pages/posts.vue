@@ -38,7 +38,7 @@ export default {
   methods: {
     async fetchPosts() {
       try {
-        const res = await axios.get('https://naoki.dev/json')
+        const res = await axios.get('https://blog-api.naoki.dev/json')
 
         this.posts.push(...res.data.items)
       } catch (e) {
