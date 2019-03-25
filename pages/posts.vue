@@ -21,7 +21,7 @@ export default {
 
   head() {
     return {
-      title: 'posts'
+      title: 'Posts'
     }
   },
 
