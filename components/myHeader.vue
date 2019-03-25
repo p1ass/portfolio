@@ -10,14 +10,14 @@
       <nuxt-link to="/works">
         Works
       </nuxt-link>
+      <nuxt-link to="/posts">
+        Posts
+      </nuxt-link>
       <nuxt-link to="/languages">
         Languages
       </nuxt-link>
       <nuxt-link to="/frameworks">
         Frameworks
-      </nuxt-link>
-      <nuxt-link to="/contacts">
-        Contacts
       </nuxt-link>
       <div class="clear" />
     </div>
