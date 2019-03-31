@@ -30,6 +30,18 @@ export default {
     return {
       works: [
         {
+          name: 'feeder',
+          content:
+            '複数のRSSやAtomフィードなどから記事を取得し、一つのRSSやJSONを生成するライブラリです。インターフェースを実装することで、Qiitaなど任意の場所からデータを取得することができます。',
+          link: 'https://github.com/naoki-kishi/feeder'
+        },
+        {
+          name: 'GraphQL Chat Server',
+          content:
+            'GraphQL Subscriptionsを使ったリアルタイムチャットサーバです。Redis PubSubを使用してスケールアウトできる構成を目指しました。',
+          link: 'https://github.com/naoki-kishi/graphql-redis-realtime-chat'
+        },
+        {
           name: 'えもじっく',
           content:
             'AWS Rekognitionの顔認識機能を使って、人の画像を絵文字に変換するWebサービスです。フロントエンドにはNuxt.jsを、バックエンドにはPythonを使い、Serverless Frameworkで構築しています。',
