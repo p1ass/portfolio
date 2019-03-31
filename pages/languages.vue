@@ -30,28 +30,28 @@ export default {
     return {
       languages: [
         {
+          name: 'Golang',
+          content:
+            '最近ハマっている言語です。GraphQLサーバやAPIサーバを建てたりして遊んでます。また、feederというライブラリを作成し、様々な媒体の投稿記事をPostsに表示させています。',
+          term: '3ヶ月'
+        },
+        {
           name: 'Python',
           content:
             '私が一番使っている言語です。Django REST Frameworkを使ったAPI実装やKU休講情報Bot(@KUBotver2)の開発などを行いました。',
           term: '2年'
         },
         {
-          name: 'Golang',
+          name: 'Java',
           content:
-            '最近勉強を始めた言語です。REST APIやgRPCサーバーのサンプルを動かしたりして遊んでいます。',
+            'インターンに参加した際に使用しました。Spring Bootを用いたAPIサーバの作成などを行いました。',
           term: '1ヶ月'
-        },
-        {
-          name: 'HTML & SCSS',
-          content:
-            'このポートフォリオサイトを作成に当たって勉強しました。基本知識はProgateを使って学びました。',
-          term: '3ヶ月'
         },
         {
           name: 'JavaScript (ES6)',
           content:
             'こちらもポートフォリオサイト作成に当たって勉強しました。Progateを使って学んだ後は分からないところが見つかるたびに調べて勉強しました。',
-          term: '3ヶ月'
+          term: '6ヶ月'
         },
         {
           name: 'C',
@@ -62,7 +62,7 @@ export default {
         {
           name: 'Kotlin',
           content:
-            'LINE SUMMER INTERNSHIP 2018 エンジニアスクールコースにて使用しました。Spring Bootを用いたサーバーサイドAPIの実装やAndroidクライアントの作成を行いました。',
+            'LINE SUMMER INTERNSHIP 2018 エンジニアスクールコースにて使用しました。APIの実装やAndroidクライアントの作成を行いました。',
           term: '3ヶ月'
         }
       ]
