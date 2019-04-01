@@ -27,14 +27,8 @@ export default {
 
 
 <style lang="scss">
-.wf-active {
+html {
   font-family: 'Noto Sans JP';
-}
-
-.wf-loading,
-.wf-inactive {
-  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo,
-    メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 
 body {
