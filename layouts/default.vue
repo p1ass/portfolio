@@ -26,9 +26,21 @@ export default {
 </script>
 
 
-<style>
-html {
+<style lang="scss">
+@mixin notoSans {
   font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  @include notoSans;
+  font-family: 'Noto Sans Swap';
+  font-display: swap;
+}
+
+html {
+  font-family: 'Noto Sans Swap';
 }
 
 body {
