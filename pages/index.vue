@@ -6,10 +6,10 @@
       <h3>Share</h3>
 
       <div class="share-buttons">
-        <a href="http://twitter.com/share?url=https://naoki.dev/&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank" rel="noopener noreferrer">
+        <a href="http://twitter.com/share?url=https://naoki.dev/&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank" rel="noopener noreferrer" aria-label="Share on twitter">
           <div class="button fa fa-twitter" />
         </a>
-        <a href="http://www.facebook.com/sharer.php?u=https://naoki.dev/" target="_blank" rel="noopener noreferrer">
+        <a href="http://www.facebook.com/sharer.php?u=https://naoki.dev/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
           <div class="button fa fa-facebook" />
         </a>
       </div>

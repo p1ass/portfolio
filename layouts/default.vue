@@ -27,20 +27,14 @@ export default {
 
 
 <style lang="scss">
-@mixin notoSans {
+.wf-active {
   font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
 }
 
-@font-face {
-  @include notoSans;
-  font-family: 'Noto Sans Swap';
-  font-display: swap;
-}
-
-html {
-  font-family: 'Noto Sans Swap';
+.wf-loading,
+.wf-inactive {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo,
+    メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 
 body {
