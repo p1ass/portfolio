@@ -3,7 +3,7 @@
     <pageTitle title="Works" />
     <div class="works">
       <box v-for="work in works" :key="work.link" :item="work">
-        <a :href="work.link" target="_blank">
+        <a :href="work.link" target="_blank" rel="noopener noreferrer">
           URL
         </a>
       </box>
