@@ -1,6 +1,6 @@
 <template>
   <section class="post">
-    <a :href="item.url" target="_blank">
+    <a :href="item.url" target="_blank" rel="noopener noreferrer">
       <h2>{{ item.title }}</h2>
     </a>
     <p class="post-content">
@@ -36,11 +36,6 @@ export default {
   padding-bottom: 32px;
   border-radius: 30px;
   position: relative;
-}
-
-@media (max-width: 1000px) {
-  .post {
-  }
 }
 
 h2 {

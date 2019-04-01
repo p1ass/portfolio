@@ -26,7 +26,7 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Noto Sans JP';
 }
