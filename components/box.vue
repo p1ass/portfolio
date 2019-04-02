@@ -31,12 +31,6 @@ export default {
   @include box(300px, 300px);
 }
 
-@media (max-width: 1000px) {
-  .box {
-    @include box-smartphone(260px, 320px);
-  }
-}
-
 h2 {
   @include box-title;
 }

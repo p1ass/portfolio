@@ -1,7 +1,9 @@
 <template>
   <article class="posts-wrapper">
     <pageTitle title="Posts" />
-    <p>様々な媒体に投稿した記事を自動で集計し、動的に生成しています。</p>
+    <p class="description">
+      様々な媒体に投稿した記事を自動で集計し、動的に生成しています。
+    </p>
     <div class="posts">
       <post v-for="post in posts" :key="post.id" :item="post" />
     </div>
@@ -53,8 +55,9 @@ export default {
 <style lang='scss' scoped>
 @import '@/assets/styles/_color.scss';
 
-p {
+.description {
   color: $text-color;
+  margin: 0 20px;
 }
 .posts-wrapper {
   text-align: center;
