@@ -57,7 +57,7 @@ export default {
 .posts {
   max-width: 1000px;
   margin: 0;
-  padding: 32px;
+  padding: 16px;
   display: inline-block;
 }
 </style>
