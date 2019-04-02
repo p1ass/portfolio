@@ -36,6 +36,7 @@ export default {
   padding-bottom: 32px;
   border-radius: 30px;
   position: relative;
+  width: 90%;
 }
 
 h2 {
