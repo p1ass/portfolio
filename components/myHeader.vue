@@ -49,13 +49,17 @@ a {
   transition: all 0.3s;
   cursor: pointer;
   font-size: 18px;
-  color: black;
+  color: $text-color;
   text-decoration: none;
   width: 150px;
   display: inline-block;
 
   &:hover {
     background-color: darken(white, 5%);
+  }
+
+  &:link {
+    color: $text-color;
   }
 }
 
