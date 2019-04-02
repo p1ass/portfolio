@@ -43,4 +43,8 @@ body {
 .page-fade-leave-to {
   opacity: 0;
 }
+
+a:link {
+  color: #0044cc;
+}
 </style>
