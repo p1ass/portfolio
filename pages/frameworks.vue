@@ -28,35 +28,24 @@ export default {
     return {
       tools: [
         {
-          name: 'Django',
-          content:
-            'Django REST Frameworkを使ったバックエンドAPIの実装の経験があります。また、Firebase Authenticationと連携させて認証ありAPIの実装も行いました。',
-          term: '6ヶ月'
-        },
-        {
-          name: 'Vue.js / Nuxt.js',
-          content:
-            'ポートフォリオサイト作成のために勉強しました。.vueファイルを用いた単一コンポーネントやVue Routerを使ったSPAの実装を行いました。また、えもじっくの作成にはNuxt.jsを使いました。',
-          term: '4ヶ月'
-        },
-        {
           name: 'AWS',
           content:
             'EC2やECS、RDS、Lambda、CloudFront、Route53、RekognitionといったAWSの主要なサービスを使用したことがあります。',
-          term: '6ヶ月'
-        },
-        {
-          name: 'Firebase',
-          content:
-            'Firebase Authenticationを使用したログイン機能の実装やJWTを使ったサーバーサイドとの連携の実装をしました。また、Cloud Firestoreを用いたデータベースの構築も行いました。',
-          term: '6ヶ月'
+          term: '1年'
         },
         {
           name: 'GitHub',
           content:
-            '基本的なgitの使い方を習得しています。また、プルリクエスト、レビューといった複数人での開発の経験があります。',
+            'rebaseやcherry-pickを自由に使いこなすレベルです。また、プルリクエスト、レビューといった複数人での開発の経験があります。',
           term: '1年'
         },
+        {
+          name: 'Vue.js / Nuxt.js',
+          content:
+            'えもじっくやポートフォリオのフロントエンドに使用しています。また、pixivのハッカソンではNuxt.jsを使用し優勝しました。',
+          term: '6ヶ月'
+        },
+
         {
           name: 'Docker',
           content:
@@ -66,8 +55,26 @@ export default {
         {
           name: 'Circle CI',
           content:
-            'Django REST Frameworkで作成したAPIの自動テストを行っています。Circle CI上のVMでdocker-composeを立ち上げてローカルと同じ環境でテストできるようにしています。',
-          term: '3ヶ月'
+            'テストや各種クラウドサービスへのデプロイをCI上で行っています。',
+          term: '6ヶ月'
+        },
+        {
+          name: 'Django',
+          content:
+            'Django REST Frameworkを使ったバックエンドAPIの実装を行いました。また、Firebase Authenticationと連携させて認証ありAPIの実装も行いました。',
+          term: '6ヶ月'
+        },
+        {
+          name: 'Firebase',
+          content:
+            'Firebase Authenticationを使用したログイン機能の実装やJWTを使ったサーバーサイドとの連携の実装をしました。また、Cloud Firestoreを用いたデータベースの構築も行いました。',
+          term: '6ヶ月'
+        },
+        {
+          name: 'GCP',
+          content:
+            'Postsに表示する投稿を返すAPIをGAEにデプロイしていています。',
+          term: '1ヶ月'
         }
       ]
     }
