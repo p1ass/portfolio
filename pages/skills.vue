@@ -59,15 +59,15 @@ export default {
           level: 3
         },
         {
-          name: 'Django',
-          content:
-            'Django REST Frameworkを使ったバックエンドAPIの実装を行いました。また、Firebase Authenticationと連携させて認証ありAPIの実装も行いました。',
-          level: 2
-        },
-        {
           name: 'Firebase',
           content:
             'Firebase Authenticationを使用したログイン機能の実装やJWTを使ったサーバーサイドとの連携の実装をしました。また、Cloud Firestoreを用いたデータベースの構築も行いました。',
+          level: 2
+        },
+        {
+          name: 'Django',
+          content:
+            'Django REST Frameworkを使ったバックエンドAPIの実装を行いました。また、Firebase Authenticationと連携させて認証ありAPIの実装も行いました。',
           level: 2
         },
         {
