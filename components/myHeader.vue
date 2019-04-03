@@ -16,8 +16,8 @@
       <nuxt-link to="/languages">
         Languages
       </nuxt-link>
-      <nuxt-link to="/frameworks">
-        Frameworks
+      <nuxt-link to="/skills">
+        Skills
       </nuxt-link>
       <div class="clear" />
     </div>
