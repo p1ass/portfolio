@@ -33,7 +33,7 @@ export default {
           name: 'Golang',
           content:
             '最近ハマっている言語です。GraphQLサーバやAPIサーバを建てたりして遊んでます。また、feederというライブラリを作成し、様々な媒体の投稿記事をPostsに表示させています。',
-          level: 2
+          level: 3
         },
         {
           name: 'Python',
