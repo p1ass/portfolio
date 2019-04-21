@@ -24,10 +24,10 @@ December 2018 to Present
 - Created development environments using Docker, which made other members develop easily
 
 ## Award
-**1st prize in a hackason held by pixiv Inc.**  
+**1st prize in a hackathon held by pixiv Inc.**  
 December 2018
 
-- Participated in a  hackason  to make a brand new web service, created an illust viewer named Marshiv, which tiles hundreds of illusts continuously as you scroll down
+- Participated in a  hackathon  to make a brand new web service, created an illust viewer named Marshiv, which tiles hundreds of illusts continuously as you scroll down
 -  Developed from scratch in cooperation with a mentor in 10 hours using Nuxt.js
 
 ## Education
