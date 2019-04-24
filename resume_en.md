@@ -3,6 +3,7 @@
 **Student Engineer with wide experiences of engineering internship and manager of community.**  
 Kyoto  
 naokikishi.kyoto@gmail.com  
+[https://github.com/naoki-kishi](https://github.com/naoki-kishi)
 
 ## Summary
 Various experiences of developing API, website, and library as internship and private. Advanced implementation skills with Go and Python. Manager of one of the biggest student engineer community in Kyoto.
@@ -39,15 +40,15 @@ April 2017 to Present
 - Relevant Coursework: Information Theory, Computer Programming, Basic Informatics, Computer Hardware Design
 
 ## Works
-**naoki-kishi/feeder**  
+[**naoki-kishi/feeder**](https://github.com/naoki-kishi/feeder)  
 - RSS, Atom, and JSON feed generator from multiple data written in Go
 - You can generate feeds from any data you want by implementing interface
 
-**Announcement bot in Kyoto University** 
+[**Announcement bot in Kyoto University**](https://github.com/naoki-kishi/ku-cancel-announcement-bot)
 - Twitter bot for announcing class information written in Python
 - Built with VPS server, used cron job scheduler
 
-**naoki.dev**
+[**naoki.dev**](https://naoki.dev)
 - My website that introduce my profile
 - Crawls my posts in various websites automatically using naoki-kishi/feeder
 
