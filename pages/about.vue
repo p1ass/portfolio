@@ -6,12 +6,12 @@
         <tbody>
           <tr v-for="(contact, index) in contacts" :key="index">
             <th>{{ contact.key }}</th>
-            <td v-if="contact.url">
+            <td v-if="contact.url" class="last-td">
               <a :href="contact.url" target="_blank" rel="noopener noreferrer">
                 {{ contact.value }}
               </a>
             </td>
-            <td v-else>
+            <td v-else class="last-td">
               {{ contact.value }}
             </td>
           </tr>
@@ -25,7 +25,9 @@
           <tr v-for="(experience, index) in experiences" :key="index">
             <th>{{ experience.term }}</th>
             <td>{{ experience.key }}</td>
-            <td>{{ experience.value }}</td>
+            <td class="last-td">
+              {{ experience.value }}
+            </td>
           </tr>
         </tbody>
       </table>
@@ -98,7 +100,7 @@ export default {
           term: '2019/2 ~ 2019/2'
         },
         {
-          key: 'pixiv',
+          key: 'ピクシブ',
           value: '君だけのpixivを開発れ！ 優勝',
           term: '2018/12 ~ 2018/12'
         },
@@ -127,22 +129,23 @@ export default {
   border-radius: 50px;
   margin: 20px auto;
   color: $text-color;
-}
 
-table {
-  padding: 50px 0;
-  display: inline-block;
-  text-align: left;
-}
+  table {
+    padding: 50px 16px;
+    display: inline-block;
+    text-align: left;
+  }
 
-th {
-  padding-right: 20px;
-  font-weight: normal;
-}
+  th {
+    padding-right: 20px;
+    font-weight: normal;
+    color: $sub-text-color;
+  }
 
-td {
-  font-size: 20px;
-  padding: 5px 8px 5px 0px;
+  td {
+    font-size: 20px;
+    padding: 5px 8px 5px 0px;
+  }
 }
 
 a {
@@ -152,26 +155,31 @@ a {
 /*タブレット*/
 @media (max-width: 1000px) {
   .box-wrapper {
-    width: 600px;
+    width: 80%;
     border-radius: 50px;
   }
 }
 
 /*スマートフォン*/
-@media (max-width: 670px) {
+@media (max-width: 820px) {
   .box-wrapper {
     width: 80%;
     border-radius: 50px;
-  }
 
-  th {
-    display: block;
-  }
+    th {
+      display: block;
+    }
 
-  td {
-    display: block;
-    font-size: 16px;
-    width: 100%;
+    td {
+      display: block;
+      font-size: 16px;
+      width: 100%;
+      padding: 5px 0px;
+    }
+
+    .last-td {
+      border-bottom: 1px solid $border-color;
+    }
   }
 }
 </style>
