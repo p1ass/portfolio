@@ -1,7 +1,7 @@
 <template>
   <article class="about-wrapper">
     <pageTitle title="About" />
-    <div class="self-introduction">
+    <div class="box-wrapper">
       <table>
         <tbody>
           <tr v-for="(contact, index) in contacts" :key="index">
@@ -14,6 +14,18 @@
             <td v-else>
               {{ contact.value }}
             </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <pageTitle title="Experiences" />
+    <div class="box-wrapper">
+      <table>
+        <tbody>
+          <tr v-for="(experience, index) in experiences" :key="index">
+            <th>{{ experience.term }}</th>
+            <td>{{ experience.key }}</td>
+            <td>{{ experience.value }}</td>
           </tr>
         </tbody>
       </table>
@@ -67,6 +79,34 @@ export default {
           url: 'https://plus-blog.hatenablog.com'
         },
         { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
+      ],
+
+      experiences: [
+        {
+          key: 'CAMPHOR-',
+          value: 'コアメンバー',
+          term: '2019/1 ~ Present'
+        },
+        {
+          key: 'LINE',
+          value: '就業型インターン (サーバーサイド)',
+          term: '2019/2 ~ 2019/3'
+        },
+        {
+          key: 'Cyber Agent',
+          value: 'Architecture Challenge 参加',
+          term: '2019/2 ~ 2019/2'
+        },
+        {
+          key: 'pixiv',
+          value: '君だけのpixivを開発れ！ 優勝',
+          term: '2018/12 ~ 2018/12'
+        },
+        {
+          key: 'mixi',
+          value: 'git challenge #10 参加',
+          term: '2018/12 ~ 2018/12'
+        }
       ]
     }
   }
@@ -81,7 +121,7 @@ export default {
   text-align: center;
 }
 
-.self-introduction {
+.box-wrapper {
   @include box-shadow;
   width: 800px;
   border-radius: 50px;
@@ -102,7 +142,7 @@ th {
 
 td {
   font-size: 20px;
-  padding: 5px 0px;
+  padding: 5px 8px 5px 0px;
 }
 
 a {
@@ -111,7 +151,7 @@ a {
 
 /*タブレット*/
 @media (max-width: 1000px) {
-  .self-introduction {
+  .box-wrapper {
     width: 600px;
     border-radius: 50px;
   }
@@ -119,7 +159,7 @@ a {
 
 /*スマートフォン*/
 @media (max-width: 670px) {
-  .self-introduction {
+  .box-wrapper {
     width: 80%;
     border-radius: 50px;
   }
