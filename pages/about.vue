@@ -87,17 +87,17 @@ export default {
         {
           key: 'CAMPHOR-',
           value: 'コアメンバー',
-          term: '2019/1 ~ Present'
+          term: '2019/01 ~ Present'
         },
         {
           key: 'LINE',
           value: '就業型インターン (サーバーサイド)',
-          term: '2019/2 ~ 2019/3'
+          term: '2019/02 ~ 2019/03'
         },
         {
           key: 'Cyber Agent',
           value: 'Architecture Challenge 参加',
-          term: '2019/2 ~ 2019/2'
+          term: '2019/02 ~ 2019/02'
         },
         {
           key: 'ピクシブ',
