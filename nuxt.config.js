@@ -65,6 +65,10 @@ module.exports = {
     ]
   ],
 
+  env: {
+    apiEndpoint: process.env.API_ENDPOINT || 'http://localhost:8080/json'
+  },
+
   /*
   ** Build configuration
   */
