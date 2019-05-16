@@ -1,5 +1,5 @@
 <template>
-  <section class="post">
+  <div class="post">
     <a :href="item.url" target="_blank" rel="noopener noreferrer">
       <h2>{{ item.title }}</h2>
     </a>
@@ -9,7 +9,7 @@
     <p class="sub-content">
       <slot />
     </p>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -30,13 +30,10 @@ export default {
 
 .post {
   @include box-shadow;
-  display: inline-block;
-  vertical-align: top;
-  margin: 20px;
+  margin: 20px 0;
   padding-bottom: 32px;
   border-radius: 30px;
-  position: relative;
-  width: 90%;
+  width: 100%;
 }
 
 h2 {

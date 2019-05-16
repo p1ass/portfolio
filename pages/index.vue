@@ -1,25 +1,29 @@
 <template>
-  <article class="hello">
-    <h1>{{ msg }}</h1>
-
-    <div class="share">
-      <h3>Share</h3>
-
-      <div class="share-buttons">
-        <a href="http://twitter.com/share?url=https://naoki.dev/&text=Naoki Kishi's Portfolio Site&via=plus_kyoto" target="_blank" rel="noopener noreferrer" aria-label="Share on twitter">
-          <div class="button fa fa-twitter" />
-        </a>
-        <a href="http://www.facebook.com/sharer.php?u=https://naoki.dev/" target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
-          <div class="button fa fa-facebook" />
-        </a>
-      </div>
-    </div>
-  </article>
+  <main>
+    <section id="top" class="top-wrapper">
+      <h1>{{ msg }}</h1>
+      <div class="share" />
+    </section>
+    <about />
+    <experiences />
+    <works />
+    <languages />
+    <skills />
+    <posts />
+  </main>
 </template>
 
 <script>
+import About from '@/containers/about'
+import Experiences from '@/containers/experiences'
+import Works from '@/containers/works'
+import Posts from '@/containers/posts'
+import Languages from '@/containers/languages'
+import Skills from '@/containers/skills'
+
 export default {
   name: 'Top',
+  components: { About, Works, Posts, Languages, Skills, Experiences },
   head() {
     return {
       title: `Naoki Kishi's Portfolio`,
@@ -39,16 +43,17 @@ export default {
 <style lang='scss' scoped>
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 @import '@/assets/styles/_color.scss';
+@import '@/assets/styles/_size.scss';
 
-.hello {
-  height: 93vh;
-  position: relative;
+.top-wrapper {
+  margin-top: $header-height_pc;
   background: linear-gradient(to left, $main-color-1 0%, $main-color-2 100%);
   text-align: center;
+  padding: 30vh 0;
 }
 
 h1 {
-  padding-top: 40vh;
+  // padding-top: 40vh;
   font-size: 50px;
   color: white;
   letter-spacing: 3px;
@@ -56,7 +61,6 @@ h1 {
   border-bottom: 1px solid white;
   padding-right: 20px;
   padding-left: 20px;
-  margin: 0;
   text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,19 +100,19 @@ h3 {
 }
 
 /* タブレット */
-@media (max-width: 1000px) {
-  .hello {
-    height: 88vh;
+@media (max-width: 1100px) {
+  .top-wrapper {
+    margin-top: $header-height_tablet;
   }
   h1 {
-    padding-top: 30vh;
     font-size: 40px;
   }
 }
 /* スマートフォン */
 @media (max-width: 670px) {
-  .hello {
-    height: 82vh;
+  .top-wrapper {
+    padding: 20vh 0;
+    margin-top: $header-height_sp;
     background: linear-gradient(
       to bottom,
       $main-color-1 0%,

@@ -1,10 +1,10 @@
 <template>
-  <article class="works-wrapper">
+  <section id="works" class="works-wrapper">
     <pageTitle title="Works" />
     <div class="works">
       <work-box v-for="work in works" :key="work.link" :item="work" />
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
@@ -81,14 +81,14 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '@/assets/styles/_mixin.scss';
+
 .works-wrapper {
-  text-align: center;
+  @include section;
 }
 
 .works {
-  max-width: 1200px;
-  margin: 0;
-  display: inline-block;
+  @include box-wrapper;
 }
 
 a {

@@ -1,5 +1,5 @@
 <template>
-  <section class="work-box">
+  <div class="work-box">
     <a :href="item.link" target="_blank" rel="noopener noreferrer">
       <h2>{{ item.name }}</h2>
     </a>
@@ -9,7 +9,7 @@
     <p class="sub-content">
       {{ item.subContent }}
     </p>
-  </section>
+  </div>
 </template>
 
 <script>

@@ -1,12 +1,12 @@
 <template>
-  <article class="languages-wrapper">
+  <section id="languages" class="languages-wrapper">
     <pageTitle title="Languages" />
     <div class="languages">
       <box v-for="language in languages" :key="language.name" :item="language">
         {{ "★".repeat(language.level) }}{{ "☆".repeat(3-language.level) }}
       </box>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
@@ -66,13 +66,13 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '@/assets/styles/_mixin.scss';
+
 .languages-wrapper {
-  text-align: center;
+  @include section;
 }
 
 .languages {
-  max-width: 1200px;
-  margin: 0;
-  display: inline-block;
+  @include box-wrapper;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <h1>{{ title }}</h1>
+  <h2 class="title">
+    {{ title }}
+  </h2>
 </template>
 
 <script>
@@ -17,8 +19,18 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/_color.scss';
 
-h1 {
+.title {
   font-weight: normal;
   color: $text-color;
+  font-size: 36px;
+  width: 33%;
+  margin: 0px;
+  top: 50px;
+}
+
+@media (max-width: 670px) {
+  .title {
+    padding: 16px 0px;
+  }
 }
 </style>
