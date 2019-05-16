@@ -1,23 +1,24 @@
 <template>
   <header>
     <div class="link">
-      <nuxt-link to="/">
+      <nuxt-link v-scroll-to="'#top'" to>
         Top
       </nuxt-link>
-      <nuxt-link to="/about">
+      <nuxt-link v-scroll-to="'#about'" to>
         About
       </nuxt-link>
-      <nuxt-link to="/works">
+      <nuxt-link v-scroll-to="'#works'" to>
         Works
       </nuxt-link>
-      <nuxt-link to="/posts">
-        Posts
-      </nuxt-link>
-      <nuxt-link to="/languages">
+
+      <nuxt-link v-scroll-to="'#languages'" to>
         Languages
       </nuxt-link>
-      <nuxt-link to="/skills">
+      <nuxt-link v-scroll-to="'#skills'" to>
         Skills
+      </nuxt-link>
+      <nuxt-link v-scroll-to="'#posts'" to>
+        Posts
       </nuxt-link>
       <div class="clear" />
     </div>
@@ -32,20 +33,21 @@ export default {
 
 <style lang='scss' scoped>
 @import '@/assets/styles/_color.scss';
+@import '@/assets/styles/_size.scss';
 
 header {
   width: 100%;
   text-align: center;
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  position: relative;
+  position: fixed;
   top: 0px;
   z-index: 10;
 }
 
 a {
-  height: 7vh;
-  line-height: 7vh;
+  height: $header-height_pc;
+  line-height: $header-height_pc;
   transition: all 0.3s;
   cursor: pointer;
   font-size: 18px;
@@ -67,11 +69,11 @@ a {
   clear: left;
 }
 /* タブレット */
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   a {
     width: 30%;
-    height: 60px;
-    line-height: 60px;
+    height: $header-height_tablet;
+    line-height: $header-height_tablet;
   }
 }
 
@@ -79,8 +81,8 @@ a {
 @media (max-width: 670px) {
   a {
     width: 40%;
-    height: 35px;
-    line-height: 35px;
+    height: $header-height_sp;
+    line-height: $header-height_sp;
   }
 }
 </style>

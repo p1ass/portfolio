@@ -28,7 +28,7 @@ export default {
 
 <style lang="scss">
 html {
-  font-family: 'Noto Sans JP';
+  // font-family: 'Noto Sans JP';
 }
 
 body {

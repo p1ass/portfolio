@@ -1,23 +1,5 @@
 <template>
-  <article class="about-wrapper">
-    <pageTitle title="About" />
-    <div class="box-wrapper">
-      <table>
-        <tbody>
-          <tr v-for="(contact, index) in contacts" :key="index">
-            <th>{{ contact.key }}</th>
-            <td v-if="contact.url" class="last-td">
-              <a :href="contact.url" target="_blank" rel="noopener noreferrer">
-                {{ contact.value }}
-              </a>
-            </td>
-            <td v-else class="last-td">
-              {{ contact.value }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <section id="about" class="about-wrapper">
     <pageTitle title="Experiences" />
     <div class="box-wrapper">
       <table>
@@ -32,17 +14,17 @@
         </tbody>
       </table>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
 import pageTitle from '@/components/pageTitle'
 
 export default {
-  name: 'About',
+  name: 'Experiences',
   head() {
     return {
-      title: 'About'
+      title: 'Experiences'
     }
   },
   components: {
@@ -120,18 +102,14 @@ export default {
 @import '@/assets/styles/_mixin.scss';
 
 .about-wrapper {
-  text-align: center;
+  @include section;
 }
 
 .box-wrapper {
-  @include box-shadow;
-  width: 800px;
-  border-radius: 50px;
-  margin: 20px auto;
+  border-radius: 30px;
   color: $text-color;
 
   table {
-    padding: 50px 16px;
     display: inline-block;
     text-align: left;
   }
@@ -153,19 +131,15 @@ a {
 }
 
 /*タブレット*/
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .box-wrapper {
-    width: 80%;
-    border-radius: 50px;
+    width: 100%;
   }
 }
 
 /*スマートフォン*/
 @media (max-width: 820px) {
   .box-wrapper {
-    width: 80%;
-    border-radius: 50px;
-
     th {
       display: block;
     }

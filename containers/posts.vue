@@ -1,13 +1,15 @@
 <template>
-  <article class="posts-wrapper">
+  <section id="posts" class="posts-wrapper">
     <pageTitle title="Posts" />
-    <p class="description">
-      様々な媒体に投稿した記事を自動で集計し、動的に生成しています。
-    </p>
     <div class="posts">
-      <post v-for="post in posts" :key="post.id" :item="post" />
+      <p class="description">
+        様々な媒体に投稿した記事を自動で集計し、動的に生成しています。
+      </p>
+      <div class="post-wrapper">
+        <post v-for="post in posts" :key="post.id" :item="post" />
+      </div>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
@@ -54,19 +56,31 @@ export default {
 
 <style lang='scss' scoped>
 @import '@/assets/styles/_color.scss';
+@import '@/assets/styles/_mixin.scss';
 
+.posts-wrapper {
+  @include section;
+}
 .description {
   color: $text-color;
-  margin: 0 20px;
+  margin: 20px 0;
 }
-.posts-wrapper {
-  text-align: center;
+
+.post-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .posts {
-  max-width: 1000px;
+  width: 650px;
   margin: 0;
-  padding: 16px;
-  display: inline-block;
+}
+
+@media (max-width: 1100px) {
+  .posts {
+    width: 100%;
+    margin: 0;
+  }
 }
 </style>

@@ -1,17 +1,18 @@
 @import 'color';
 
 @mixin box-shadow {
-  box-shadow: 0px 0px 20px 0px $box-shadow-color;
+  box-shadow: 0px 0px 10px 0px $box-shadow-color;
 }
 
 @mixin box($width, $height) {
   width: $width;
   height: $height;
-  display: inline-block;
   vertical-align: top;
-  margin: 20px;
-  border-radius: 30px;
+  margin: 0px 20px 20px 0px;
+  border-radius: 20px;
+  background-color: white;
   position: relative;
+
 }
 
 @mixin box-smartphone($width, $height) {
@@ -43,4 +44,23 @@
   margin: 20px;
   color: $text-color;
   word-break: break-all;
+}
+
+@mixin section{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 60px 0px 60px;
+  padding-bottom:30px;
+  border-bottom:1px solid $border-color;
+  &:last-child{
+    border-bottom:none; 
+  }
+}
+
+@mixin box-wrapper{
+  display: flex;
+  width: 66%;
+  margin: 0;
+  flex-wrap: wrap;
 }

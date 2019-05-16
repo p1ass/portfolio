@@ -1,12 +1,12 @@
 <template>
-  <article class="skills-wrapper">
+  <section id="skills" class="skills-wrapper">
     <pageTitle title="Skills" />
     <div class="skills">
       <box v-for="(skill,index) in skills" :key="index" :item="skill">
         {{ "★".repeat(skill.level) }}{{ "☆".repeat(3-skill.level) }}
       </box>
     </div>
-  </article>
+  </section>
 </template>
 
 <script>
@@ -83,13 +83,21 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+@import '@/assets/styles/_mixin.scss';
+
 .skills-wrapper {
-  text-align: center;
+  @include section;
 }
 
 .skills {
-  max-width: 1200px;
-  margin: 0;
-  display: inline-block;
+  @include box-wrapper;
+}
+
+/*タブレット*/
+@media (max-width: 1100px) {
+  .skills {
+    width: 100%;
+    justify-content: center;
+  }
 }
 </style>
