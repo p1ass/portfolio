@@ -69,6 +69,7 @@ export default {
 }
 
 .box-wrapper {
+  @include box-wrapper;
   color: $text-color;
 
   table {

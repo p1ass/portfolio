@@ -57,8 +57,12 @@ export default {
 }
 
 .posts {
-  width: 650px;
   margin: 0;
+
+  // PCのみ
+  @media (min-width: 1100px) {
+    flex: 1;
+  }
 }
 
 .description {
@@ -67,8 +71,7 @@ export default {
 }
 
 .post-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @include box-wrapper;
+  width: 100%;
 }
 </style>
