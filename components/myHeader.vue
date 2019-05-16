@@ -7,13 +7,13 @@
       <nuxt-link v-scroll-to="'#about'" to>
         About
       </nuxt-link>
+      <nuxt-link v-scroll-to="'#experiences'" to>
+        Experiences
+      </nuxt-link>
       <nuxt-link v-scroll-to="'#works'" to>
         Works
       </nuxt-link>
 
-      <nuxt-link v-scroll-to="'#languages'" to>
-        Languages
-      </nuxt-link>
       <nuxt-link v-scroll-to="'#skills'" to>
         Skills
       </nuxt-link>

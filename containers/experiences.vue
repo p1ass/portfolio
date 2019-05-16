@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-wrapper">
+  <section id="experiences" class="experiences-wrapper">
     <pageTitle title="Experiences" />
     <div class="box-wrapper">
       <table>
@@ -96,7 +96,7 @@ export default {
 @import '@/assets/styles/_color.scss';
 @import '@/assets/styles/_mixin.scss';
 
-.about-wrapper {
+.experiences-wrapper {
   @include section;
 }
 
