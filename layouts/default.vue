@@ -1,9 +1,7 @@
 <template>
   <div>
     <myHeader />
-    <transition name="page-fade" mode="out-in">
-      <nuxt />
-    </transition>
+    <nuxt />
   </div>
 </template>
 
@@ -27,15 +25,6 @@ html {
 
 body {
   margin: 0px;
-}
-
-.page-fade-enter-active,
-.page-fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.page-fade-enter,
-.page-fade-leave-to {
-  opacity: 0;
 }
 
 a:link {

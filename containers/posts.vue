@@ -55,6 +55,12 @@ export default {
 .posts-wrapper {
   @include section;
 }
+
+.posts {
+  width: 650px;
+  margin: 0;
+}
+
 .description {
   color: $text-color;
   margin: 20px 0;
@@ -64,17 +70,5 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.posts {
-  width: 650px;
-  margin: 0;
-}
-
-@media (max-width: 1100px) {
-  .posts {
-    width: 100%;
-    margin: 0;
-  }
 }
 </style>

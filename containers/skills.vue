@@ -54,11 +54,4 @@ li {
   font-size: 16px;
   padding: 4px 0;
 }
-/*タブレット*/
-@media (max-width: 1100px) {
-  .skills {
-    width: 100%;
-    justify-content: center;
-  }
-}
 </style>

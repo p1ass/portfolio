@@ -62,34 +62,6 @@ export default {
           url: 'https://plus-blog.hatenablog.com'
         },
         { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
-      ],
-
-      experiences: [
-        {
-          key: 'CAMPHOR-',
-          value: 'コアメンバー',
-          term: '2019/01 ~ Present'
-        },
-        {
-          key: 'LINE',
-          value: '就業型インターン (サーバーサイド)',
-          term: '2019/02 ~ 2019/03'
-        },
-        {
-          key: 'Cyber Agent',
-          value: 'Architecture Challenge 参加',
-          term: '2019/02 ~ 2019/02'
-        },
-        {
-          key: 'ピクシブ',
-          value: '君だけのpixivを開発れ！ 優勝',
-          term: '2018/12 ~ 2018/12'
-        },
-        {
-          key: 'mixi',
-          value: 'git challenge #10 参加',
-          term: '2018/12 ~ 2018/12'
-        }
       ]
     }
   }
@@ -105,11 +77,10 @@ export default {
 }
 
 .box-wrapper {
-  border-radius: 30px;
+  @include box-wrapper;
   color: $text-color;
 
   table {
-    display: inline-block;
     text-align: left;
   }
 
@@ -127,13 +98,6 @@ export default {
 
 a {
   text-decoration: none;
-}
-
-/*タブレット*/
-@media (max-width: 1100px) {
-  .box-wrapper {
-    width: 100%;
-  }
 }
 
 /*スマートフォン*/
