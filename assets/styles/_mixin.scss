@@ -13,6 +13,10 @@
   background-color: white;
   position: relative;
 
+  @media (max-width: 670px) {
+    margin: 0px 0px 20px 0px;
+  }
+
 }
 
 @mixin box-smartphone($width, $height) {
@@ -59,7 +63,7 @@
   
   @media (max-width: 1100px) {
     border:none;
-}
+  }
 }
 
 @mixin box-wrapper{
