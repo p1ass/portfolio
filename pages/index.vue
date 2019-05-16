@@ -24,12 +24,6 @@ import Skills from '@/containers/skills'
 export default {
   name: 'Top',
   components: { About, Works, Posts, Languages, Skills, Experiences },
-  head() {
-    return {
-      title: `Naoki Kishi's Portfolio`,
-      titleTemplate: ``
-    }
-  },
 
   data() {
     return {

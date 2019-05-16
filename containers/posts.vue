@@ -24,12 +24,6 @@ export default {
     Post
   },
 
-  head() {
-    return {
-      title: 'Posts'
-    }
-  },
-
   data() {
     return {
       posts: []

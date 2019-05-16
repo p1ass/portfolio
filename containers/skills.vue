@@ -15,11 +15,6 @@ import box from '@/components/box'
 
 export default {
   name: 'Skills',
-  head() {
-    return {
-      title: 'Skills'
-    }
-  },
   components: {
     pageTitle,
     box

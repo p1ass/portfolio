@@ -22,11 +22,6 @@ import pageTitle from '@/components/pageTitle'
 
 export default {
   name: 'Experiences',
-  head() {
-    return {
-      title: 'Experiences'
-    }
-  },
   components: {
     pageTitle
   },
