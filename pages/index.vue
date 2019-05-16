@@ -92,7 +92,7 @@ h3 {
 }
 
 /* タブレット */
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   .top-wrapper {
     margin-top: $header-height_tablet;
   }

@@ -1,17 +1,51 @@
 @import 'color';
 
+@mixin section{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 60px 0px 60px;
+  padding-right:180px;
+  padding-bottom:30px;
+  border-bottom:1px solid $border-color;
+  &:last-child{
+    border-bottom:none; 
+  }
+  
+  @media (max-width: 1250px) {
+    border:none;
+    padding-right:0px;
+  }
+}
+
+@mixin box-wrapper{
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content:center;
+
+  // PCのみ
+  @media (min-width: 1250px) {
+    flex: 1;
+  }
+
+  @media (max-width: 1250px) {
+      width: 100%;
+      justify-content:center;
+  }
+}
 @mixin box-shadow {
   box-shadow: 0px 0px 10px 0px $box-shadow-color;
 }
 
-@mixin box($width, $height) {
+@mixin box($width) {
   width: $width;
-  height: $height;
   vertical-align: top;
   margin: 0px 20px 20px 0px;
   border-radius: 20px;
   background-color: white;
   position: relative;
+  padding-bottom: 64px;
 
   @media (max-width: 670px) {
     margin: 0px 0px 20px 0px;
@@ -19,10 +53,6 @@
 
 }
 
-@mixin box-smartphone($width, $height) {
-  width: $width;
-  height: $height;
-}
 
 @mixin box-title {
   font-weight: normal;
@@ -50,32 +80,3 @@
   word-break: break-all;
 }
 
-@mixin section{
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 60px 0px 60px;
-  padding-right:180px;
-  padding-bottom:30px;
-  border-bottom:1px solid $border-color;
-  &:last-child{
-    border-bottom:none; 
-  }
-  
-  @media (max-width: 1100px) {
-    border:none;
-    padding-right:0px;
-  }
-}
-
-@mixin box-wrapper{
-  display: flex;
-  width: 66%;
-  margin: 0;
-  flex-wrap: wrap;
-
-  @media (max-width: 1100px) {
-      width: 100%;
-      justify-content:center;
-  }
-}

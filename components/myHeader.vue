@@ -69,7 +69,7 @@ a {
   clear: left;
 }
 /* タブレット */
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   a {
     width: 30%;
     height: $header-height_tablet;

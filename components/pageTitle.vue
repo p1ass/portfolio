@@ -28,7 +28,7 @@ export default {
   top: 50px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1250px) {
   .title {
     padding: 16px 0px;
   }

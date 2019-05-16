@@ -60,7 +60,7 @@ export default {
   margin: 0;
 
   // PCのみ
-  @media (min-width: 1100px) {
+  @media (min-width: 1250px) {
     flex: 1;
   }
 }
