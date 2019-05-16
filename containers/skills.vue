@@ -48,10 +48,20 @@ export default {
 .skills {
   @include box-wrapper;
 }
+ul {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+
+  @media (max-width: 670px) {
+    grid-template-columns: 200px;
+  }
+}
+
 li {
   width: 100%;
   text-align: left;
   font-size: 16px;
-  padding: 4px 0;
+  padding: 8px 0;
+  color: $text-color;
 }
 </style>
