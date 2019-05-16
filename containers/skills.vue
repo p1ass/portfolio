@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       skills: [
-        { name: 'Golang' },
+        { name: 'Go' },
         { name: 'Python' },
         { name: 'JavaScript (ES6)' },
         { name: 'C' },
