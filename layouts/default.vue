@@ -9,14 +9,6 @@
 
 <script>
 import myHeader from '@/components/myHeader'
-import WebFont from 'webfontloader'
-
-WebFont.load({
-  custom: {
-    families: ['Noto Sans JP'],
-    urls: ['https://fonts.googleapis.com/css?family=Noto+Sans+JP']
-  }
-})
 
 export default {
   components: {
@@ -28,7 +20,9 @@ export default {
 
 <style lang="scss">
 html {
-  // font-family: 'Noto Sans JP';
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', YuGothic,
+    'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, Arial, 'メイリオ', Meiryo,
+    sans-serif;
 }
 
 body {
