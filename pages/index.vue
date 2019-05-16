@@ -7,7 +7,6 @@
     <about />
     <experiences />
     <works />
-    <languages />
     <skills />
     <posts />
   </main>
@@ -18,12 +17,11 @@ import About from '@/containers/about'
 import Experiences from '@/containers/experiences'
 import Works from '@/containers/works'
 import Posts from '@/containers/posts'
-import Languages from '@/containers/languages'
 import Skills from '@/containers/skills'
 
 export default {
   name: 'Top',
-  components: { About, Works, Posts, Languages, Skills, Experiences },
+  components: { About, Experiences, Works, Posts, Skills },
 
   data() {
     return {
