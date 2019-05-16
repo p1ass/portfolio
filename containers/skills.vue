@@ -50,7 +50,11 @@ export default {
 }
 ul {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: repeat(4, 200px);
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(3, 200px);
+  }
 
   @media (max-width: 670px) {
     grid-template-columns: 200px;
