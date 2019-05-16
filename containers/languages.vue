@@ -75,4 +75,12 @@ export default {
 .languages {
   @include box-wrapper;
 }
+
+/*タブレット*/
+@media (max-width: 1100px) {
+  .languages {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>

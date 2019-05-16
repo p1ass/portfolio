@@ -91,6 +91,14 @@ export default {
   @include box-wrapper;
 }
 
+/*タブレット*/
+@media (max-width: 1100px) {
+  .works {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 a {
   text-decoration: none;
 }

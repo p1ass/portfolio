@@ -92,4 +92,12 @@ export default {
 .skills {
   @include box-wrapper;
 }
+
+/*タブレット*/
+@media (max-width: 1100px) {
+  .skills {
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
