@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 a:link {

@@ -39,9 +39,9 @@ header {
   width: 100%;
   text-align: center;
   background-color: white;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
-  top: 0px;
+  top: 0;
   z-index: 10;
 }
 

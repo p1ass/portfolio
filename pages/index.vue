@@ -2,7 +2,6 @@
   <main>
     <section id="top" class="top-wrapper">
       <h1>{{ msg }}</h1>
-      <div class="share" />
     </section>
     <about />
     <experiences />
@@ -85,12 +84,6 @@ h3 {
   }
 }
 
-.fa {
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 40px;
-  line-height: 100px;
-}
-
 /* タブレット */
 @media (max-width: 1250px) {
   .top-wrapper {
@@ -128,10 +121,6 @@ h3 {
     width: 70px;
     height: 70px;
     border-radius: 70px;
-  }
-
-  .fa {
-    line-height: 70px;
   }
 }
 </style>

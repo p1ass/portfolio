@@ -24,13 +24,13 @@ export default {
   color: $text-color;
   font-size: 36px;
   width: 33%;
-  margin: 0px;
+  margin: 0;
   top: 50px;
 }
 
 @media (max-width: 1250px) {
   .title {
-    padding: 16px 0px;
+    padding: 16px 0;
   }
 }
 </style>

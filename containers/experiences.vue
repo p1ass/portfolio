@@ -104,7 +104,7 @@ a {
       display: block;
       font-size: 16px;
       width: 100%;
-      padding: 5px 0px;
+      padding: 5px 0;
     }
 
     .last-td {
