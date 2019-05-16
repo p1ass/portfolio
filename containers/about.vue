@@ -26,11 +26,6 @@ import pageTitle from '@/components/pageTitle'
 
 export default {
   name: 'About',
-  head() {
-    return {
-      title: 'About'
-    }
-  },
   components: {
     pageTitle
   },

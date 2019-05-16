@@ -13,11 +13,6 @@ import workBox from '@/components/workBox'
 
 export default {
   name: 'Works',
-  head() {
-    return {
-      title: 'Works'
-    }
-  },
   components: {
     pageTitle,
     workBox

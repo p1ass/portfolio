@@ -6,7 +6,6 @@ module.exports = {
   */
   head: {
     title: `Naoki Kishi's Portfolio`,
-    titleTemplate: `%s | Naoki Kishi's Portfolio`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

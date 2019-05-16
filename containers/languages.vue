@@ -20,12 +20,6 @@ export default {
     box
   },
 
-  head() {
-    return {
-      title: 'Languages'
-    }
-  },
-
   data() {
     return {
       languages: [
