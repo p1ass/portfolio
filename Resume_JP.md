@@ -6,15 +6,15 @@ naokikishi.kyoto@gmail.com
 
 ## 経歴
 **LINE株式会社**  
-サーバーサイドエンジニア (インターンシップ) 
-2019/2 〜 2019/3
+サーバーサイドエンジニア (インターンシップ)  
+2019/2 ~ 2019/3
 
 - LINE LIVEアプリのチームで、ライブ配信者と視聴者がインタラクティブにやり取りしながら参加できるクイズイベントのAPI開発を担当しました。
 
 
 **CAMPHOR-**  
-京都のIT系学生コミュニティの運営 
-2018/12 〜 現在
+京都のIT系学生コミュニティの運営  
+2018/12 ~ 現在
 
 - 学生なら誰でも無料で使えるワークスペースの運営や勉強会の企画・主催を行っています。
 - gRPCを用いた内部向けバックエンドAPIの開発やWeb ComponentsとgRPC-Webを用いた出欠管理システムのフロントエンドの実装を担当しました。
@@ -28,16 +28,22 @@ naokikishi.kyoto@gmail.com
 ## 学歴
 **京都大学**  
 工学部電気電子工学科  
-2017/4 〜 現在
+2017/4 ~ 現在
 
 **三重県立津高等学校**  
 普通科  
-2014/4 〜 2017/3
+2014/4 ~ 2017/3
 
 ## 作品
 [**naoki-kishi/feeder**](https://github.com/naoki-kishi/feeder)  
 - 複数のRSSなどを統合し、一つのRSSやJSONフィードを生成するGo製のライブラリです。
 - インターフェースを実装することで、任意の情報からフィードを生成することができます。
+
+[**えもじっく**](https://emojic.ch)
+- 人の顔を絵文字スタンプに変換するWebサービスです。プライバシーを配慮した画像を簡単に作成できます。
+
+[**GraphQL Chat Server**](https://github.com/naoki-kishi/graphql-redis-realtime-chat)
+- GraphQL Subscriptionsを使ったGo製のリアルタイムチャットサーバです。Redis PubSubを使用してスケールアウトできる構成を目指しました。
 
 [**KU休講情報Bot**](https://github.com/naoki-kishi/ku-cancel-announcement-bot)
 - 大学の休講情報を定期的につぶやくPython製のTwitter Botです。
