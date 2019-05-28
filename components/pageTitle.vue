@@ -22,7 +22,7 @@ export default {
 .title {
   font-weight: normal;
   color: $text-color;
-  font-size: 36px;
+  font-size: 48px;
   width: 33%;
   margin: 0;
   top: 50px;
@@ -31,6 +31,8 @@ export default {
 @media (max-width: 1250px) {
   .title {
     padding: 16px 0;
+    font-size: 36px;
+    width: 100%;
   }
 }
 </style>

@@ -36,6 +36,10 @@ export default {
 @import '@/assets/styles/_color.scss';
 @import '@/assets/styles/_size.scss';
 
+main {
+  background-color: white;
+}
+
 .top-wrapper {
   margin-top: $header-height_pc;
   background: linear-gradient(to left, $main-color-1 0%, $main-color-2 100%);

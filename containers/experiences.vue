@@ -98,13 +98,14 @@ a {
   .box-wrapper {
     th {
       display: block;
+      padding: 0px 16px;
     }
 
     td {
       display: block;
       font-size: 16px;
       width: 100%;
-      padding: 5px 0;
+      padding: 5px 16px;
     }
 
     .last-td {

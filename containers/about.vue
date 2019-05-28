@@ -103,19 +103,12 @@ a {
 /*スマートフォン*/
 @media (max-width: 670px) {
   .box-wrapper {
-    th {
-      display: block;
-    }
-
     td {
       display: block;
       font-size: 16px;
       width: 100%;
       padding: 5px 0;
-    }
-
-    .last-td {
-      border-bottom: 1px solid $border-color;
+      border-bottom: none;
     }
   }
 }

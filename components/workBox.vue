@@ -30,7 +30,7 @@ export default {
 
 .work-box {
   @include box-shadow;
-  @include box(300px);
+  @include box(100%);
 }
 
 h2 {
