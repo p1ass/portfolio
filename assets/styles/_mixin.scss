@@ -4,21 +4,19 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 60px 0px 60px;
-  padding-right:180px;
-  padding-bottom:30px;
+  padding: 60px 150px;
   // border-bottom:1px solid $border-color;
   &:last-child{
     border-bottom:none; 
   }
   
   @media (max-width: 1250px) {
+    padding: 30px 60px;
     border:none;
-    padding-right:0px;
   }
 
   @media (max-width: 670px) {
-    margin: 30px 32px 0px 32px;
+    padding: 30px;
   }
 }
 

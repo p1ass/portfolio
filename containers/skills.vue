@@ -44,6 +44,8 @@ export default {
 @import '@/assets/styles/_mixin.scss';
 .skills-wrapper {
   @include section;
+  flex-direction: row-reverse;
+  background-color: $background-color2;
 }
 .skills {
   @include box-wrapper;

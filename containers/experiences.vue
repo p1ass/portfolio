@@ -66,6 +66,8 @@ export default {
 
 .experiences-wrapper {
   @include section;
+  background-color: $background-color2;
+  flex-direction: row-reverse;
 }
 
 .box-wrapper {
@@ -104,7 +106,6 @@ a {
     td {
       display: block;
       font-size: 16px;
-      width: 100%;
       padding: 5px 16px;
     }
 
