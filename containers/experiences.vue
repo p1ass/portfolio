@@ -67,7 +67,7 @@ export default {
 .experiences-wrapper {
   @include section;
   background-color: $background-color2;
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
 }
 
 .box-wrapper {

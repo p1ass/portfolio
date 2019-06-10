@@ -23,7 +23,8 @@ export default {
   font-weight: normal;
   color: $text-color;
   font-size: 48px;
-  margin: 0 10%;
+  width: 30%;
+  margin: 0 5%;
   top: 50px;
 }
 

@@ -44,15 +44,19 @@ export default {
 @import '@/assets/styles/_mixin.scss';
 .skills-wrapper {
   @include section;
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
   background-color: $background-color2;
 }
 .skills {
   @include box-wrapper;
+  width: 100%;
 }
 ul {
   display: grid;
   grid-template-columns: repeat(3, 200px);
+  @media (max-width: 1410px) {
+    grid-template-columns: repeat(2, 200px);
+  }
 
   @media (max-width: 670px) {
     grid-template-columns: 200px;

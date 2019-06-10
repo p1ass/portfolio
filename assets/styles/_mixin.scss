@@ -4,7 +4,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  padding: 60px 10vw;
+  padding: 60px 12vw;
   // border-bottom:1px solid $border-color;
   &:last-child{
     border-bottom:none; 
@@ -24,7 +24,7 @@
   display: flex;
   margin: 0;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:left;
 
   // PCのみ
   @media (min-width: 1250px) {

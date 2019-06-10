@@ -54,6 +54,7 @@ export default {
 
 .posts-wrapper {
   @include section;
+  justify-content: center;
 }
 
 .posts {
