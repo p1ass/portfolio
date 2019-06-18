@@ -44,7 +44,7 @@ main {
   margin-top: $header-height_pc;
   background: linear-gradient(to left, $main-color-1 0%, $main-color-2 100%);
   text-align: center;
-  padding: 30vh 0;
+  padding: 38vh 0;
 }
 
 h1 {

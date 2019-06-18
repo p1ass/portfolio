@@ -45,7 +45,7 @@ export default {
 .skills-wrapper {
   @include section;
   // flex-direction: row-reverse;
-  background-color: $background-color2;
+  background-color: $background-color1;
 }
 .skills {
   @include box-wrapper;
