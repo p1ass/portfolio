@@ -58,8 +58,8 @@ export default {
         },
         {
           key: 'Blog',
-          value: '一人前のエンジニアを目指して',
-          url: 'https://plus-blog.hatenablog.com'
+          value: 'ぷらすのブログ',
+          url: 'https://blog.naoki.dev'
         },
         { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
       ]
