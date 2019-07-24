@@ -38,13 +38,13 @@ export default {
         { key: 'Birthday', value: '1998/11/24', url: '' },
         {
           key: 'GitHub',
-          value: 'naoki-kishi',
-          url: 'https://github.com/naoki-kishi'
+          value: 'p1ass',
+          url: 'https://github.com/p1ass'
         },
         {
           key: 'Qiita',
-          value: 'plus_kyoto',
-          url: 'https://qiita.com/plus_kyoto'
+          value: 'p1ass',
+          url: 'https://qiita.com/p1ass'
         },
         {
           key: 'Facebook',
@@ -53,8 +53,8 @@ export default {
         },
         {
           key: 'Twitter',
-          value: '@plus_kyoto',
-          url: 'https://twitter.com/plus_kyoto'
+          value: '@p1ass',
+          url: 'https://twitter.com/p1ass'
         },
         {
           key: 'Blog',

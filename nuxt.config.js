@@ -12,14 +12,16 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
+        content:
+          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
       },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@plus_kyoto' },
+      { name: 'twitter:site', content: '@p1ass' },
       { name: 'og:title', content: `Naoki Kishi's Portfolio Site` },
       {
         name: 'og:description',
-        content: 'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
+        content:
+          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
       },
       {
         name: 'og:url',
