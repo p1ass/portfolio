@@ -3,7 +3,7 @@
 **Student Engineer with wide experiences of engineering internship and manager of community.**  
 Kyoto  
 naokikishi.kyoto@gmail.com  
-[https://github.com/naoki-kishi](https://github.com/naoki-kishi)  
+[https://github.com/p1ass](https://github.com/p1ass)  
 [https://naoki.dev](https://naoki.dev)
 
 ## Summary
@@ -41,17 +41,17 @@ April 2017 to Present
 - Relevant Coursework: Information Theory, Computer Programming, Basic Informatics, Computer Hardware Design
 
 ## Works
-[**naoki-kishi/feeder**](https://github.com/naoki-kishi/feeder)  
+[**p1ass/feeder**](https://github.com/p1ass/feeder)  
 - RSS, Atom, and JSON feed generator from multiple data written in Go
 - You can generate feeds from any data you want by implementing interface
 
-[**Announcement bot in Kyoto University**](https://github.com/naoki-kishi/ku-cancel-announcement-bot)
+[**Announcement bot in Kyoto University**](https://github.com/p1ass/ku-cancel-announcement-bot)
 - Twitter bot for announcing class information written in Python
 - Built with VPS server, used cron job scheduler
 
 [**naoki.dev**](https://naoki.dev)
 - My website that introduce my profile
-- Crawls my posts in various websites automatically using naoki-kishi/feeder
+- Crawls my posts in various websites automatically using p1ass/feeder
 
 ## Skills
 Go, Python, JavaScript, Java, C, HTML, Git, Docker, MySQL, GAE, Firebase

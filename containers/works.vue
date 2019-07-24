@@ -25,21 +25,21 @@ export default {
           content:
             '複数のRSSやAtomフィードなどから記事を取得し、一つのRSSやJSONを生成するライブラリです。インターフェースを実装することで、Qiitaなど任意の場所からデータを取得することができます。',
           subContent: 'Go',
-          link: 'https://github.com/naoki-kishi/feeder'
+          link: 'https://github.com/p1ass/feeder'
         },
         {
           name: 'GraphQL Chat Server',
           content:
             'GraphQL Subscriptionsを使ったリアルタイムチャットサーバです。Redis PubSubを使用してスケールアウトできる構成を目指しました。',
           subContent: 'Go, GraphQL, Redis',
-          link: 'https://github.com/naoki-kishi/graphql-redis-realtime-chat'
+          link: 'https://github.com/p1ass/graphql-redis-realtime-chat'
         },
         {
           name: 'えもじっく',
           content:
             '人の顔を絵文字スタンプに変換するWebサービスです。プライバシーを配慮した画像を簡単にソーシャルメディアにアップロードできます。',
           subContent: 'Python, Nuxt.js, AWS',
-          link: 'https://github.com/naoki-kishi/emojic.ch'
+          link: 'https://github.com/p1ass/emojic.ch'
         },
         {
           name: 'marshiv',
@@ -53,14 +53,14 @@ export default {
           content:
             '私のポートフォリオです。iOSのApp Storeのようなドロップシャドウや、Instagramのアイコンのようなグラデーションを意識したデザインにしました。',
           subContent: 'HTML, SCSS, Nuxt.js',
-          link: 'https://github.com/naoki-kishi/portfolio'
+          link: 'https://github.com/p1ass/portfolio'
         },
         {
           name: 'KU休講情報Bot',
           content:
             '京都大学の休講情報を定期的につぶやくBotです。EC2上でcronを使って動かしています。Pythonで書かれており、休講情報はSeleniumとChrome Driverを使ってスクレイピングで取得しています。',
           subContent: 'Python, Selenium',
-          link: 'https://github.com/naoki-kishi/KUCancelAnnouncementBot'
+          link: 'https://github.com/p1ass/KUCancelAnnouncementBot'
         },
         {
           name: 'SHABEL',

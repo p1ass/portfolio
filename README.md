@@ -13,7 +13,7 @@
 
 ## Build
 ```
-git clone https://github.com/naoki-kishi/portfolio.git
+git clone https://github.com/p1ass/portfolio.git
 cd portfolio
 cd vue_project
 npm run build
