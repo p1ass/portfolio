@@ -61,7 +61,7 @@ export default {
           value: 'ぷらすのブログ',
           url: 'https://blog.p1ass.com'
         },
-        { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
+        { key: 'Mail', value: 'contact[at]p1ass.com', url: '' }
       ]
     }
   }
