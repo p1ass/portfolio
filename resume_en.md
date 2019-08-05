@@ -4,7 +4,7 @@
 Kyoto  
 naokikishi.kyoto@gmail.com  
 [https://github.com/p1ass](https://github.com/p1ass)  
-[https://naoki.dev](https://naoki.dev)
+[https://p1ass.com](https://p1ass.com)
 
 ## Summary
 Various experiences of developing API, website, and library as internship and private. Advanced implementation skills with Go and Python. Manager of one of the biggest student engineer community in Kyoto.
@@ -49,7 +49,7 @@ April 2017 to Present
 - Twitter bot for announcing class information written in Python
 - Built with VPS server, used cron job scheduler
 
-[**naoki.dev**](https://naoki.dev)
+[**p1ass.com**](https://p1ass.com)
 - My website that introduce my profile
 - Crawls my posts in various websites automatically using p1ass/feeder
 

@@ -2,7 +2,7 @@
  
 naokikishi.kyoto@gmail.com  
 [https://github.com/p1ass](https://github.com/p1ass)  
-[https://naoki.dev](https://naoki.dev)
+[https://p1ass.com](https://p1ass.com)
 
 ## 経歴
 **LINE株式会社**  
@@ -49,7 +49,7 @@ naokikishi.kyoto@gmail.com
 - 大学の休講情報を定期的につぶやくPython製のTwitter Botです。
 - 休講情報はスクレイピングで取得しています。
 
-[**naoki.dev**](https://naoki.dev)
+[**p1ass.com**](https://p1ass.com)
 - 制作物や経歴が掲載されているNuxt.js製のポートフォリオサイトです。
 - p1ass/feederを使い、各媒体に掲載した記事を動的に表示させています。
 

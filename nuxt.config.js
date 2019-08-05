@@ -25,11 +25,11 @@ module.exports = {
       },
       {
         name: 'og:url',
-        content: 'https://naoki.dev/'
+        content: 'https://p1ass.com/'
       },
       {
         name: 'og:image',
-        content: 'https://naoki.dev/og.png'
+        content: 'https://p1ass.com/og.png'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

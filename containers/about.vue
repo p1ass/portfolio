@@ -59,7 +59,7 @@ export default {
         {
           key: 'Blog',
           value: 'ぷらすのブログ',
-          url: 'https://blog.naoki.dev'
+          url: 'https://blog.p1ass.com'
         },
         { key: 'Mail', value: 'naokikishi.kyoto[at]gmail.com', url: '' }
       ]
