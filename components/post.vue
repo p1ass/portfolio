@@ -1,24 +1,28 @@
 <template>
   <div class="post">
+    <p class="date">
+      {{ date }}
+    </p>
     <a :href="item.url" target="_blank" rel="noopener noreferrer">
       <h2>{{ item.title }}</h2>
     </a>
-    <p class="post-content">
-      {{ item.summary }}...
-    </p>
-    <p class="sub-content">
-      <slot />
-    </p>
   </div>
 </template>
 
 <script>
+import parseISO from 'date-fns/parseISO'
+import format from 'date-fns/format'
 export default {
   name: 'Box',
   props: {
     item: {
       type: Object,
       default: () => {}
+    }
+  },
+  computed: {
+    date: function() {
+      return format(parseISO(this.item.date_published), 'yyyy年MM月dd日')
     }
   }
 }
@@ -31,9 +35,13 @@ export default {
 .post {
   @include box-shadow;
   margin: 20px 0;
-  padding-bottom: 32px;
+  padding-bottom: 16px;
   border-radius: 30px;
   width: 100%;
+}
+
+.date {
+  margin: 16px 0 0 0;
 }
 
 h2 {
