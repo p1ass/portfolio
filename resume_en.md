@@ -26,6 +26,12 @@ December 2018 to Present
 - Created development environments using Docker, which made other members develop easily
 
 ## Award
+
+**1ast prize in a internship held by DeNA**   
+August 2019
+
+- I participated in the intern in the theme of “Grow an app to be the best app in 3 days” as a server-side and was in charge of building a server that could make 20,000 requests per second
+
 **1st prize in a hackathon held by pixiv Inc.**  
 December 2018
 
