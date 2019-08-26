@@ -23,8 +23,7 @@ export default {
   font-weight: normal;
   color: $text-color;
   font-size: 48px;
-  width: 30%;
-  margin: 0 5%;
+  margin: 20px 5%;
   top: 50px;
 }
 
@@ -38,18 +37,10 @@ export default {
     rgba(86, 204, 242, 0.7) 100%
   );
 }
-@media (max-width: 1250px) {
-  .title {
-    padding: 16px 0 32px 0;
-    font-size: 36px;
-    width: 100%;
-    margin: 0 15%;
-  }
-}
 
 @media (max-width: 670px) {
   .title {
-    margin: 0 10vw;
+    margin: 20px 10vw;
   }
 }
 </style>

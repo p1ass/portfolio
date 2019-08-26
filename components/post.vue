@@ -22,7 +22,7 @@ export default {
   },
   computed: {
     date: function() {
-      return format(parseISO(this.item.date_published), 'yyyy年MM月dd日')
+      return format(parseISO(this.item.date_published), 'yyyy.MM.dd')
     }
   }
 }
@@ -34,14 +34,19 @@ export default {
 
 .post {
   @include box-shadow;
-  margin: 20px 0;
+  margin: 20px;
   padding-bottom: 16px;
   border-radius: 30px;
-  width: 100%;
+  width: 40%;
+
+  @media (max-width: 670px) {
+    width: 100%;
+  }
 }
 
 .date {
-  margin: 16px 0 0 0;
+  margin-bottom: 0px;
+  color: $text-color;
 }
 
 h2 {

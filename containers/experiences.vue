@@ -35,6 +35,11 @@ export default {
           term: '2019/01 ~ Present'
         },
         {
+          key: 'DeNA',
+          value: 'サマーインターンプロダクト開発コース 優勝',
+          term: '2019/08 ~ 2019/08'
+        },
+        {
           key: 'LINE',
           value: '就業型インターン (サーバーサイド)',
           term: '2019/02 ~ 2019/03'
