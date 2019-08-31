@@ -17,18 +17,18 @@ module.exports = {
       },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@p1ass' },
-      { name: 'og:title', content: `Naoki Kishi's Portfolio Site` },
+      { property: 'og:title', content: `Naoki Kishi's Portfolio Site` },
       {
-        name: 'og:description',
+        property: 'og:description',
         content:
           'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
       },
       {
-        name: 'og:url',
+        property: 'og:url',
         content: 'https://p1ass.com/'
       },
       {
-        name: 'og:image',
+        property: 'og:image',
         content: 'https://p1ass.com/og.png'
       }
     ],
