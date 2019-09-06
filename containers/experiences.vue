@@ -48,7 +48,7 @@ export default {
         },
         {
           key: 'AbemaTV ',
-          value: '就業形インターン',
+          value: '就業型インターン',
           term: '2019/08',
           description:
             'SNSから番組への流入を増やすためにTwitterシェアに関する機能を追加しました。スケーラビリティを考慮しつつ仕様設計から実装、テストを全て行いました。'
