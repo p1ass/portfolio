@@ -104,7 +104,6 @@ export default {
     handleResize: function() {
       // resizeのたびにこいつが発火するので、ここでやりたいことをやる
       this.width = window.innerWidth
-      this.height = window.innerHeight
     }
   }
 }
