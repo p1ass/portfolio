@@ -64,7 +64,8 @@ module.exports = {
       {
         id: 'UA-127036212-5'
       }
-    ]
+    ],
+    '@nuxtjs/vuetify'
   ],
 
   env: {
