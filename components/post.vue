@@ -45,12 +45,17 @@ export default {
 }
 
 .date {
-  margin-bottom: 0px;
+  margin: 16px 0 0 0;
   color: $text-color;
 }
 
 h2 {
   @include box-title;
+  margin: 0;
+  font-size: 20px;
+  @media (max-width: 670px) {
+    font-size: 16px;
+  }
 }
 
 .post-content {
