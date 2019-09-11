@@ -60,7 +60,7 @@ export default {
           content:
             '京都大学の休講情報を定期的につぶやくBotです。EC2上でcronを使って動かしています。Pythonで書かれており、休講情報はSeleniumとChrome Driverを使ってスクレイピングで取得しています。',
           subContent: 'Python, Selenium',
-          link: 'https://github.com/p1ass/KUCancelAnnouncementBot'
+          link: 'https://github.com/p1ass/ku-cancel-announcement-bot'
         },
         {
           name: 'SHABEL',
