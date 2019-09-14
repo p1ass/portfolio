@@ -39,7 +39,7 @@ export default {
           content:
             '人の顔を絵文字スタンプに変換するWebサービスです。プライバシーを配慮した画像を簡単にソーシャルメディアにアップロードできます。',
           subContent: 'Python, Nuxt.js, AWS',
-          link: 'https://github.com/p1ass/emojic.ch'
+          link: 'https:///emojic.ch'
         },
         {
           name: 'marshiv',
