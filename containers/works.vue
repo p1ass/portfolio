@@ -21,6 +21,13 @@ export default {
     return {
       works: [
         {
+          name: 'Memoito（めもいと）',
+          content:
+            'Memoito（めもいと）はTwitterと連携して、フォローしている人と紐付けてメモを保存することができるWebサービスです。オフ会で会った時に話した内容をメモしたり、フォローした理由をメモしておくことができます',
+          subContent: 'Go, Nuxt.js',
+          link: 'https://memoito.com'
+        },
+        {
           name: 'feeder',
           content:
             '複数のRSSやAtomフィードなどから記事を取得し、一つのRSSやJSONを生成するライブラリです。インターフェースを実装することで、Qiitaなど任意の場所からデータを取得することができます。',
@@ -46,12 +53,12 @@ export default {
           content:
             'pixivの2018年冬インターンシップに参加した際に作成した画像ビューワーです。Intersection Observerを使ったイラストの無限スクロースやタグを用いた簡易的なレコメンドシステムを作成しました。',
           subContent: 'Javascript, Nuxt.js',
-          link: 'https://plus-blog.hatenablog.com/entry/pixiv-intern-2018'
+          link: 'https://blog.p1ass.com/posts/pixiv-intern-2018/'
         },
         {
           name: 'Portfolio Site',
           content:
-            '私のポートフォリオです。iOSのApp Storeのようなドロップシャドウや、Instagramのアイコンのようなグラデーションを意識したデザインにしました。',
+            '私のポートフォリオ(このページ)です。iOSのApp Storeのようなドロップシャドウや、Instagramのアイコンのようなグラデーションを意識したデザインにしました。',
           subContent: 'HTML, SCSS, Nuxt.js',
           link: 'https://github.com/p1ass/portfolio'
         },
