@@ -25,15 +25,14 @@ export default {
         { name: 'Python' },
         { name: 'JavaScript (ES6)' },
         { name: 'C' },
-        { name: 'Java' },
-        { name: 'AWS' },
-        { name: 'GitHub' },
         { name: 'Vue.js / Nuxt.js' },
+        { name: 'GCP' },
+        { name: 'GitHub' },
         { name: 'Docker' },
+        { name: 'Kubernetes' },
+        { name: 'Terraform' },
         { name: 'Circle CI' },
-        { name: 'Firebase' },
-        { name: 'Django' },
-        { name: 'GCP' }
+        { name: 'Firebase' }
       ]
     }
   }
