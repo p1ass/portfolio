@@ -23,7 +23,7 @@ Server-side Engineer (Internship)
 September 2019  
 
 - Improved large-scale application design for in-game money management service
-- Added the feature that the OSS test generator in Go called aktsk/atgen supports raw binary request body
+- Added the feature that the OSS test generator in Go called [aktsk/atgen](https://github.com/aktsk/atgen) supports raw binary request body
 
 **CyberAgent, Inc.**  
 Server-side Engineer (Internship)  
@@ -44,7 +44,7 @@ February 2019 to March 2019
 **1ast prize in a internship held by DeNA**   
 August 2019
 
-- I participated in the intern in the theme of “Grow an app to be the best app in 3 days” as a server-side and was in charge of building a server that could make 20,000 requests per second
+- I participated in the intern in the theme of “Grow an app to be the best app in 3 days” as a server-side and was in charge of building a server that could make 10,000 requests per second
 
 **1st prize in a hackathon held by pixiv Inc.**  
 December 2018

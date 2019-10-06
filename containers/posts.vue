@@ -13,9 +13,9 @@
 </template>
 
 <script>
+import axios from 'axios'
 import pageTitle from '@/components/pageTitle'
 import Post from '@/components/post'
-import axios from 'axios'
 
 export default {
   name: 'Posts',

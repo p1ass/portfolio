@@ -36,7 +36,7 @@
 @mixin box($width) {
   width: $width;
   vertical-align: top;
-  margin: 0px 20px 20px 0px;
+  margin: 0px 20px 40px 0px;
   border-radius: 20px;
   background-color: white;
   position: relative;
@@ -44,7 +44,7 @@
 
   @media (max-width: 670px) {
     width: 100%;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 40px 0px;
   }
 
 }
