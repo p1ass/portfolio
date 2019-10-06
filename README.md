@@ -12,5 +12,5 @@ My portfolio site.
 
 [Japanese Resume](./Resume_JP.md)
 
-[English Resume](./Resume_EN.md)
+[English Resume](./resume_en.md)
 

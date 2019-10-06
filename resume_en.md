@@ -2,7 +2,7 @@
 
 **Student Engineer with wide experiences of engineering internship and manager of community.**  
 Kyoto  
-naokikishi.kyoto@gmail.com  
+contact@p1ass.com  
 [https://github.com/p1ass](https://github.com/p1ass)  
 [https://p1ass.com](https://p1ass.com)
 
@@ -77,4 +77,5 @@ April 2017 to Present
 - Crawls my posts in various websites automatically using p1ass/feeder
 
 ## Skills
-Go, Python, JavaScript, Java, C, HTML, Git, Docker, MySQL, GAE, Firebase
+
+Go, Python, Docker, Git / GitHub, CircleCI, GCP, Kubernetes, C, SQL, HTML, JavaScript, Vue.js / Nuxt.js, Java
