@@ -9,17 +9,17 @@ contact@p1ass.com
 京都のIT系学生コミュニティの運営  
 2019/01 ~ 現在
 
-- 学生なら誰でも無料で使えるワークスペースの運営や勉強会の企画・主催を行っています。
+- 学生なら誰でも無料で使えるコミュニティスペースの運営や勉強会の企画・主催を行っています。
 - gRPCを用いた内部向けバックエンドAPIの開発や、Web ComponentsとgRPC-Webを用いた出欠管理システムのフロントエンドの実装を担当しました。
 
 **株式会社アカツキ**  
 就業型インターン  
 2019/09  
 
-- OSSであるaktsk/atgenという静的解析を用いたGoのテストジェネレーターで`application/octet-stream`や`application/x-www-form-urlencoded`のリクエストボディを使えるように実装を追加。
 - ゲーム内通貨管理サービスの大規模なアプリケーション設計の改善を行いました。
+- OSSであるaktsk/atgenという静的解析を用いたGoのテストジェネレーターで、`application/octet-stream`や`application/x-www-form-urlencoded`のリクエストボディを扱えるようにしました。
 
-**株式会社 サイバーエージェント**  
+**株式会社サイバーエージェント**  
 CA Tech JOB (就業型インターンシップ)  
 2019/8  
 
@@ -49,6 +49,10 @@ CA Tech JOB (就業型インターンシップ)
 2017/4 ~ 現在
 
 ## 作品
+[**Memoito（めもいと）**](https://memoito.com)  
+- Twitter OAuthを使って、フォローしている人と紐付けてメモを保存することができるWebサービスです。
+- 勉強会などで話した内容をメモしたり、フォローした理由をメモしておくことができます。
+
 [**p1ass/feeder**](https://github.com/p1ass/feeder)  
 - 複数のRSSなどを統合し、一つのRSSやJSONフィードを生成するGo製のライブラリです。
 - インターフェースを実装することで、任意の情報からフィードを生成することができます。
@@ -68,4 +72,25 @@ CA Tech JOB (就業型インターンシップ)
 - p1ass/feederを使い、各媒体に掲載した記事を動的に表示させています。
 
 ## スキル
-Go, Python, JavaScript, Java, C, HTML, Git, Docker, MySQL, GAE, Firebase
+
+#### ★★★
+
+- Go
+- Python
+- Docker
+- Git / GitHub
+- CircleCI
+
+#### ★★☆
+
+- GCP
+- Kubernetes
+- C
+- SQL
+- HTML
+- JavaScript
+- Vue.js / Nuxt.js
+
+#### ★☆☆
+
+- Java
