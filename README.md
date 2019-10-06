@@ -10,10 +10,7 @@ My portfolio site.
 
 ## Resume
 
-### Japanese
-[Resume_JP.md](./Resume_JP.md)
+[Japanese Resume](./Resume_JP.md)
 
-### English
+[English Resume](./Resume_EN.md)
 
-
-In preparation.

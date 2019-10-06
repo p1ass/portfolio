@@ -10,13 +10,6 @@ naokikishi.kyoto@gmail.com
 Various experiences of developing API, website, and library as internship and private. Advanced implementation skills with Go and Python. Manager of one of the biggest student engineer community in Kyoto.
 
 ## Experience
-**LINE Corporation, Tokyo**  
-Server-side Engineer (Internship)  
-February 2019 to March 2019
-
-- Developed API for real time quiz competition where live streamers can communicate with hundreds of audiences interactively
-- Took measures against expected spike access by using Redis instead of MySQL and accomplished no down time
-
 **CAMPHOR-, Kyoto**  
 Manager of a community for students leaning IT engineering in Kyoto  
 December 2018 to Present
@@ -24,6 +17,27 @@ December 2018 to Present
 - Manage working space for students and organize study session
 - Fixed official website bugs, wrote unit tests for internal API
 - Created development environments using Docker, which made other members develop easily
+
+**Akatsuki Inc.**  
+Server-side Engineer (Internship)  
+September 2019  
+
+- Improved large-scale application design for in-game money management service
+- Added the feature that the OSS test generator in Go called aktsk/atgen supports raw binary request body
+
+**CyberAgent, Inc.**  
+Server-side Engineer (Internship)  
+August 2019  
+
+- Designed, and improved, and tested the data structure of broadcasting metadata related to sharing from  to increase the viewers from SNS
+
+**LINE Corporation, Tokyo**  
+Server-side Engineer (Internship)  
+February 2019 to March 2019
+
+- Developed API for real time quiz competition where live streamers can communicate with hundreds of audiences interactively
+- Took measures against expected spike access by using Redis instead of MySQL and accomplished no down time
+
 
 ## Award
 
@@ -47,6 +61,9 @@ April 2017 to Present
 - Relevant Coursework: Information Theory, Computer Programming, Basic Informatics, Computer Hardware Design
 
 ## Works
+[**Memoito**](https://memoito.com)  
+- The Web service that saves your notes associated with your following people using Twitter OAuth
+
 [**p1ass/feeder**](https://github.com/p1ass/feeder)  
 - RSS, Atom, and JSON feed generator from multiple data written in Go
 - You can generate feeds from any data you want by implementing interface
