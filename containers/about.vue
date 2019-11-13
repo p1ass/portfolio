@@ -35,7 +35,6 @@ export default {
       contacts: [
         { key: 'Name', value: '岸 直輝 (Naoki Kishi)', url: '' },
         { key: 'University', value: '京都大学 工学部 電気電子工学科', url: '' },
-        { key: 'Birthday', value: '1998/11/24', url: '' },
         {
           key: 'GitHub',
           value: 'p1ass',
