@@ -82,7 +82,7 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import '@/assets/styles/_mixin.scss';
 
 .works-wrapper {

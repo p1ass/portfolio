@@ -3,7 +3,7 @@
     <pageTitle title="Skills" />
     <div class="skills">
       <ul>
-        <li v-for="(skill,index) in skills" :key="index">
+        <li v-for="(skill, index) in skills" :key="index">
           {{ skill.name }}
         </li>
       </ul>
@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import '@/assets/styles/_mixin.scss';
 .skills-wrapper {
   @include section;
