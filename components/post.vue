@@ -21,7 +21,7 @@ export default {
     }
   },
   computed: {
-    date: function() {
+    date() {
       return format(parseISO(this.item.date_published), 'yyyy.MM.dd')
     }
   }

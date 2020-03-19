@@ -15,7 +15,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', YuGothic,

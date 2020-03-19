@@ -1,10 +1,7 @@
 <template>
   <section id="experiences" class="experiences-wrapper">
     <pageTitle title="Experiences" />
-    <v-timeline
-      :reverse="reverse"
-      :dense="dense"
-    >
+    <v-timeline :reverse="reverse" :dense="dense">
       <v-timeline-item
         v-for="(experience, index) in experiences"
         :key="index"
@@ -100,15 +97,15 @@ export default {
       return this.width > 670
     }
   },
-  mounted: function() {
+  mounted() {
     window.addEventListener('resize', this.handleResize)
   },
-  beforeDestroy: function() {
+  beforeDestroy() {
     window.removeEventListener('resize', this.handleResize)
   },
 
   methods: {
-    handleResize: function() {
+    handleResize() {
       // resizeのたびにこいつが発火するので、ここでやりたいことをやる
       this.width = window.innerWidth
     }
