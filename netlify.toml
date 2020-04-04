@@ -3,5 +3,8 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-[build]
-  environment = {NODE_VERSION = "10.15.3"}
+[build.environment]
+  NODE_VERSION = "12.16.1"
+  NODE_ENV = "production"
+  YARN_VERSION = "1.22.4"
+  API_ENDPOINT="https://blog-api.p1ass.com/json"
