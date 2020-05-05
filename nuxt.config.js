@@ -13,7 +13,7 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
+          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。',
       },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@p1ass' },
@@ -21,18 +21,18 @@ module.exports = {
       {
         property: 'og:description',
         content:
-          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。'
+          'Naoki Kishiのポートフォリオサイトです。Nuxt.jsで書かれています。インターンの経歴や開発しているものを紹介しています。',
       },
       {
         property: 'og:url',
-        content: 'https://p1ass.com/'
+        content: 'https://p1ass.com/',
       },
       {
         property: 'og:image',
-        content: 'https://p1ass.com/og.png'
-      }
+        content: 'https://p1ass.com/og.png',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -56,20 +56,21 @@ module.exports = {
   modules: [
     [
       'nuxt-sass-resources-loader',
-      ['@/assets/styles/_colors.scss', '@/assets/styles/_mixins.scss']
+      ['@/assets/styles/_colors.scss', '@/assets/styles/_mixins.scss'],
     ],
     '@nuxtjs/pwa',
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-127036212-5'
-      }
+        id: 'UA-127036212-5',
+      },
     ],
-    '@nuxtjs/vuetify'
   ],
 
+  buildModules: [['@nuxtjs/vuetify', {}]],
+
   env: {
-    apiEndpoint: process.env.API_ENDPOINT || 'http://localhost:8080/json'
+    apiEndpoint: process.env.API_ENDPOINT || 'http://localhost:8080/json',
   },
 
   /*
@@ -86,9 +87,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
-  }
+    },
+  },
 }

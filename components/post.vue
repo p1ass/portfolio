@@ -17,14 +17,14 @@ export default {
   props: {
     item: {
       type: Object,
-      default: () => {}
-    }
+      default: () => {},
+    },
   },
   computed: {
     date() {
       return format(parseISO(this.item.date_published), 'yyyy.MM.dd')
-    }
-  }
+    },
+  },
 }
 </script>
 

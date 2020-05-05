@@ -16,7 +16,7 @@ import pageTitle from '@/components/pageTitle'
 export default {
   name: 'Skills',
   components: {
-    pageTitle
+    pageTitle,
   },
   data() {
     return {
@@ -32,10 +32,10 @@ export default {
         { name: 'Kubernetes' },
         { name: 'Terraform' },
         { name: 'Circle CI' },
-        { name: 'Firebase' }
-      ]
+        { name: 'Firebase' },
+      ],
     }
-  }
+  },
 }
 </script>
 

@@ -27,7 +27,7 @@ import pageTitle from '@/components/pageTitle'
 export default {
   name: 'About',
   components: {
-    pageTitle
+    pageTitle,
   },
 
   data() {
@@ -38,32 +38,32 @@ export default {
         {
           key: 'GitHub',
           value: 'p1ass',
-          url: 'https://github.com/p1ass'
+          url: 'https://github.com/p1ass',
         },
         {
           key: 'Qiita',
           value: 'p1ass',
-          url: 'https://qiita.com/p1ass'
+          url: 'https://qiita.com/p1ass',
         },
         {
           key: 'Facebook',
           value: '岸 直輝',
-          url: 'https://www.facebook.com/naokikishi.kyoto'
+          url: 'https://www.facebook.com/naokikishi.kyoto',
         },
         {
           key: 'Twitter',
           value: '@p1ass',
-          url: 'https://twitter.com/p1ass'
+          url: 'https://twitter.com/p1ass',
         },
         {
           key: 'Blog',
           value: 'ぷらすのブログ',
-          url: 'https://blog.p1ass.com'
+          url: 'https://blog.p1ass.com',
         },
-        { key: 'Mail', value: 'contact[at]p1ass.com', url: '' }
-      ]
+        { key: 'Mail', value: 'contact[at]p1ass.com', url: '' },
+      ],
     }
-  }
+  },
 }
 </script>
 

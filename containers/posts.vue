@@ -21,12 +21,12 @@ export default {
   name: 'Posts',
   components: {
     pageTitle,
-    Post
+    Post,
   },
 
   data() {
     return {
-      posts: []
+      posts: [],
     }
   },
 
@@ -43,8 +43,8 @@ export default {
       } catch (e) {
         console.log(e)
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
