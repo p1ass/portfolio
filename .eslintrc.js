@@ -7,7 +7,10 @@ module.exports = {
     extends: [
       'eslint:recommended',
       'plugin:@typescript-eslint/eslint-recommended',
-      'react-app'
+      'react-app',
+      'plugin:prettier/recommended',
+      'prettier/@typescript-eslint',
+      'prettier/react'
     ],
     globals: {
       Atomics: 'readonly',
@@ -21,8 +24,14 @@ module.exports = {
       ecmaVersion: 2018,
       sourceType: 'module'
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
+      'prettier/prettier': ['error', { 
+        'singleQuote': true ,
+        'printWidth': 100,
+        'tabWidth': 2,
+        'semi': false
+      }],
       semi: ['error', 'never'],
       indent: ['error', 2]
     }
