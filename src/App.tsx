@@ -41,7 +41,7 @@ const Logo = styled.img`
   }
 `
 
-function App() {
+export function App() {
   return (
     <Wrapper>
       <Header>
@@ -56,5 +56,3 @@ function App() {
     </Wrapper>
   )
 }
-
-export default App
