@@ -4,10 +4,12 @@ module.exports = {
       es6: true,
       node: true
     },
+    plugins: ['react','react-hooks', '@typescript-eslint', 'prettier'],
     extends: [
       'eslint:recommended',
       'plugin:@typescript-eslint/eslint-recommended',
       'react-app',
+      'plugin:react-hooks/recommended',
       'plugin:prettier/recommended',
       'prettier/@typescript-eslint',
       'prettier/react'
@@ -24,7 +26,6 @@ module.exports = {
       ecmaVersion: 2018,
       sourceType: 'module'
     },
-    plugins: ['react', '@typescript-eslint', 'prettier'],
     rules: {
       'prettier/prettier': ['error', { 
         'singleQuote': true ,
