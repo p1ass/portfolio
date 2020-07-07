@@ -2,7 +2,8 @@
 
 contact@p1ass.com  
 [https://github.com/p1ass](https://github.com/p1ass)  
-[https://p1ass.com](https://p1ass.com)
+[https://p1ass.com](https://p1ass.com)  
+[https://blog.p1ass.com](https://blog.p1ass.com)
 
 ## 経歴
 
