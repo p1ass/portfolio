@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "axios": "^0.19.2",
     "cross-env": "^7.0.2",
-    "date-fns": "^2.14.0",
+    "date-fns": "^2.15.0",
     "nuxt": "^2.14.0",
     "nuxt-sass-resources-loader": "^2.0.5",
     "vue-scrollto": "^2.18.1",
