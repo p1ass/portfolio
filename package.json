@@ -19,7 +19,7 @@
     "axios": "^0.20.0",
     "cross-env": "^7.0.2",
     "date-fns": "^2.16.1",
-    "nuxt": "^2.14.6",
+    "nuxt": "^2.14.7",
     "nuxt-sass-resources-loader": "^2.0.5",
     "vue-scrollto": "^2.18.2",
     "webfontloader": "^1.6.28"
