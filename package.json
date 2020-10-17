@@ -21,7 +21,7 @@
     "date-fns": "^2.16.1",
     "nuxt": "^2.14.7",
     "nuxt-sass-resources-loader": "^2.0.5",
-    "vue-scrollto": "^2.18.2",
+    "vue-scrollto": "^2.19.1",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
