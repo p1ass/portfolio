@@ -13,7 +13,7 @@
           <span slot="">{{ experience.term }}</span>
           <span class="elevation-2">
             <v-card-title class="headline">
-              {{ experience.key + ' ' + experience.value }}
+              {{ experience.key}}<br>{{experience.value }}
             </v-card-title>
             <v-card-text>
               {{ experience.description }}
@@ -40,7 +40,7 @@ export default {
       experiences: [
         {
           key: '株式会社ディー・エヌ・エー',
-          value: '内定者ある培土',
+          value: '内定者アルバイト',
           term: '2020/01 ~ Present',
           description:
             '日比谷音楽祭向けスマートフォンアプリのバックエンド開発や社内システムの開発を行っています。',
