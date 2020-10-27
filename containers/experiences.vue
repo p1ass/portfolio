@@ -13,7 +13,7 @@
           <span slot="">{{ experience.term }}</span>
           <span class="elevation-2">
             <v-card-title class="headline">
-              {{ experience.key + ' ' + experience.value }}
+              {{ experience.key}}<br>{{experience.value }}
             </v-card-title>
             <v-card-text>
               {{ experience.description }}
@@ -39,6 +39,13 @@ export default {
       width: window.innerWidth,
       experiences: [
         {
+          key: '株式会社ディー・エヌ・エー',
+          value: '内定者アルバイト',
+          term: '2020/01 ~ Present',
+          description:
+            '日比谷音楽祭向けスマートフォンアプリのバックエンド開発を経て、現在は社内システムの開発を行っています。他業種や他部署のメンバーを連携しつつ、ほぼ１人で要件定義から実装まで行っています。',
+        },
+        {
           key: 'CAMPHOR-',
           value: 'コアメンバー',
           term: '2019/01 ~ Present',
@@ -46,42 +53,42 @@ export default {
             '京都のIT系学生コミュニティであるCAMPHOR-の運営を行っています。学生なら誰でも無料で使えるワークスペースの管理や勉強会の企画・開催などを行っています。',
         },
         {
-          key: 'アカツキ ',
+          key: '株式会社アカツキ',
           value: '就業型インターン',
           term: '2019/09',
           description:
             'OSSであるaktsk/atgenという静的解析を用いたGoのテストジェネレーターの機能追加やゲーム内通貨管理サービスの大規模なアプリケーション設計の改善を行いました。',
         },
         {
-          key: 'AbemaTV ',
+          key: '株式会社AbemaTV',
           value: '就業型インターン',
           term: '2019/08',
           description:
             'SNSから番組への流入を増やすためにTwitterシェアに関する機能を追加しました。スケーラビリティを考慮しつつ仕様設計から実装、テストを全て行いました。',
         },
         {
-          key: 'DeNA',
+          key: '株式会社ディー・エヌ・エー',
           value: 'サマーインターンプロダクト開発コース 優勝',
           term: '2019/08',
           description:
             '「3日間で最高のアプリに作り直す」というミッションが課せられていたインターンにサーバーサイドエンジニアとして参加し、Goを用いたAPIの実装や負荷対策の実装を行い優勝しました。',
         },
         {
-          key: 'LINE',
+          key: 'LINE株式会社',
           value: '就業型インターン',
           term: '2019/02 ~ 2019/03',
           description:
             'LINE LIVEという配信アプリのサーバサイドエンジニアとしてLIVE Qという配信者と視聴者がやり取りしながらクイズに参加できる新機能の実装を行いました。',
         },
         {
-          key: 'CyberAgent',
+          key: '株式会社サイバーエージェント',
           value: 'Architecture Challenge',
           term: '2019/02',
           description:
             '「架空のサービスのチャット機能部分のアーキテクチャを考える」がテーマのインターンに参加し、スケーラビリティや拡張性を考えた設計を行いました。',
         },
         {
-          key: 'ピクシブ',
+          key: 'ピクシブ株式会社',
           value: '君だけのpixivを開発れ！ 優勝',
           term: '2018/12',
           description:
