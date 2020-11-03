@@ -41,6 +41,6 @@
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.6",
     "prettier": "2.1.2",
-    "sass-loader": "^10.0.4"
+    "sass-loader": "^10.0.5"
   }
 }
