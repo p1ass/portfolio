@@ -1,53 +1,55 @@
+const eslintSveltePreprocess = require('eslint-svelte3-preprocess')
+const svelteConfig = require('./svelte.config')
+
 module.exports = {
-    root: true,
-    parser: "@typescript-eslint/parser",
-    parserOptions: {
-      tsconfigRootDir: __dirname,
-      project: ["./tsconfig.json"],
-      sourceType: "module"
+  root: true,
+  env: {
+    es6: true,
+    node: true,
+    browser: true
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    createDefaultProgram: true,
+    ecmaVersion: 2019,
+    sourceType: 'module'
+  },
+  extends: ['eslint:recommended'],
+  plugins: ['svelte3', '@typescript-eslint', 'prettier'],
+  overrides: [
+    {
+      files: ['*.svelte'],
+      processor: 'svelte3/svelte3'
     },
-    env: {
-      es6: true,
-      browser: true,
-      node: true
-    },
-    plugins: ["@typescript-eslint", "svelte3"],
-    extends: [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:import/errors",
-      "plugin:import/warnings",
-      "plugin:import/typescript",
-      "prettier"
-    ],
-    ignorePatterns: [
-      'public/build/'
-    ],
-    overrides: [
+    {
+      files: ['*.ts', '*.json'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+        'prettier/@typescript-eslint',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript'
+      ]
+    }
+  ],
+  rules: {
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'import/order': [
+      'error',
       {
-        files: ['**/*.svelte'],
-        processor: 'svelte3/svelte3'
-      }
-    ],
-    rules: {
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "import/order": [
-          "error",
+        pathGroups: [
           {
-            "pathGroups": [
-              {
-                "pattern": "@/**",
-                "group": "parent",
-                "position": "after"
-              }
-            ],
-            "newlines-between": "always"
+            pattern: '@/**',
+            group: 'parent',
+            position: 'after'
           }
         ],
-        "import/no-default-export": "warn"
-    },
-    settings: {
-      // Nothing
-    }
+        'newlines-between': 'always'
+      }
+    ]
+  },
+  settings: {
+    'svelte3/preprocess': eslintSveltePreprocess(svelteConfig.preprocess)
   }
-
+}

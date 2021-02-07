@@ -1,0 +1,22 @@
+diff --git a/node_modules/prettier/third-party.js b/node_modules/prettier/third-party.js
+index 1e4292b..acb7bbd 100644
+--- a/node_modules/prettier/third-party.js
++++ b/node_modules/prettier/third-party.js
+@@ -9684,7 +9684,7 @@ var readFile_1 = createCommonjsModule(function (module, exports) {
+ 
+       return content;
+     } catch (error) {
+-      if (throwNotFound === false && error.code === 'ENOENT') {
++      if (throwNotFound === false && error.code === 'ENOENT' || error.code === "ENOTDIR") {
+         return null;
+       }
+ 
+@@ -9755,7 +9755,7 @@ function isTypeSync(fsStatType, statsMethodName, filePath) {
+   try {
+     return fs__default['default'][fsStatType](filePath)[statsMethodName]();
+   } catch (error) {
+-    if (error.code === 'ENOENT') {
++    if (error.code === 'ENOENT' || error.code === "ENOTDIR") {
+       return false;
+     }
+ 
