@@ -1,0 +1,8 @@
+{
+    "tailwindCSS.includeLanguages": {
+        "svelte": "html"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+      },
+}
