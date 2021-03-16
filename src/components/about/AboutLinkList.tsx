@@ -5,10 +5,10 @@ export const AboutLinkList = () => {
     <div>
       {AboutLinks.map((aboutLink) => (
         <dl key={aboutLink.key} className="flex mt-4 text-gray">
-          <dt className="font-bold text-lg w-28">{aboutLink.key}</dt>
+          <dt className="w-28 text-lg font-bold">{aboutLink.key}</dt>
           <dd>
             {aboutLink.url ? (
-              <a href={aboutLink.url} className="cursor-pointer underline">
+              <a href={aboutLink.url} className="underline cursor-pointer">
                 {aboutLink.value}
               </a>
             ) : (

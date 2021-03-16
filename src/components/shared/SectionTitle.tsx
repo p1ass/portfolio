@@ -8,8 +8,8 @@ type Props = {
 export const SectionTitle = ({ title, subtitle }: Props) => {
   return (
     <div>
-      <h1 className="text-3xl text-blue text-center font-bold">{title}</h1>
-      <span className="text-center block text-gray-light mt-1">{subtitle}</span>
+      <h1 className="text-center text-blue text-3xl font-bold">{title}</h1>
+      <span className="block mt-1 text-center text-gray-light">{subtitle}</span>
     </div>
   )
 }
