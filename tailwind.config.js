@@ -7,8 +7,15 @@ module.exports = {
     },
     colors: {
       blue: {
-        DEFAULT: '#4172B5'
+        DEFAULT: '#4172B5' // Primary Color
+      },
+      gray: {
+        DEFAULT: '#1E2126', // Secondary Text Color
+        light: '#636E7D' // Third Text COlor
       }
+    },
+    fontFamily: {
+      sans: ['Hiragino Kaku Gothic ProN', 'sans-serif']
     },
     extend: {}
   },
