@@ -2,6 +2,6 @@
     "version": 2,
     "name": "portfolio",
     "builds": [
-      { "src": "package.json", "use": "@vercel/next" },
+      { "src": "package.json", "use": "@vercel/next" }
     ]
-  }
+}
