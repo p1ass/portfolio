@@ -5,6 +5,11 @@ module.exports = {
     container: {
       center: true
     },
+    colors: {
+      blue: {
+        DEFAULT: '#4172B5'
+      }
+    },
     extend: {}
   },
   variants: {
