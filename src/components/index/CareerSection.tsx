@@ -1,10 +1,10 @@
 import { SectionWrapper } from '../shared/SectionWrapper'
 import { SectionTitle } from '../shared/SectionTitle'
 
-export const AboutSection = () => {
+export const CareerSection = () => {
   return (
     <SectionWrapper>
-      <SectionTitle title="About Me" subtitle="私について"></SectionTitle>
+      <SectionTitle title="Career" subtitle="経歴"></SectionTitle>
     </SectionWrapper>
   )
 }
