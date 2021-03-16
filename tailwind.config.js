@@ -27,8 +27,8 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '-apple-system',
-        'BlinkMacSystemFont',
+        'Hiragino Kaku Gothic ProN',
+        'Hiragino Sans',
         'Segoe UI',
         'Roboto',
         'Noto Sans CJK JP',
