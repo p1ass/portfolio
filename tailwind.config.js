@@ -20,10 +20,25 @@ module.exports = {
       border: {
         DEFAULT: '#DDE0E4', // Primary Border Color
         light: '#FFFFFF' // Primary Border Color
+      },
+      white: {
+        DEFAULT: '#FFFFFF'
       }
     },
     fontFamily: {
-      sans: ['Hiragino Kaku Gothic ProN', 'sans-serif']
+      sans: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Hiragino Sans',
+        'Noto Sans CJK JP',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Sans Emoji'
+      ]
     },
     extend: {}
   },
