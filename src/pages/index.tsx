@@ -6,7 +6,7 @@ import { ProductsSection } from '../components/products/ProductsSection'
 
 export default function Index() {
   return (
-    <main className="container lg:max-w-5xl">
+    <main className="bg-background container lg:max-w-5xl">
       <AboutSection></AboutSection>
       <CareerSection></CareerSection>
       <PresentationsSection></PresentationsSection>
