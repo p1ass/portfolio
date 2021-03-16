@@ -1,8 +1,8 @@
-import { AboutSection } from '../components/index/AboutSection'
-import { CallForJobOffersSection } from '../components/index/CallForJobOffersSection'
-import { CareerSection } from '../components/index/CareerSection'
-import { PresentationsSection } from '../components/index/PresentationsSection'
-import { ProductsSection } from '../components/index/ProductsSection'
+import { AboutSection } from '../components/about/AboutSection'
+import { CallForJobOffersSection } from '../components/job_offers/CallForJobOffersSection'
+import { CareerSection } from '../components/career/CareerSection'
+import { PresentationsSection } from '../components/presentations/PresentationsSection'
+import { ProductsSection } from '../components/products/ProductsSection'
 
 export default function Index() {
   return (
