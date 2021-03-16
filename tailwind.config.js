@@ -6,6 +6,10 @@ module.exports = {
       center: true
     },
     colors: {
+      background: {
+        dark: '#F9F9FA',
+        DEFAULT: '#FFFFFF' // Primary Color
+      },
       blue: {
         DEFAULT: '#4172B5' // Primary Color
       },
