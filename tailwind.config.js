@@ -11,7 +11,11 @@ module.exports = {
       },
       gray: {
         DEFAULT: '#1E2126', // Secondary Text Color
-        light: '#636E7D' // Third Text COlor
+        light: '#636E7D' // Third Text Color
+      },
+      border: {
+        DEFAULT: '#DDE0E4', // Primary Border Color
+        light: '#FFFFFF' // Primary Border Color
       }
     },
     fontFamily: {
