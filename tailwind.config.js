@@ -31,7 +31,6 @@ module.exports = {
         'BlinkMacSystemFont',
         'Segoe UI',
         'Roboto',
-        'Hiragino Sans',
         'Noto Sans CJK JP',
         'sans-serif',
         'Apple Color Emoji',
