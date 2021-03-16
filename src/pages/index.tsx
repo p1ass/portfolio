@@ -2,7 +2,7 @@ import { AboutSection } from '../components/index/AboutSection'
 
 export default function Index() {
   return (
-    <main className="container m-auto">
+    <main className="container mx-auto">
       <AboutSection></AboutSection>
     </main>
   )
