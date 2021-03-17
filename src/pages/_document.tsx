@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head />
+        <Head title="p1ass's portfolio" />
         <body className="tracking-wide">
           <Main />
           <NextScript />
