@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head />
-        <body>
+        <body className="tracking-wide">
           <Main />
           <NextScript />
         </body>

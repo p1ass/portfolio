@@ -11,11 +11,12 @@ export const MotivationCard = () => {
         </span>
         {statusList()}
         <h3 className="mt-4 text-center text-blue text-2xl font-bold">採用担当の方へ</h3>
-        <p className="mt-4 text-gray">
-          上記転職意思に関わらず、採用に関するメール・DMは常時受け付けています。しかし、必ずしもメールを返信するとは限りませんので予めご了承ください。
-          <br />
-          また、人材紹介業の方からのご連絡はお断りしております。
-        </p>
+        <div className="mt-4 text-gray">
+          <p>
+            上記転職意思に関わらず、採用に関するメール・DMは常時受け付けています。しかし、必ずしもメールを返信するとは限りませんので予めご了承ください。
+          </p>
+          <p>また、人材紹介業の方からのご連絡はお断りしております。</p>
+        </div>
       </div>
     </div>
   )
