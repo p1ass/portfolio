@@ -2,6 +2,7 @@ import { SectionWrapper } from '../shared/SectionWrapper'
 import { SectionTitle } from '../shared/SectionTitle'
 
 import { MotivationCard } from './MotivationCard'
+import { InterestsCard } from './InterestsCard'
 
 export const CallForJobOffersSection = () => {
   return (
@@ -11,7 +12,10 @@ export const CallForJobOffersSection = () => {
         subtitle="転職のお誘い"
         backgroundStyle="blue"
       ></SectionTitle>
-      <MotivationCard></MotivationCard>
+      <div className="flex flex-grow">
+        <MotivationCard></MotivationCard>
+        <InterestsCard></InterestsCard>
+      </div>
     </SectionWrapper>
   )
 }
