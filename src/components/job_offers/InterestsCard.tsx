@@ -7,11 +7,9 @@ export const InterestsCard = () => {
       <div className="mx-4">
         {interests.map((interest) => {
           return (
-            <>
-              <h4 key={interest.field} className="my-2 text-gray text-lg font-bold">
-                {interest.field}
-              </h4>
-              <ul className="pl-5 list-disc">
+            <div key={interest.field} className="border-border first:border-0 border-t">
+              <h4 className="mb-2 mt-4 text-gray text-lg font-bold">{interest.field}</h4>
+              <ul className="mb-4 pl-5 list-disc">
                 {interest.contents.map((content) => {
                   return (
                     <li key={content} className="mt-1 text-gray">
@@ -20,7 +18,7 @@ export const InterestsCard = () => {
                   )
                 })}
               </ul>
-            </>
+            </div>
           )
         })}
       </div>
