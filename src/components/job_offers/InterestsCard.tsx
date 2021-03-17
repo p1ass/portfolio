@@ -14,7 +14,7 @@ export const InterestsCard = () => {
               <ul className="pl-5 list-disc">
                 {interest.contents.map((content) => {
                   return (
-                    <li key={content} className="text-gray">
+                    <li key={content} className="mt-1 text-gray">
                       {content}
                     </li>
                   )
