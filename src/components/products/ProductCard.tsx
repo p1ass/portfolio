@@ -21,7 +21,7 @@ export const ProductCard = ({ product }: Props) => {
         alt={product.title}
       ></Image>
       <div className="flex flex-col p-4 pt-2">
-        <p className="text-blue text-xs">
+        <p className="text-blue text-sm">
           {product.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
         </p>
         <h2 className="mt-2 font-semibold">{product.title}</h2>
