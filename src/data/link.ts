@@ -21,11 +21,6 @@ export const AboutLinks: AboutLink[] = [
     url: 'https://blog.p1ass.com'
   },
   {
-    key: 'Slide',
-    value: 'https://speakerdeck.com/p1ass',
-    url: 'https://speakerdeck.com/p1ass'
-  },
-  {
     key: 'Mail',
     value: 'contact[at]p1ass.com'
   }
