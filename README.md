@@ -1,16 +1,16 @@
 # p1ass/portfolio
 
-My portfolio site.
+🏠 My portfolio
 
-[https://p1ass.com/](https://p1ass.com/)
+## Getting Started
 
-## Blog
+1. Install Node and yarn.
+1. Run `yarn`
+1. Run `yarn dev`
 
-[フロント未学習の大学生が1週間でVue.jsを使ったポートフォリオを作った話](https://qiita.com/p1ass/items/a01578b782f17f573510)
+## Technical Stack
 
-## Resume
-
-[Japanese Resume](./Resume_JP.md)
-
-[English Resume](./resume_en.md)
-
+- TypeScript
+- Next.js
+- Tailwind CSS
+- Vercel
