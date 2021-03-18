@@ -29,10 +29,10 @@ const currentStatus = jobChangeMotivation.statusDescriptions.find(
 
 const statusList = () => {
   return (
-    <div className="flex flex-col justify-center mb-8 mt-4 mx-auto sm:max-w-min">
+    <div className="flex flex-col justify-center mb-8 mt-4 mx-auto">
       {jobChangeMotivation.statusDescriptions.map((status) => {
         return (
-          <dl key={status.icon} className="flex items-center mt-2">
+          <dl key={status.icon} className="flex items-center mt-2 mx-auto lg:mx-0">
             <dt>{status.icon}</dt>
             <dd className="ml-2 text-gray text-sm sm:min-w-max">{status.description}</dd>
           </dl>
