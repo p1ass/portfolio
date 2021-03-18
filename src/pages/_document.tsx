@@ -12,7 +12,6 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
-          <title>p1ass&apos;s portfolio</title>
           <meta name="description" content={description}></meta>
           <meta property="og:url" content="https://p1ass.com" />
           <meta property="og:type" content="website" />

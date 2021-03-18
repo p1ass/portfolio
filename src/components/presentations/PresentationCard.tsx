@@ -8,7 +8,7 @@ type Props = {
 export const PresentationCard = ({ presentation }: Props) => {
   return (
     <a
-      className="group border-border mt-8 mx-2 border rounded-lg cursor-pointer sm:w-72"
+      className="border-border hover:bg-background-dark mt-8 mx-2 border rounded-lg cursor-pointer transition sm:w-72"
       href={presentation.url}
       target="blank"
       rel="noopener noreferer"
@@ -20,7 +20,7 @@ export const PresentationCard = ({ presentation }: Props) => {
         className="rounded-t-lg"
         alt={presentation.title}
       ></Image>
-      <div className="group-hover:bg-background-dark flex flex-col p-4 pt-2 transition">
+      <div className="flex flex-col p-4 pt-2">
         <p className="text-blue text-xs">
           {presentation.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
         </p>

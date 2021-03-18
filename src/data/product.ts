@@ -1,0 +1,34 @@
+export type Product = {
+  title: string
+  url: string
+  image: string
+  description: string
+  hashtags: string[] // #はいらない
+}
+
+// TODO(p1ass): APIで取ってこれるようにする
+export const products: Product[] = [
+  {
+    title: 'Relaym',
+    url: 'https://relaym.camph.net',
+    image: 'https://relaym.camph.net/ogp.png',
+    description:
+      'Relaym（リレイム）は、それぞれが聴きたいSpotifyの楽曲を1つのスピーカーで楽しめるWebアプリ',
+    hashtags: ['OSS', 'RSS']
+  },
+  {
+    title: '生活習慣の乱れを可視化するやつ',
+    url: 'https://midare.p1ass.com',
+    image: 'https://midare.p1ass.com/ogp.jpg',
+    description: 'ツイートを使って生活習慣の乱れを可視化するWebアプリ',
+    hashtags: ['OSS', 'RSS']
+  },
+  {
+    title: 'feeder',
+    url: 'https://github.com/p1ass/feeder',
+    image:
+      'https://repository-images.githubusercontent.com/176959575/eae4a900-f3f2-11e9-8d95-60cb8ca12fd9',
+    description: '複数のRSSやAtomフィードなどから記事を取得し、一つのRSSやJSONを生成するライブラリ',
+    hashtags: ['OSS', 'RSS']
+  }
+]
