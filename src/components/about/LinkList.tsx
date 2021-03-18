@@ -2,9 +2,9 @@ import { AboutLinks } from '../../data/link'
 
 export const AboutLinkList = () => {
   return (
-    <div className="flex flex-col justify-center mb-8 ml-32">
+    <div className="flex flex-col justify-center mb-8 mx-auto max-w-min md:ml-32">
       {AboutLinks.map((aboutLink) => (
-        <dl key={aboutLink.key} className="flex mt-4 text-gray">
+        <dl key={aboutLink.key} className="flex mt-4 text-gray md:mx-0">
           <dt className="w-28 text-lg font-bold">{aboutLink.key}</dt>
           <dd>
             {aboutLink.url ? (

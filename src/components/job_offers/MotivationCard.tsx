@@ -1,8 +1,9 @@
 import { jobChangeMotivation } from '../../data/job_change_motivation'
+import { WhiteBlock } from '../shared/WhiteBlock'
 
 export const MotivationCard = () => {
   return (
-    <div className="bg-white flex flex-col m-4 p-4 w-full rounded-lg">
+    <WhiteBlock>
       <h3 className="text-center text-blue text-2xl font-bold">現在の転職意思</h3>
       <div className="mx-4">
         <p className="mt-2 text-center text-gray-light text-sm">2021/04/01 更新</p>
@@ -18,7 +19,7 @@ export const MotivationCard = () => {
           <p>また、人材紹介業の方からのご連絡はお断りしております。</p>
         </div>
       </div>
-    </div>
+    </WhiteBlock>
   )
 }
 
@@ -27,12 +28,16 @@ const currentStatus = jobChangeMotivation.statusDescriptions.find(
 )
 
 const statusList = () => {
-  return jobChangeMotivation.statusDescriptions.map((status) => {
-    return (
-      <dl key={status.icon} className="flex flex-1 items-center mt-2">
-        <dt className="">{status.icon}</dt>
-        <dd className="ml-2 text-gray text-sm">{status.description}</dd>
-      </dl>
-    )
-  })
+  return (
+    <div className="flex flex-col justify-center mb-8 mx-auto sm:max-w-min md:ml-32">
+      {jobChangeMotivation.statusDescriptions.map((status) => {
+        return (
+          <dl key={status.icon} className="flex items-center mt-2">
+            <dt>{status.icon}</dt>
+            <dd className="ml-2 text-gray text-sm sm:min-w-max">{status.description}</dd>
+          </dl>
+        )
+      })}
+    </div>
+  )
 }

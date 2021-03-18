@@ -1,8 +1,9 @@
 import { interests } from '../../data/interests'
+import { WhiteBlock } from '../shared/WhiteBlock'
 
 export const InterestsCard = () => {
   return (
-    <div className="bg-white flex flex-col m-4 p-4 w-full rounded-lg">
+    <WhiteBlock>
       <h3 className="text-center text-blue text-2xl font-bold">興味・関心</h3>
       <div className="mx-4">
         {interests.map((interest) => {
@@ -22,6 +23,6 @@ export const InterestsCard = () => {
           )
         })}
       </div>
-    </div>
+    </WhiteBlock>
   )
 }
