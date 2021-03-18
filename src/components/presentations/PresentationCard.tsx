@@ -18,6 +18,7 @@ export const PresentationCard = ({ presentation }: Props) => {
         width={1024}
         height={576}
         className="rounded-t-lg"
+        alt={presentation.title}
       ></Image>
       <div className="group-hover:bg-background-dark flex flex-col p-4 pt-2 transition">
         <p className="text-blue text-xs">
