@@ -8,7 +8,7 @@ type Props = {
 export const PresentationCard = ({ presentation }: Props) => {
   return (
     <a
-      className="group border-border mt-8 mx-2 w-72 border rounded-lg cursor-pointer"
+      className="group border-border mt-8 mx-2 border rounded-lg cursor-pointer sm:w-72"
       href={presentation.url}
       target="blank"
       rel="noopener noreferer"
