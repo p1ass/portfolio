@@ -8,7 +8,7 @@ type Props = {
 export const PresentationCard = ({ presentation }: Props) => {
   return (
     <a
-      className="border-border hover:bg-background-dark mt-8 mx-2 border rounded-lg cursor-pointer transition sm:w-72"
+      className="mt-8 mx-2 hover:bg-background-dark border border-border rounded-lg cursor-pointer transition sm:w-72"
       href={presentation.url}
       target="blank"
       rel="noopener noreferer"
@@ -25,7 +25,7 @@ export const PresentationCard = ({ presentation }: Props) => {
         <p className="text-blue text-sm">
           {presentation.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
         </p>
-        <h2 className="mt-2 font-semibold">{presentation.title}</h2>
+        <h2 className="mt-2 font-semibold sm:h-16">{presentation.title}</h2>
         <time className="mt-2 text-gray-light text-sm">
           {presentation.date.format('YYYY/MM/DD')}
         </time>
