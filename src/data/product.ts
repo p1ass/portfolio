@@ -6,7 +6,6 @@ export type Product = {
   hashtags: string[] // #はいらない
 }
 
-// TODO(p1ass): APIで取ってこれるようにする
 export const products: Product[] = [
   {
     title: 'Relaym',
