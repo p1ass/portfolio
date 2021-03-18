@@ -6,7 +6,7 @@ import { ProductList } from './ProductList'
 export const ProductsSection = () => {
   return (
     <SectionWrapper>
-      <SectionTitle title="Products" subtitle="制作物"></SectionTitle>
+      <SectionTitle title="Hobby Products" subtitle="趣味の制作物"></SectionTitle>
       <ProductList></ProductList>
     </SectionWrapper>
   )
