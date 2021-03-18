@@ -5,9 +5,9 @@ export const IconAndName = () => {
         <img src="/p1ass.svg" alt="Profile Icon" width={128} height={128}></img>
       </div>
       <h3 className="mt-2 text-gray text-2xl font-bold">
-        岸 直輝
+        p1ass
         <br />
-        Naoki Kishi
+        (Naoki Kishi)
       </h3>
     </div>
   )
