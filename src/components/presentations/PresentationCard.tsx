@@ -24,7 +24,7 @@ export const PresentationCard = ({ presentation }: Props) => {
         <p className="text-blue text-xs">
           {presentation.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
         </p>
-        <h4 className="mt-2 font-semibold">{presentation.title}</h4>
+        <h2 className="mt-2 font-semibold">{presentation.title}</h2>
         <p className="mt-2 text-gray-light text-sm">{presentation.date.toISOString()}</p>
       </div>
     </a>

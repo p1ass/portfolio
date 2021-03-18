@@ -8,9 +8,9 @@ export const CareerListRow = ({ career }: Props) => {
     <div className="border-border py-8 first:border-0 border-t md:flex">
       <div className="md:w-96">
         <p className="text-gray-light text-sm">{career.term}</p>
-        <h3 className="mt-1 text-gray text-xl font-bold md:mt-2 md:text-2xl">
+        <h2 className="mt-1 text-gray text-xl font-bold md:mt-2 md:text-2xl">
           {career.companyName}
-        </h3>
+        </h2>
       </div>
       <div className="flex flex-1 items-center mt-2 md:mt-0">
         <p className="text-gray">{career.description}</p>
