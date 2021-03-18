@@ -5,7 +5,7 @@ export const InterestsCard = () => {
   return (
     <WhiteBlock>
       <h2 className="text-center text-blue text-2xl font-bold">興味・関心</h2>
-      <div className="mx-4">
+      <div>
         {interests.map((interest) => {
           return (
             <div key={interest.field} className="border-border first:border-0 border-t">
