@@ -11,8 +11,7 @@ export const products: Product[] = [
     title: 'Relaym',
     url: 'https://relaym.camph.net',
     image: 'https://relaym.camph.net/ogp.png',
-    description:
-      'Relaym（リレイム）は、それぞれが聴きたいSpotifyの楽曲を1つのスピーカーで楽しめるWebアプリ',
+    description: 'みんなに聴いてもらいたいSpotifyの曲を1つのスピーカーで楽しめるWebアプリ',
     hashtags: ['Go', 'MySQL', 'Concurrency', 'OSS']
   },
   {
