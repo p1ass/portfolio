@@ -8,7 +8,7 @@ export const AboutSection = () => {
   return (
     <SectionWrapper>
       <SectionTitle title="About Me" subtitle="私について"></SectionTitle>
-      <div className="mt-8 md:flex">
+      <div className="mt-8 md:flex md:justify-center md:mx-auto">
         <IconAndName></IconAndName>
         <AboutLinkList></AboutLinkList>
       </div>
