@@ -14,7 +14,7 @@ export default function Index() {
         <title>p1ass&apos;s portfolio</title>
       </Head>
       <div>
-        <main className="bg-background container lg:max-w-5xl">
+        <main className="bg-background container mb-16 lg:max-w-5xl">
           <AboutSection></AboutSection>
           <CareerSection></CareerSection>
           <PresentationsSection></PresentationsSection>
