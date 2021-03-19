@@ -14,7 +14,7 @@ class MyDocument extends Document {
         <Head>
           {process.env.NODE_ENV === 'production' ? (
             <>
-              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127036212-5" />
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLKFV87P5B" />
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
@@ -23,7 +23,7 @@ class MyDocument extends Document {
             dataLayer.push(arguments);
         }
         gtag("js", new Date());
-        gtag("config", "UA-127036212-5");
+        gtag("config", "G-RLKFV87P5B");
         `
                 }}
               />
