@@ -12,6 +12,23 @@ class MyDocument extends Document {
     return (
       <Html lang="ja">
         <Head>
+          {process.env.NODE_ENV === 'production' ? (
+            <>
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127036212-5" />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-127036212-5");
+        `
+                }}
+              />
+            </>
+          ) : null}
           <meta name="description" content={description}></meta>
           <meta property="og:url" content="https://p1ass.com" />
           <meta property="og:type" content="website" />
