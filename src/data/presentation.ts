@@ -11,6 +11,14 @@ export type Presentation = {
 // TODO(p1ass): APIで取ってこれるようにする
 export const presentations: Presentation[] = [
   {
+    title: '趣味プロジェクトをリードする技術',
+    url: 'https://speakerdeck.com/p1ass/technology-to-lead-hobby-projects',
+    image:
+      'https://files.speakerdeck.com/presentations/bcf73bb224c34201a84b0012161fa011/slide_0.jpg',
+    date: dayjs('2020-03-27'),
+    hashtags: ['Management', 'camphor_day']
+  },
+  {
     title: 'vercel/og-imageを使ったブログOGPの簡単自動生成',
     url: 'https://speakerdeck.com/p1ass/generate-ogp-easily-using-vercel-og-image',
     image:
