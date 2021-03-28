@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>plusoon&apos;s portfolio</title>
+        <title>p1usoon&apos;s portfolio</title>
       </Head>
       <div>
         <main className="container mb-16 bg-background lg:max-w-5xl">

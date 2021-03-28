@@ -23,7 +23,7 @@ export const products: Product[] = [
   },
   {
     title: 'feeder',
-    url: 'https://github.com/plusoon/feeder',
+    url: 'https://github.com/p1usoon/feeder',
     image:
       'https://repository-images.githubusercontent.com/176959575/eae4a900-f3f2-11e9-8d95-60cb8ca12fd9',
     description: '複数のRSSやAtomフィードなどから記事を取得し、一つのRSSやJSONを生成するライブラリ',

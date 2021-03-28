@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
 
-const description = 'plusoonのポートフォリオサイトです。'
+const description = 'p1usoonのポートフォリオサイトです。'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -30,14 +30,14 @@ class MyDocument extends Document {
             </>
           ) : null}
           <meta name="description" content={description}></meta>
-          <meta property="og:url" content="https://plusoon.com" />
+          <meta property="og:url" content="https://p1usoon.com" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="plusoon's portfolio" />
+          <meta property="og:title" content="p1usoon's portfolio" />
           <meta property="og:description" content={description}></meta>
-          <meta property="og:site_name" content="plusoon's portfolio" />
-          <meta property="og:image" content="https://plusoon.com/ogp.png" />
+          <meta property="og:site_name" content="p1usoon's portfolio" />
+          <meta property="og:image" content="https://p1usoon.com/ogp.png" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@plusoon" />
+          <meta name="twitter:site" content="@p1usoon" />
           <link data-n-head="1" rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         </Head>
         <body className="tracking-wide">

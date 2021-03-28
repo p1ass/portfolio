@@ -4,7 +4,7 @@ export default function Salary() {
   return (
     <>
       <Head>
-        <title>salary - plusoon&apos;s portfolio</title>
+        <title>salary - p1usoon&apos;s portfolio</title>
       </Head>
       <div>
         <main className="container mb-16 bg-background lg:max-w-5xl">
