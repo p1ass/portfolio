@@ -22,6 +22,6 @@ export const AboutLinks: AboutLink[] = [
   },
   {
     key: 'Mail',
-    value: 'contact[at]p1ass.com'
+    value: 'contact[at]p1usoon.com'
   }
 ]
