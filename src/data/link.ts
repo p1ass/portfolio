@@ -7,18 +7,18 @@ type AboutLink = {
 export const AboutLinks: AboutLink[] = [
   {
     key: 'GitHub',
-    value: '@p1ass',
-    url: 'https://github.com/p1ass'
+    value: '@plusoon',
+    url: 'https://github.com/plusoon'
   },
   {
     key: 'Twitter',
-    value: '@p1ass',
-    url: 'https://twitter.com/p1ass'
+    value: '@plusoon',
+    url: 'https://twitter.com/plusoon'
   },
   {
     key: 'Blog',
-    value: 'https://blog.p1ass.com',
-    url: 'https://blog.p1ass.com'
+    value: 'https://blog.plusoon.com',
+    url: 'https://blog.plusoon.com'
   },
   {
     key: 'Mail',

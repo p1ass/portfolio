@@ -11,10 +11,10 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>p1ass&apos;s portfolio</title>
+        <title>plusoon&apos;s portfolio</title>
       </Head>
       <div>
-        <main className="bg-background container mb-16 lg:max-w-5xl">
+        <main className="container mb-16 bg-background lg:max-w-5xl">
           <AboutSection></AboutSection>
           <CareerSection></CareerSection>
           <PresentationsSection></PresentationsSection>
