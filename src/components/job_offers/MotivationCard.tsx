@@ -5,8 +5,8 @@ export const MotivationCard = () => {
   return (
     <WhiteBlock>
       <h2 className="text-center text-blue text-2xl font-bold">現在の転職意思</h2>
-      <p className="mt-2 text-center text-gray-light text-sm">2021/03/19 更新</p>
-      <span className="border-border block mt-4 mx-auto p-8 w-min text-8xl border border-solid rounded-full">
+      <p className="mt-2 text-center text-gray-light text-sm">2021/05/20 更新</p>
+      <span className="block mt-4 mx-auto p-8 w-min text-8xl border border-solid border-border rounded-full">
         {currentStatus?.icon}
       </span>
       {statusList()}
