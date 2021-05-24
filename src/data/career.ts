@@ -6,7 +6,7 @@ export type Career = {
 
 export const careers: Career[] = [
   {
-    term: '2020/04~',
+    term: '2021/04~',
     companyName: '株式会社ディー・エヌ・エー',
     description: '大学卒業に伴いアルバイトから正社員に雇用形態を変更しました。'
   },
