@@ -29,7 +29,7 @@ export default function Salary() {
               </tr>
               <tr>
                 <td className="px-4">2021</td>
-                <td className="px-4">{Buffer.from('NjUw', 'base64').toString('ascii')}</td>
+                <td className="px-4">{Buffer.from('NjAw', 'base64').toString('ascii')}</td>
                 <td className="px-4">0</td>
               </tr>
             </tbody>
