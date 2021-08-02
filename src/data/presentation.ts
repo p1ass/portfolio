@@ -60,8 +60,7 @@ export const presentations: Presentation[] = [
   },
   {
     title: 'ドメインロジックと 永続化処理を分離する設計改善 を行って得られた知見',
-    url:
-      'https://speakerdeck.com/p1ass/design-improvements-that-separate-domain-logic-and-persistence-function',
+    url: 'https://speakerdeck.com/p1ass/design-improvements-that-separate-domain-logic-and-persistence-function',
     image:
       'https://files.speakerdeck.com/presentations/0c518f77dec8474f99c6f80994ffbba3/slide_0.jpg',
     date: dayjs('2019-09-20'),

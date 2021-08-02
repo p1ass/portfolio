@@ -8,7 +8,7 @@ export const InterestsCard = () => {
       <div>
         {interests.map((interest) => {
           return (
-            <div key={interest.field} className="border-border first:border-0 border-t">
+            <div key={interest.field} className="first:border-0 border-t border-border">
               <h3 className="mb-2 mt-4 text-gray text-lg font-bold">{interest.field}</h3>
               <ul className="mb-4 pl-5 list-disc">
                 {interest.contents.map((content) => {
