@@ -12,7 +12,7 @@ export const CallForJobOffersSection = () => {
         subtitle="転職のお誘い"
         backgroundStyle="blue"
       ></SectionTitle>
-      <div className="mt-4 md:flex md:flex-grow">
+      <div className="mt-4 md:flex md:grow">
         <MotivationCard></MotivationCard>
         <InterestsCard></InterestsCard>
       </div>

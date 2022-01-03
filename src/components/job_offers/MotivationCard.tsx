@@ -4,13 +4,13 @@ import { WhiteBlock } from '../shared/WhiteBlock'
 export const MotivationCard = () => {
   return (
     <WhiteBlock>
-      <h2 className="text-center text-blue text-2xl font-bold">現在の転職意思</h2>
-      <p className="mt-2 text-center text-gray-light text-sm">2021/05/20 更新</p>
-      <span className="block mt-4 mx-auto p-8 w-min text-8xl border border-solid border-border rounded-full">
+      <h2 className="text-2xl font-bold text-center text-blue">現在の転職意思</h2>
+      <p className="mt-2 text-sm text-center text-gray-light">2021/05/20 更新</p>
+      <span className="block p-8 mx-auto mt-4 w-min text-8xl rounded-full border border-border border-solid">
         {currentStatus?.icon}
       </span>
       {statusList()}
-      <h2 className="mt-4 text-center text-blue text-2xl font-bold">採用担当の方へ</h2>
+      <h2 className="mt-4 text-2xl font-bold text-center text-blue">採用担当の方へ</h2>
       <div className="mt-4 text-gray">
         <p>
           上記転職意思に関わらず、採用に関するメール・DMは常時受け付けています。しかし、必ずしもメールを返信するとは限りませんので予めご了承ください。
@@ -27,7 +27,7 @@ const currentStatus = jobChangeMotivation.statusDescriptions.find(
 
 const statusList = () => {
   return (
-    <div className="flex flex-col justify-center mb-8 mt-4 mx-auto">
+    <div className="flex flex-col justify-center mx-auto mt-4 mb-8">
       {jobChangeMotivation.statusDescriptions.map((status) => {
         return (
           <dl key={status.icon} className="flex items-center mt-2">

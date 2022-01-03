@@ -8,7 +8,7 @@ export default function Salary() {
       </Head>
       <div>
         <main className="container mb-16 bg-background lg:max-w-5xl">
-          <table className="mx-auto my-8 text-center">
+          <table className="my-8 mx-auto text-center">
             <thead>
               <tr>
                 <th className="px-4">year</th>
