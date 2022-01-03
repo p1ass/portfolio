@@ -7,8 +7,8 @@ export const CareerListRow = ({ career }: Props) => {
   return (
     <div className="py-8 first:border-0 border-t border-border md:flex">
       <div className="md:w-96">
-        <p className="text-gray-light text-sm">{career.term}</p>
-        <h2 className="mt-1 text-gray text-xl font-bold md:mt-2 md:text-2xl">
+        <p className="text-sm text-gray-light">{career.term}</p>
+        <h2 className="mt-1 text-xl font-bold text-gray md:mt-2 md:text-2xl">
           {career.companyName}
         </h2>
       </div>

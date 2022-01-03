@@ -4,8 +4,9 @@ module.exports = {
     es6: true,
     node: true
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['tailwindcss', '@typescript-eslint', 'prettier'],
   extends: [
+    'plugin:tailwindcss/recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
