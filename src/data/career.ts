@@ -8,7 +8,7 @@ export const careers: Career[] = [
   {
     term: '2021/04~',
     companyName: '株式会社ディー・エヌ・エー',
-    description: '大学卒業に伴いアルバイトから正社員に雇用形態を変更しました。'
+    description: '現在は認証認可基盤周辺サービスの設計・開発に従事しています。'
   },
   {
     term: '2020/01~2021/03',
