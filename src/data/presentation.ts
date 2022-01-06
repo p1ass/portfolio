@@ -11,6 +11,14 @@ export type Presentation = {
 // TODO(p1ass): APIで取ってこれるようにする
 export const presentations: Presentation[] = [
   {
+    title: 'TypeScript Compiler APIで型定義をJavaのクラスに変換した話',
+    url: 'https://speakerdeck.com/dena_tech/techcon2021-winter-lt3',
+    image:
+      'https://files.speakerdeck.com/presentations/d15d5bf59ea2436d9c6ab592719834b3/slide_0.jpg',
+    date: dayjs('2021-12-27'),
+    hashtags: ['DeNATechCon', 'TypeScript', 'Java']
+  },
+  {
     title: '趣味プロジェクトをリードする技術',
     url: 'https://speakerdeck.com/p1ass/technology-to-lead-hobby-projects',
     image:
