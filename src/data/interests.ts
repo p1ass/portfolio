@@ -7,7 +7,7 @@ export const interests: Interest[] = [
   {
     field: '事業',
     contents: [
-      'ドッグフーディングできるtoC事業',
+      '自分が実際に使いたいと思うtoC事業',
       '音楽/ラジオといった音声コンテンツ',
       'アニメや同人などのオタクコンテンツ'
     ]
