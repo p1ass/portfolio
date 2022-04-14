@@ -9,7 +9,7 @@
     "lint": "eslint src --ext .ts,.tsx,.js"
   },
   "dependencies": {
-    "dayjs": "^1.10.8",
+    "dayjs": "^1.11.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0"
