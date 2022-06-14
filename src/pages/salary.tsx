@@ -12,8 +12,8 @@ export default function Salary() {
             <thead>
               <tr>
                 <th className="px-4">year</th>
-                <th className="px-4">base</th>
-                <th className="px-4">bonus</th>
+                <th className="px-4">basic salary + standard bonus</th>
+                <th className="px-4">bonus scale factor</th>
               </tr>
             </thead>
             <tbody>
@@ -25,7 +25,7 @@ export default function Salary() {
                   2000/h
                 </td>
                 <td className="px-4" align="right">
-                  0
+                  0.00
                 </td>
               </tr>
               <tr>
@@ -36,7 +36,7 @@ export default function Salary() {
                   2200/h
                 </td>
                 <td className="px-4" align="right">
-                  0
+                  0.00
                 </td>
               </tr>
               <tr>
@@ -44,30 +44,32 @@ export default function Salary() {
                   2021/04
                 </td>
                 <td className="px-4" align="right">
-                  {Buffer.from('NiwwMTAsMDAwCg==', 'base64').toString('ascii')}
+                  {Buffer.from('Niw1MDAsMDAwCg==', 'base64').toString('ascii')}
                 </td>
                 <td className="px-4" align="right">
-                  0
+                  0.00
                 </td>
               </tr>
               <tr>
                 <td className="px-4" align="right">
-                  2021/12
+                  2021/11
                 </td>
-                <td className="px-4">-</td>
                 <td className="px-4" align="right">
-                  {Buffer.from('MjQ1LDAwMAo=', 'base64').toString('ascii')}
+                  {Buffer.from('Niw1MDAsMDAwCg==', 'base64').toString('ascii')}
+                </td>
+                <td className="px-4" align="right">
+                  1.00
                 </td>
               </tr>
               <tr>
                 <td className="px-4" align="right">
-                  2022/06
-                </td>
-                <td className="px-4">
-                  {Buffer.from('NiwyOTAsMDAwCg==', 'base64').toString('ascii')}
+                  2022/05
                 </td>
                 <td className="px-4" align="right">
-                  {Buffer.from('MzA2LDI1MAo=', 'base64').toString('ascii')}
+                  {Buffer.from('Niw4MDAsMDAwCg==', 'base64').toString('ascii')}
+                </td>
+                <td className="px-4" align="right">
+                  1.25
                 </td>
               </tr>
             </tbody>
