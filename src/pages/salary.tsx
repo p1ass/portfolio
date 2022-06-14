@@ -59,6 +59,17 @@ export default function Salary() {
                   {Buffer.from('MjQ1LDAwMAo=', 'base64').toString('ascii')}
                 </td>
               </tr>
+              <tr>
+                <td className="px-4" align="right">
+                  2022/06
+                </td>
+                <td className="px-4">
+                  {Buffer.from('NiwyOTAsMDAwCg==', 'base64').toString('ascii')}
+                </td>
+                <td className="px-4" align="right">
+                  {Buffer.from('MzA2LDI1MAo=', 'base64').toString('ascii')}
+                </td>
+              </tr>
             </tbody>
           </table>
         </main>
