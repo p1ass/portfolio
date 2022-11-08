@@ -18,7 +18,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.1",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.27.0",
     "eslint-config-next": "^13.0.2",
