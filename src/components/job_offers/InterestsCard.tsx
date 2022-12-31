@@ -4,13 +4,13 @@ import { WhiteBlock } from '../shared/WhiteBlock'
 export const InterestsCard = () => {
   return (
     <WhiteBlock>
-      <h2 className="text-2xl font-bold text-center text-blue">興味・関心</h2>
+      <h2 className="text-center text-2xl font-bold text-blue">興味・関心</h2>
       <div>
         {interests.map((interest) => {
           return (
-            <div key={interest.field} className="first:border-0 border-t border-border">
+            <div key={interest.field} className="border-t border-border first:border-0">
               <h3 className="mt-4 mb-2 text-lg font-bold text-gray">{interest.field}</h3>
-              <ul className="pl-5 mb-4 list-disc">
+              <ul className="mb-4 list-disc pl-5">
                 {interest.contents.map((content) => {
                   return (
                     <li key={content} className="text-gray sm:mt-1">

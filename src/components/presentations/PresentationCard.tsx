@@ -8,7 +8,7 @@ type Props = {
 export const PresentationCard = ({ presentation }: Props) => {
   return (
     <a
-      className="mx-2 mt-8 hover:bg-background-dark rounded-lg border border-border transition cursor-pointer sm:w-72"
+      className="mx-2 mt-8 cursor-pointer rounded-lg border border-border transition hover:bg-background-dark sm:w-72"
       href={presentation.url}
       target="blank"
       rel="noopener noreferer"

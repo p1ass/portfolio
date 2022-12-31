@@ -19,7 +19,7 @@ export const SectionTitle = ({ title, subtitle, backgroundStyle }: Props) => {
   return (
     <div>
       <h1 className={`${h1Color} text-center text-3xl font-bold`}>{title}</h1>
-      <span className={`block mt-1 text-center ${spanColor}`}>{subtitle}</span>
+      <span className={`mt-1 block text-center ${spanColor}`}>{subtitle}</span>
     </div>
   )
 }
