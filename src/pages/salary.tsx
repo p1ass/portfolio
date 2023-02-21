@@ -72,6 +72,17 @@ export default function Salary() {
                   1.25
                 </td>
               </tr>
+              <tr>
+                <td className="px-4" align="right">
+                  2022/11
+                </td>
+                <td className="px-4" align="right">
+                  {Buffer.from('NywxMDAsMDAwCg==', 'base64').toString('ascii')}
+                </td>
+                <td className="px-4" align="right">
+                  1.25
+                </td>
+              </tr>
             </tbody>
           </table>
         </main>
