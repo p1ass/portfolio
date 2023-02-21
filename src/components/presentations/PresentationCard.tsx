@@ -14,13 +14,18 @@ export const PresentationCard = ({ presentation }: Props) => {
       rel="noopener noreferer"
     >
       <Image
-        src={presentation.image}
-        width={1024}
-        height={576}
+        src={presentation.image.url}
+        width={presentation.image.width}
+        height={presentation.image.height}
         className="rounded-t-lg"
         alt={presentation.title}
-        objectFit="cover"
-      ></Image>
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+          objectFit: 'cover',
+          aspectRatio: '16 / 9'
+        }}
+      />
       <div className="flex flex-col p-4 pt-2">
         <p className="text-sm text-blue">
           {presentation.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
