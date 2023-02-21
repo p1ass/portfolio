@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Product } from '../../data/product'
+import { Product } from './product'
 
 type Props = {
   product: Product

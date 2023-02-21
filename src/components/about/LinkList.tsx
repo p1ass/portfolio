@@ -1,4 +1,4 @@
-import { AboutLinks } from '../../data/link'
+import { AboutLinks } from './link'
 
 export const AboutLinkList = () => {
   return (

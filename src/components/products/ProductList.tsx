@@ -1,5 +1,4 @@
-import { products } from '../../data/product'
-
+import { products } from './product'
 import { ProductCard } from './ProductCard'
 
 export const ProductList = () => {

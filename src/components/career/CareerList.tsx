@@ -1,5 +1,4 @@
-import { careers } from '../../data/career'
-
+import { careers } from './career'
 import { CareerListRow } from './CareerListRow'
 
 export const CareerList = () => {

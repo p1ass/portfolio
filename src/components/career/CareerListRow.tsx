@@ -1,4 +1,4 @@
-import { Career } from '../../data/career'
+import { Career } from './career'
 
 type Props = {
   career: Career

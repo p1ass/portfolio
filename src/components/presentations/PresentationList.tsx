@@ -1,5 +1,4 @@
-import { presentations } from '../../data/presentation'
-
+import { presentations } from './presentation'
 import { PresentationCard } from './PresentationCard'
 
 export const PresentationList = () => {

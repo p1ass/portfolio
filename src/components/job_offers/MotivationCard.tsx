@@ -1,5 +1,6 @@
-import { jobChangeMotivation } from '../../data/job_change_motivation'
 import { WhiteBlock } from '../shared/WhiteBlock'
+
+import { jobChangeMotivation } from './job_change_motivation'
 
 export const MotivationCard = () => {
   return (

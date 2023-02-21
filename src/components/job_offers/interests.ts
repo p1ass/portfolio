@@ -16,7 +16,7 @@ export const interests: Interest[] = [
     field: '技術',
     contents: [
       'Goなどの静的型付け言語',
-      '検索・決済・認証認可・MLOpsといった未経験の技術領域',
+      '検索・決済・MLOpsといった未経験の技術領域',
       'テスト・CI/CD・DesignDocといったチームの生産性・品質を高めるための取り組み'
     ]
   },

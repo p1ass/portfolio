@@ -1,5 +1,6 @@
-import { interests } from '../../data/interests'
 import { WhiteBlock } from '../shared/WhiteBlock'
+
+import { interests } from './interests'
 
 export const InterestsCard = () => {
   return (

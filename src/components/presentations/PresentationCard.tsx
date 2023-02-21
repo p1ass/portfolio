@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Presentation } from '../../data/presentation'
+import { Presentation } from './presentation'
 
 type Props = {
   presentation: Presentation
