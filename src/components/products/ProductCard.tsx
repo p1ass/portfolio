@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/image'
 
 import { Product } from '../../data/product'
 
@@ -19,7 +19,11 @@ export const ProductCard = ({ product }: Props) => {
         height={640}
         className="rounded-t-lg"
         alt={product.title}
-      ></Image>
+        style={{
+          maxWidth: '100%',
+          height: 'auto'
+        }}
+      />
       <div className="flex flex-col p-4 pt-2">
         <p className="text-sm text-blue">
           {product.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}

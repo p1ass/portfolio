@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/image'
 
 import { Presentation } from '../../data/presentation'
 
@@ -19,8 +19,12 @@ export const PresentationCard = ({ presentation }: Props) => {
         height={576}
         className="rounded-t-lg"
         alt={presentation.title}
-        objectFit="cover"
-      ></Image>
+        style={{
+          maxWidth: '100%',
+          height: 'auto',
+          objectFit: 'cover'
+        }}
+      />
       <div className="flex flex-col p-4 pt-2">
         <p className="text-sm text-blue">
           {presentation.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
