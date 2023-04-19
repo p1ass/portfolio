@@ -7,14 +7,10 @@ import { InterestsCard } from './InterestsCard'
 export const CallForJobOffersSection = () => {
   return (
     <SectionWrapper>
-      <SectionTitle
-        title="Call for Job Offers"
-        subtitle="転職のお誘い"
-        backgroundStyle="blue"
-      ></SectionTitle>
+      <SectionTitle title="Call for Job Offers" subtitle="転職のお誘い" backgroundStyle="blue" />
       <div className="mt-4 md:flex md:grow">
-        <MotivationCard></MotivationCard>
-        <InterestsCard></InterestsCard>
+        <MotivationCard />
+        <InterestsCard />
       </div>
     </SectionWrapper>
   )
