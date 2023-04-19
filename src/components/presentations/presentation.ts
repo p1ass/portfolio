@@ -15,6 +15,17 @@ export type Presentation = {
 // TODO(p1ass): APIで取ってこれるようにする
 export const presentations: Presentation[] = [
   {
+    title: 'リライトプロジェクトを安全・効率良く進めるための取り組み【DeNA TechCon 2023】',
+    url: 'https://logmi.jp/tech/articles/328395',
+    image: {
+      url: 'https://files.speakerdeck.com/presentations/22d3aa7e50a140b789ae1a3a11423e5b/slide_0.jpg',
+      width: 1024,
+      height: 576
+    },
+    date: dayjs('2023-03-02'),
+    hashtags: ['DeNATechCon', 'Lint', 'Test', 'Java']
+  },
+  {
     title: 'TypeScript Compiler APIで型定義をJavaのクラスに変換した話',
     url: 'https://speakerdeck.com/dena_tech/techcon2021-winter-lt3',
     image: {
