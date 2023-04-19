@@ -6,6 +6,7 @@ import { CareerSection } from '../components/career/CareerSection'
 import { PresentationsSection } from '../components/presentations/PresentationsSection'
 import { ProductsSection } from '../components/products/ProductsSection'
 import { AsideWrapper } from '../components/shared/AsideWrapper'
+import { CertificatesSection } from '../components/certificates/CertificatesSection'
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
         <main className="container mb-16 bg-background lg:max-w-5xl">
           <AboutSection />
           <CareerSection />
+          <CertificatesSection />
           <PresentationsSection />
           <ProductsSection />
         </main>
