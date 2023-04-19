@@ -15,13 +15,13 @@ export default function Index() {
       </Head>
       <div>
         <main className="container mb-16 bg-background lg:max-w-5xl">
-          <AboutSection></AboutSection>
-          <CareerSection></CareerSection>
-          <PresentationsSection></PresentationsSection>
-          <ProductsSection></ProductsSection>
+          <AboutSection />
+          <CareerSection />
+          <PresentationsSection />
+          <ProductsSection />
         </main>
         <AsideWrapper>
-          <CallForJobOffersSection></CallForJobOffersSection>
+          <CallForJobOffersSection />
         </AsideWrapper>
       </div>
     </>
