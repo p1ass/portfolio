@@ -14,7 +14,8 @@ const salaryHistories = [
   { month: '2021/11', salary: 650, bonusScaleFactor: 1.0 },
   { month: '2022/05', salary: 680, bonusScaleFactor: 1.25 },
   { month: '2022/11', salary: 710, bonusScaleFactor: 1.25 },
-  { month: '2023/05', salary: 760, bonusScaleFactor: 1.1 }
+  { month: '2023/05', salary: 760, bonusScaleFactor: 1.1 },
+  { month: '2023/11', salary: 810, bonusScaleFactor: 1.25 }
 ]
 
 export default function Salary() {
