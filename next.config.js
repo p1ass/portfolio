@@ -6,7 +6,8 @@ module.exports = {
       'midare.p1ass.com',
       'repository-images.githubusercontent.com',
       'images.credly.com',
-      'api.accredible.com'
+      'api.accredible.com',
+      'bcdn.docswell.com'
     ]
   }
 }
