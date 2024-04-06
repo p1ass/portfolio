@@ -12,8 +12,18 @@ export type Presentation = {
   hashtags: string[] // #はいらない
 }
 
-// TODO(p1ass): APIで取ってこれるようにする
 export const presentations: Presentation[] = [
+  {
+    title: 'gRPC API 開発のための Connect 活用法',
+    url: 'https://www.docswell.com/s/DeNA_Tech/ZQ8WNJ-2024-02-29-092351',
+    image: {
+      url: 'https://bcdn.docswell.com/page/YJ6Y55D57V.jpg',
+      width: 1920,
+      height: 1080
+    },
+    date: dayjs('2024-02-29'),
+    hashtags: ['Go', 'Connect', 'gRPC']
+  },
   {
     title: 'リライトプロジェクトを安全・効率良く進めるための取り組み【DeNA TechCon 2023】',
     url: 'https://logmi.jp/tech/articles/328395',
@@ -101,16 +111,5 @@ export const presentations: Presentation[] = [
     },
     date: dayjs('2020-03-29'),
     hashtags: ['VPS', 'DockerCompose', 'Loki']
-  },
-  {
-    title: 'ドメインロジックと 永続化処理を分離する設計改善 を行って得られた知見',
-    url: 'https://speakerdeck.com/p1ass/design-improvements-that-separate-domain-logic-and-persistence-function',
-    image: {
-      url: 'https://files.speakerdeck.com/presentations/0c518f77dec8474f99c6f80994ffbba3/slide_0.jpg',
-      width: 1024,
-      height: 576
-    },
-    date: dayjs('2019-09-20'),
-    hashtags: ['DIP', 'Architecture']
   }
 ]

@@ -24,11 +24,11 @@ export const certificates: Certificate[] = [
   },
   {
     title: 'Google Cloud Professional Cloud Architect',
-    url: 'https://www.credential.net/8beb314b-f8ab-4947-835a-b10f04fa7cd2',
+    url: 'https://www.credly.com/badges/26f4e584-98b9-4914-900d-2b06aa272ce4/public_url',
     image: {
-      url: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/54045266',
+      url: 'https://images.credly.com/size/680x680/images/d96faaa1-8c14-4d2d-8927-46f33ccf4523/image.png',
       width: 600,
-      height: 464
+      height: 600
     },
     date: dayjs('2022-07-01')
   }
