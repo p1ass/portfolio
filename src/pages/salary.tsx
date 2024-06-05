@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import {
-  LineChart,
-  Line,
   CartesianGrid,
-  XAxis,
-  YAxis,
+  Line,
+  LineChart,
+  ResponsiveContainer,
   Tooltip,
-  ResponsiveContainer
+  XAxis,
+  YAxis
 } from 'recharts'
 
 const salaryHistories = [
@@ -15,7 +15,8 @@ const salaryHistories = [
   { month: '2022/05', salary: 680, bonusScaleFactor: 1.25 },
   { month: '2022/11', salary: 710, bonusScaleFactor: 1.25 },
   { month: '2023/05', salary: 760, bonusScaleFactor: 1.1 },
-  { month: '2023/11', salary: 810, bonusScaleFactor: 1.25 }
+  { month: '2023/11', salary: 810, bonusScaleFactor: 1.25 },
+  { month: '2024/05', salary: 900, bonusScaleFactor: 1.25 }
 ]
 
 export default function Salary() {
