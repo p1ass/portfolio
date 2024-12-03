@@ -2966,10 +2966,10 @@ recharts-scale@^0.4.4:
   dependencies:
     decimal.js-light "^2.4.1"
 
-recharts@^2.13.3:
-  version "2.13.3"
-  resolved "https://registry.yarnpkg.com/recharts/-/recharts-2.13.3.tgz#a5ce61e493dff921a14a14a8f42a9f2d2bbefd5a"
-  integrity sha512-YDZ9dOfK9t3ycwxgKbrnDlRC4BHdjlY73fet3a0C1+qGMjXVZe6+VXmpOIIhzkje5MMEL8AN4hLIe4AMskBzlA==
+recharts@^2.14.0:
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/recharts/-/recharts-2.14.0.tgz#e5e3de618a59039dfd9a2882da652e87647c2821"
+  integrity sha512-kgDvDdNOh/gHQ4Q8hu7VrLNKs/bP/meG/XaRnsQG+Yp4PxugfPvaRFC0m4q7RWdlw0HxIkTSdcsGrsVQsg2qTA==
   dependencies:
     clsx "^2.0.0"
     eventemitter3 "^4.0.1"
