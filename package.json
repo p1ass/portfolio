@@ -12,13 +12,13 @@
     "dayjs": "^1.11.18",
     "next": "15.5.5",
 
-    "react": "19.1.1",
+    "react": "19.2.0",
     "react-dom": "19.1.1",
     "recharts": "^2.15.4"
   },
   "devDependencies": {
     "@types/node": "^24.9.2",
-    "@types/react": "^19.1.16",
+    "@types/react": "^19.2.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "autoprefixer": "^10.4.21",
