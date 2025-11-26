@@ -5,9 +5,9 @@ https://p1ass.com
 
 ## Getting Started
 
-1. Install Node and yarn.
-1. Run `yarn`
-1. Run `yarn dev`
+1. Install Node and pnpm.
+1. Run `pnpm install`
+1. Run `pnpm dev`
 
 ## Technical Stack
 

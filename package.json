@@ -36,7 +36,9 @@
     "tailwindcss": "^3.4.18",
     "typescript": "^5.9.3"
   },
-  "resolutions": {
-    "strip-ansi": "6.0.1"
+  "pnpm": {
+    "overrides": {
+      "strip-ansi": "6.0.1"
+    }
   }
 }
