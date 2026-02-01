@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const description = 'p1assのポートフォリオサイトです。'
 
@@ -14,19 +15,7 @@ class MyDocument extends Document {
         <Head>
           {process.env.NODE_ENV === 'production' ? (
             <>
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-RLKFV87P5B" />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-RLKFV87P5B");
-        `
-                }}
-              />
+            <GoogleTagManager gtmId="G-RLKFV87P5B" />
             </>
           ) : null}
           <meta name="description" content={description}></meta>
