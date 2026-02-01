@@ -1,3 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* 旧 tailwind.config.js の theme を Tailwind v4 の @theme で定義 */
+@theme {
+  /* カスタム色（v3 の theme.colors に対応） */
+  --color-background: #ffffff;
+  --color-background-dark: #f9f9fa;
+  --color-blue: #4172b5;
+  --color-gray: #1e2126;
+  --color-gray-light: #636e7d;
+  --color-border: #dde0e4;
+  --color-border-light: #ffffff;
+  --color-white: #ffffff;
+
+  /* フォント（v3 の theme.fontFamily.sans に対応） */
+  --font-sans:
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Segoe UI",
+    Roboto,
+    "Noto Sans CJK JP",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Sans Emoji";
+}
+
+/* container の中央寄せ（v3 の theme.container.center: true に対応） */
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
