@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src --ext .ts,.tsx,.js"
+    "lint": "eslint src"
   },
   "dependencies": {
     "dayjs": "^1.11.19",
