@@ -15,7 +15,7 @@ class MyDocument extends Document {
         <Head>
           {process.env.NODE_ENV === 'production' ? (
             <>
-            <GoogleTagManager gtmId="G-RLKFV87P5B" />
+              <GoogleTagManager gtmId="G-RLKFV87P5B" />
             </>
           ) : null}
           <meta name="description" content={description}></meta>
