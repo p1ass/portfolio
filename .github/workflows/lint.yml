@@ -10,7 +10,8 @@ jobs:
       - uses: actions/checkout@v7
       - uses: pnpm/action-setup@v6
         with:
-          version: latest
+          # pnpm 11 は package.json の pnpm.overrides を読まず、ロックファイルと食い違って install が落ちるので、ロックファイルを作った版に合わせる。
+          version: 10.8.0
       - name: Use Node.js
         uses: actions/setup-node@v7
         with:
