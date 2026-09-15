@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: [
+    remotePatterns: [
       'files.speakerdeck.com',
       'relaym.camph.net',
       'midare.p1ass.com',
@@ -8,6 +8,6 @@ module.exports = {
       'images.credly.com',
       'api.accredible.com',
       'bcdn.docswell.com'
-    ]
+    ].map((hostname) => ({ protocol: 'https', hostname }))
   }
 }
