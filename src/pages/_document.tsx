@@ -29,7 +29,7 @@ class MyDocument extends Document {
           <meta name="twitter:site" content="@p1ass" />
           <link data-n-head="1" rel="icon" type="image/x-icon" href="/favicon.ico"></link>
         </Head>
-        <body className="tracking-wide">
+        <body>
           <Main />
           <NextScript />
         </body>

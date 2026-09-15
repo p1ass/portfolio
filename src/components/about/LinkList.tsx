@@ -2,21 +2,21 @@ import { AboutLinks } from './link'
 
 export const AboutLinkList = () => {
   return (
-    <div className="mx-auto mb-8 mt-4 flex max-w-min flex-col justify-center md:mx-0 md:ml-32">
+    <dl className="grid grid-cols-[auto_1fr] gap-x-8 gap-y-3">
       {AboutLinks.map((aboutLink) => (
-        <dl key={aboutLink.key} className="mt-2 flex text-gray md:mx-0 md:mt-4">
-          <dt className="w-28 text-lg font-bold">{aboutLink.key}</dt>
+        <div key={aboutLink.key} className="contents">
+          <dt className="font-bold">{aboutLink.key}</dt>
           <dd>
             {aboutLink.url ? (
-              <a href={aboutLink.url} className="cursor-pointer underline">
+              <a href={aboutLink.url} className="link-body">
                 {aboutLink.value}
               </a>
             ) : (
               aboutLink.value
             )}
           </dd>
-        </dl>
+        </div>
       ))}
-    </div>
+    </dl>
   )
 }

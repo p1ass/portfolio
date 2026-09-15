@@ -8,27 +8,21 @@ type Props = {
 export const CertificateCard = ({ certificate }: Props) => {
   return (
     <a
-      className="mx-2 mt-8 cursor-pointer rounded-lg border border-border transition hover:bg-background-dark sm:w-72"
+      className="card-link flex items-center gap-4 rounded-md border border-border p-4"
       href={certificate.url}
-      target="blank"
-      rel="noopener noreferer"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <Image
         src={certificate.image.url}
         width={certificate.image.width}
         height={certificate.image.height}
-        className="rounded-t-lg"
-        alt={certificate.title}
-        style={{
-          maxWidth: '100%',
-          height: 'auto',
-          objectFit: 'contain',
-          aspectRatio: '16 / 9'
-        }}
+        className="size-20 shrink-0 object-contain"
+        alt=""
       />
-      <div className="flex flex-col p-4 pt-2">
-        <h2 className="mt-2 font-semibold sm:h-16">{certificate.title}</h2>
-        <time className="mt-2 text-sm text-gray-light">
+      <div className="flex flex-col gap-2">
+        <h3 className="text-body font-bold">{certificate.title}</h3>
+        <time className="text-body-sm tracking-date text-text-muted">
           {certificate.date.format('YYYY/MM/DD')}
         </time>
       </div>

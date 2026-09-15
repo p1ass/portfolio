@@ -1,36 +1,196 @@
 @import "tailwindcss";
 
-/* 旧 tailwind.config.js の theme を Tailwind v4 の @theme で定義 */
-@theme {
-  /* カスタム色（v3 の theme.colors に対応） */
-  --color-background: #ffffff;
-  --color-background-dark: #f9f9fa;
-  --color-blue: #4172b5;
-  --color-gray: #1e2126;
-  --color-gray-light: #636e7d;
-  --color-border: #dde0e4;
-  --color-border-light: #ffffff;
-  --color-white: #ffffff;
+:root {
+  color-scheme: light;
 
-  /* フォント（v3 の theme.fontFamily.sans に対応） */
+  --neutral-0: #ffffff;
+  --neutral-50: #f9f9fa;
+  --neutral-100: #eaeaea;
+  --neutral-200: #dde0e4;
+  --neutral-300: #c0c6ce;
+  --neutral-400: #8d97a5;
+  --neutral-500: #636e7d;
+  --neutral-600: #535a65;
+  --neutral-700: #42464c;
+  --neutral-800: #303233;
+  --neutral-900: #1e2126;
+  --neutral-950: #0f1114;
+
+  --accent-400: #578edb;
+  --accent-500: #255fb1;
+
+  --role-text: var(--neutral-900);
+  --role-text-muted: var(--neutral-500);
+  --role-brand-surface: var(--accent-500);
+  --role-text-on-brand: var(--neutral-0);
+  --role-accent: var(--accent-500);
+  --role-accent-muted: var(--accent-400);
+  --role-border: var(--neutral-200);
+  --role-surface: var(--neutral-0);
+  --role-surface-subtle: var(--neutral-50);
+}
+
+@theme inline {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-text: var(--role-text);
+  --color-text-muted: var(--role-text-muted);
+  --color-brand-surface: var(--role-brand-surface);
+  --color-text-on-brand: var(--role-text-on-brand);
+  --color-accent: var(--role-accent);
+  --color-accent-muted: var(--role-accent-muted);
+  --color-border: var(--role-border);
+  --color-surface: var(--role-surface);
+  --color-surface-subtle: var(--role-surface-subtle);
+}
+
+@theme {
   --font-sans:
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
-    "Segoe UI",
+    "Yu Gothic UI",
+    "Noto Sans JP",
     Roboto,
-    "Noto Sans CJK JP",
+    "Segoe UI",
     sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    "Noto Sans Emoji";
+    "Noto Color Emoji";
+
+  --tracking-*: initial;
+  --tracking-date: 1px;
+
+  --text-*: initial;
+  --text-h1: 34px;
+  --text-h1--line-height: 1.4;
+  --text-h2: 28px;
+  --text-h2--line-height: 1.4;
+  --text-h3: 24px;
+  --text-h3--line-height: 1.4;
+  --text-h4: 20px;
+  --text-h4--line-height: 1.4;
+  --text-body: 17px;
+  --text-body--line-height: 1.9;
+  --text-body-sm: 15px;
+  --text-body-sm--line-height: 1.9;
+  --text-label: 15px;
+  --text-label--line-height: 1.25;
+  --text-caption: 13px;
+  --text-caption--line-height: 1.25;
+
+  --radius-*: initial;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 9999px;
+
+  --shadow-*: initial;
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1080px;
 }
 
-/* container の中央寄せ（v3 の theme.container.center: true に対応） */
+@layer base {
+  body {
+    background-color: var(--role-surface);
+    color: var(--role-text);
+    font-size: var(--text-body);
+    line-height: var(--text-body--line-height);
+    overflow-wrap: break-word;
+    word-break: auto-phrase;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--role-accent);
+    outline-offset: 2px;
+  }
+}
+
 @layer components {
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  .link-body,
+  .link-hover-underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    transition-property: background-color, text-decoration-color, text-decoration-thickness;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+  }
+
+  .link-body {
+    color: var(--role-accent);
+    text-decoration-color: var(--role-accent-muted);
+  }
+
+  .link-hover-underline {
+    text-decoration-color: transparent;
+  }
+
+  .link-body:focus-visible,
+  .link-hover-underline:focus-visible {
+    background-color: var(--role-surface-subtle);
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+    transition-duration: 150ms;
+  }
+
+  .card-link {
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+  }
+
+  .card-link:focus-visible {
+    background-color: var(--role-surface-subtle);
+    transition-duration: 150ms;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .link-body:hover,
+    .link-hover-underline:hover {
+      background-color: var(--role-surface-subtle);
+      text-decoration-color: currentColor;
+      text-decoration-thickness: 2px;
+      transition-duration: 150ms;
+    }
+
+    .card-link:hover {
+      background-color: var(--role-surface-subtle);
+      transition-duration: 150ms;
+    }
+  }
+
+  .salary-chart .recharts-tooltip-wrapper {
+    font-size: var(--text-body-sm);
+    line-height: var(--text-body-sm--line-height);
+  }
+
+  .salary-chart .recharts-cartesian-grid line {
+    stroke: var(--role-border);
+  }
+
+  .salary-chart .recharts-cartesian-axis-tick-value {
+    font-size: var(--text-caption);
+    fill: var(--role-text-muted);
+  }
+
+  .salary-chart .recharts-line-curve,
+  .salary-chart .recharts-line-dots circle,
+  .salary-chart .recharts-active-dot circle {
+    stroke: var(--role-accent);
   }
 }

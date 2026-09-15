@@ -6,7 +6,7 @@ import { CertificateList } from './CertificateList'
 export const CertificatesSection = () => {
   return (
     <SectionWrapper>
-      <SectionTitle title="Certificates" subtitle="認定資格" />
+      <SectionTitle title="Certificates" />
       <CertificateList />
     </SectionWrapper>
   )

@@ -9,6 +9,8 @@ import {
   YAxis
 } from 'recharts'
 
+import { SectionTitle } from '../components/shared/SectionTitle'
+
 const salaryHistories = [
   { month: '2021/04', salary: 650, bonusScaleFactor: 0.0 },
   { month: '2021/11', salary: 650, bonusScaleFactor: 1.0 },
@@ -29,45 +31,49 @@ export default function Salary() {
       <Head>
         <title>salary - p1ass&apos;s portfolio</title>
       </Head>
-      <div>
-        <main className="container mb-16 bg-background lg:max-w-5xl">
-          <table className="mx-auto my-8 text-center">
+      <main className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
+        <SectionTitle title="Salary" />
+        <div className="overflow-x-auto">
+          <table className="mx-auto text-body-sm tabular-nums">
             <thead>
-              <tr>
-                <th className="px-4">year</th>
-                <th className="px-4">basic salary + standard bonus</th>
-                <th className="px-4">bonus scale factor</th>
+              <tr className="border-b border-border">
+                <th className="px-4 py-2 text-left">year</th>
+                <th className="px-4 py-2 text-right">basic salary + standard bonus</th>
+                <th className="px-4 py-2 text-right">bonus scale factor</th>
               </tr>
             </thead>
             <tbody>
               {salaryHistories.map((history) => (
-                <tr key={history.month}>
-                  <td className="px-4" align="right">
-                    {history.month}
-                  </td>
-                  <td className="px-4" align="right">
+                <tr key={history.month} className="border-b border-border">
+                  <td className="px-4 py-2 text-left">{history.month}</td>
+                  <td className="px-4 py-2 text-right">
                     {new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY' }).format(
                       history.salary * 10000
                     )}
                   </td>
-                  <td className="px-4" align="right">
-                    {history.bonusScaleFactor.toFixed(2)}
-                  </td>
+                  <td className="px-4 py-2 text-right">{history.bonusScaleFactor.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="salary-chart mt-12">
           <ResponsiveContainer width={'100%'} aspect={16 / 9}>
             <LineChart data={salaryHistories}>
-              <Line type="monotone" dataKey="salary" stroke="#8884d8" fill="#8884d8" />
-              <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-              <XAxis dataKey="month" padding={{ left: 10, right: 10 }} />
+              <Line type="monotone" dataKey="salary" />
+              <CartesianGrid strokeDasharray="4 4" />
+              <XAxis dataKey="month" padding={{ left: 12, right: 12 }} />
               <YAxis domain={['auto', 'auto']} />
-              <Tooltip />
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: 'var(--color-surface)',
+                  borderColor: 'var(--color-border)'
+                }}
+              />
             </LineChart>
           </ResponsiveContainer>
-        </main>
-      </div>
+        </div>
+      </main>
     </>
   )
 }
