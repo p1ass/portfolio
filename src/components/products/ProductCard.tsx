@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { Hashtags } from '../shared/Hashtags'
+
 import { Product } from './product'
 
 type Props = {
@@ -8,28 +10,24 @@ type Props = {
 export const ProductCard = ({ product }: Props) => {
   return (
     <a
-      className="mx-2 mt-8 cursor-pointer rounded-lg border border-border transition hover:bg-background-dark sm:w-72"
+      className="card-link flex flex-col overflow-hidden rounded-md border border-border"
       href={product.url}
-      target="blank"
-      rel="noopener noreferer"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <Image
         src={product.image}
         width={1280}
         height={640}
-        className="rounded-t-lg"
-        alt={product.title}
-        style={{
-          maxWidth: '100%',
-          height: 'auto'
-        }}
+        className="aspect-[2/1] w-full border-b border-border object-cover"
+        alt=""
       />
-      <div className="flex flex-col p-4 pt-2">
-        <p className="text-sm text-blue">
-          {product.hashtags.map((hashtag) => `#${hashtag}`).join(' ')}
-        </p>
-        <h2 className="mt-2 font-semibold">{product.title}</h2>
-        <p className="mt-2 text-gray">{product.description}</p>
+      <div className="flex flex-1 flex-col gap-3 p-4">
+        <h3 className="text-body font-bold">{product.title}</h3>
+        <p className="text-body-sm">{product.description}</p>
+        <div className="mt-auto">
+          <Hashtags hashtags={product.hashtags} />
+        </div>
       </div>
     </a>
   )

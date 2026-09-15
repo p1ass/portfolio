@@ -2,15 +2,14 @@ import Image from 'next/image'
 
 export const IconAndName = () => {
   return (
-    <div className="text-center">
-      <div className="inline-block rounded-full border border-solid border-border p-8">
-        <Image src="/p1ass.svg" alt="Profile Icon" width={128} height={128} />
+    <div className="flex flex-col items-center">
+      <div className="rounded-full border border-border p-8">
+        <Image src="/p1ass.svg" alt="" width={128} height={128} />
       </div>
-      <h2 className="mt-2 text-2xl font-bold text-gray">
+      <h1 className="mt-4 text-center text-h2 font-bold">
         p1ass
-        <br />
-        (Naoki Kishi)
-      </h2>
+        <span className="block text-body font-normal text-text-muted">Naoki Kishi</span>
+      </h1>
     </div>
   )
 }

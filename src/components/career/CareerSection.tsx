@@ -6,7 +6,7 @@ import { CareerList } from './CareerList'
 export const CareerSection = () => {
   return (
     <SectionWrapper>
-      <SectionTitle title="Career" subtitle="経歴" />
+      <SectionTitle title="Career" />
       <CareerList />
     </SectionWrapper>
   )

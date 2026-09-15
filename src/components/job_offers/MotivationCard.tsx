@@ -5,38 +5,37 @@ import { jobChangeMotivation } from './job_change_motivation'
 export const MotivationCard = () => {
   return (
     <WhiteBlock>
-      <h2 className="text-center text-2xl font-bold text-blue">現在の転職意思</h2>
-      <p className="mt-2 text-center text-sm text-gray-light">2023/12/06 更新</p>
-      <span className="mx-auto mt-4 block w-min rounded-full border border-solid border-border p-8 text-8xl">
-        {currentStatus?.icon}
-      </span>
-      {statusList()}
-      <h2 className="mt-4 text-center text-2xl font-bold text-blue">採用担当の方へ</h2>
-      <div className="mt-4 text-gray">
+      <h3 className="text-h4 font-bold">現在の転職意思</h3>
+      <p className="mt-1 text-body-sm text-text-muted">2023/12/06 更新</p>
+      <ul className="mt-4 flex flex-col gap-2">
+        {jobChangeMotivation.statusDescriptions.map((status) => {
+          const isCurrent = status.status === jobChangeMotivation.currentStatus
+          return (
+            <li
+              key={status.status}
+              aria-current={isCurrent}
+              className={`flex items-start gap-3 rounded-md border p-3 text-body-sm ${
+                isCurrent ? 'border-accent bg-surface-subtle' : 'border-transparent text-text-muted'
+              }`}
+            >
+              <span aria-hidden className="text-h4">
+                {status.icon}
+              </span>
+              <span>
+                {isCurrent && <span className="block font-bold">現在の状況</span>}
+                {status.description}
+              </span>
+            </li>
+          )
+        })}
+      </ul>
+      <h3 className="mt-8 text-h4 font-bold">採用担当の方へ</h3>
+      <div className="mt-2 text-body-sm">
         <p>
           上記転職意思に関わらず、採用に関するメール・DMは常時受け付けています。しかし、必ずしもメールを返信するとは限りませんので予めご了承ください。
         </p>
         <p>また、人材紹介業の方からのご連絡はお断りしております。</p>
       </div>
     </WhiteBlock>
-  )
-}
-
-const currentStatus = jobChangeMotivation.statusDescriptions.find(
-  (status) => status.status === jobChangeMotivation.currentStatus
-)
-
-const statusList = () => {
-  return (
-    <div className="mx-auto mb-8 mt-4 flex flex-col justify-center">
-      {jobChangeMotivation.statusDescriptions.map((status) => {
-        return (
-          <dl key={status.icon} className="mt-2 flex items-center">
-            <dt className="text-xl">{status.icon}</dt>
-            <dd className="ml-2 text-gray">{status.description}</dd>
-          </dl>
-        )
-      })}
-    </div>
   )
 }

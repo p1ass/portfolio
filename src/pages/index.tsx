@@ -14,18 +14,16 @@ export default function Index() {
       <Head>
         <title>p1ass&apos;s portfolio</title>
       </Head>
-      <div>
-        <main className="container mb-16 bg-background lg:max-w-5xl">
-          <AboutSection />
-          <CareerSection />
-          <CertificatesSection />
-          <PresentationsSection />
-          <ProductsSection />
-        </main>
-        <AsideWrapper>
-          <CallForJobOffersSection />
-        </AsideWrapper>
-      </div>
+      <main className="mx-auto max-w-5xl px-4">
+        <AboutSection />
+        <CareerSection />
+        <CertificatesSection />
+        <PresentationsSection />
+        <ProductsSection />
+      </main>
+      <AsideWrapper>
+        <CallForJobOffersSection />
+      </AsideWrapper>
     </>
   )
 }
