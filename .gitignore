@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# VRT の実行結果 (基準画像は vrt/__screenshots__ に置く)
+vrt/.results
+# 基準画像は Linux で撮ったものだけを置く
+vrt/__screenshots__/**/*-darwin.png
+vrt/__screenshots__/**/*-win32.png

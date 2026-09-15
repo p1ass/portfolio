@@ -1,0 +1,40 @@
+name: VRT
+
+on:
+  pull_request:
+
+jobs:
+  vrt:
+    runs-on: ubuntu-latest
+    # 基準画像はこのイメージの中で撮る。ローカルからは vrt/docker-run.sh が同じイメージを使うので、フォントのレンダリングが一致する。
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+    permissions:
+      contents: read
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+        with:
+          # ロックファイルを作った版に合わせる。別の版で入れると、触っていない pnpm-lock.yaml まで書き換わる。
+          version: 10.8.0
+      - name: Use Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: "pnpm"
+      - run: pnpm install --frozen-lockfile
+      # 素の Playwright イメージには和文フォントが無く、sans-serif が中国語のフォントに解決される。基準画像を撮る前に固定する。
+      - name: Install fonts
+        run: ./vrt/install-fonts.sh
+      - run: pnpm build
+      - name: Run visual regression tests
+        run: pnpm exec playwright test
+      - name: Upload diff
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: vrt-diff
+          path: vrt/.results
+          retention-days: 7
