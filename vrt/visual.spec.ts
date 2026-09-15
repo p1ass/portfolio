@@ -1,9 +1,7 @@
 import { expect, type Page, test } from '@playwright/test'
 
-const pages = [
-  { name: 'top', path: '/' },
-  { name: 'salary', path: '/salary' },
-]
+// /salary は公開していないページなので対象にしない。
+const pages = [{ name: 'top', path: '/' }]
 
 // 固有サイズを持たない SVG にすると、img の width/height 属性の比率で描画されるので、本物の画像と同じレイアウトになる。
 const placeholderSvg =
@@ -40,7 +38,7 @@ for (const { name, path } of pages) {
     await page.evaluate(() => document.fonts.ready)
     await expandViewportToPage(page)
 
-    await waitForStableRendering(page)
+    await waitForStableHeight(page)
 
     await expect(page).toHaveScreenshot(`${name}.png`, {
       fullPage: true,
@@ -49,8 +47,7 @@ for (const { name, path } of pages) {
   })
 }
 
-// fullPage の撮影はビューポートを一時的にページの高さへ広げる。recharts はそのリサイズで描画アニメーションをやり直すので、撮影前に広げておく。
-// 広げると loading="lazy" の画像も可視域に入り、すべて読み込まれる。
+// next/image は loading="lazy" なので、ビューポートをページの高さまで広げて、すべての画像を可視域に入れて読み込ませる。
 async function expandViewportToPage(page: Page) {
   const viewport = page.viewportSize()
   if (!viewport) {
@@ -62,18 +59,17 @@ async function expandViewportToPage(page: Page) {
   }
 }
 
-// recharts の描画アニメーションは requestAnimationFrame で SVG の属性を書き換えるので、DOM が動かなくなるまで待つ。
-async function waitForStableRendering(page: Page) {
+async function waitForStableHeight(page: Page) {
   await page.waitForFunction(
     () =>
       new Promise((resolve) => {
-        let previous = ''
+        let previous = -1
         let stableCount = 0
         const tick = () => {
-          const current = `${document.documentElement.scrollHeight}:${document.body.innerHTML}`
+          const current = document.documentElement.scrollHeight
           stableCount = current === previous ? stableCount + 1 : 0
           previous = current
-          if (stableCount >= 10) {
+          if (stableCount >= 5) {
             resolve(true)
             return
           }
