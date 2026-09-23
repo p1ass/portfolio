@@ -11,9 +11,9 @@
     "vrt:update": "./vrt/docker-run.sh --update-snapshots"
   },
   "dependencies": {
-    "@next/third-parties": "^16.3.5",
+    "@next/third-parties": "^16.3.6",
     "dayjs": "^1.11.23",
-    "next": "16.3.5",
+    "next": "16.3.6",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "recharts": "^3.10.1"
@@ -21,14 +21,14 @@
   "devDependencies": {
     "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.2",
     "@types/react": "^19.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.70.0",
-    "@typescript-eslint/parser": "^8.70.0",
+    "@typescript-eslint/eslint-plugin": "^8.70.1",
+    "@typescript-eslint/parser": "^8.70.1",
     "@typescript/native": "npm:typescript@^7.0.2",
     "autoprefixer": "^10.6.1",
     "eslint": "^9.39.5",
-    "eslint-config-next": "^16.3.5",
+    "eslint-config-next": "^16.3.6",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import": "^2.32.0",
@@ -37,7 +37,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-tailwindcss": "^4.4.0",
     "postcss": "^8.5.28",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "tailwindcss": "^4.3.3",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
