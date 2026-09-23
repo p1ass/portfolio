@@ -93,7 +93,7 @@ spacing:
   2xl: 48px
   3xl: 64px
   4xl: 96px
-  gutter: 16px
+  gutter: 24px
   content-width: 1024px
   breakpoint-sm: 640px
   breakpoint-lg: 1080px
@@ -106,6 +106,15 @@ components:
   section-title:
     textColor: "{colors.accent}"
     typography: "{typography.h1}"
+  section-title-mobile:
+    textColor: "{colors.accent}"
+    typography: "{typography.h2}"
+  career-company:
+    textColor: "{colors.text}"
+    typography: "{typography.h3}"
+  career-company-mobile:
+    textColor: "{colors.text}"
+    typography: "{typography.h4}"
   date:
     textColor: "{colors.text-muted}"
     typography: "{typography.date}"
@@ -114,7 +123,7 @@ components:
     textColor: "{colors.text}"
     typography: "{typography.body-sm}"
     rounded: "{rounded.md}"
-    padding: "{spacing.md}"
+    padding: "{spacing.lg}"
   card-title:
     textColor: "{colors.text}"
     typography: "{typography.body}"
@@ -133,6 +142,10 @@ components:
     backgroundColor: "{colors.brand-surface}"
     textColor: "{colors.text-on-brand}"
     typography: "{typography.h1}"
+  aside-mobile:
+    backgroundColor: "{colors.brand-surface}"
+    textColor: "{colors.text-on-brand}"
+    typography: "{typography.h2}"
   status-current:
     backgroundColor: "{colors.surface-subtle}"
     textColor: "{colors.text}"

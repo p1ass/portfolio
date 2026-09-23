@@ -8,7 +8,7 @@ type Props = {
 export const CertificateCard = ({ certificate }: Props) => {
   return (
     <a
-      className="card-link flex items-center gap-4 rounded-md border border-border p-4"
+      className="card-link flex items-center gap-4 rounded-md border border-border p-6"
       href={certificate.url}
       target="_blank"
       rel="noopener noreferrer"

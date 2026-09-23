@@ -98,20 +98,27 @@
     font-size: var(--text-body);
     line-height: var(--text-body--line-height);
     overflow-wrap: break-word;
-    word-break: auto-phrase;
+
+    @variant sm {
+      word-break: auto-phrase;
+    }
   }
 
   h1,
   h2,
   h3,
   h4 {
-    text-wrap: balance;
+    @variant sm {
+      text-wrap: balance;
+    }
   }
 
   p,
   li,
   dd {
-    text-wrap: pretty;
+    @variant sm {
+      text-wrap: pretty;
+    }
   }
 
   :focus-visible {
