@@ -10,7 +10,7 @@ export const CareerListRow = ({ career }: Props) => {
         <p className="text-body-sm tracking-date text-text-muted">{career.term}</p>
         <h3 className="mt-1 text-h4 font-bold sm:text-h3">{career.companyName}</h3>
       </div>
-      <p className="mt-3 sm:mt-0">{career.description}</p>
+      <p className="mt-3 text-justify sm:mt-0 sm:text-left">{career.description}</p>
     </div>
   )
 }
