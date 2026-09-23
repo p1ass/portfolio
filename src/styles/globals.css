@@ -114,7 +114,9 @@
   p,
   li,
   dd {
-    text-wrap: pretty;
+    @variant sm {
+      text-wrap: pretty;
+    }
   }
 
   :focus-visible {
