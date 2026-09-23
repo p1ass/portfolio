@@ -98,7 +98,10 @@
     font-size: var(--text-body);
     line-height: var(--text-body--line-height);
     overflow-wrap: break-word;
-    word-break: auto-phrase;
+
+    @variant sm {
+      word-break: auto-phrase;
+    }
   }
 
   h1,

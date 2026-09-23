@@ -22,7 +22,7 @@ export const PresentationCard = ({ presentation }: Props) => {
         className="aspect-video w-full border-b border-border object-cover"
         alt=""
       />
-      <div className="flex flex-1 flex-col gap-3 p-4">
+      <div className="flex flex-1 flex-col gap-3 p-6">
         <h3 className="text-body font-bold">{presentation.title}</h3>
         <Hashtags hashtags={presentation.hashtags} />
         <time className="mt-auto text-body-sm tracking-date text-text-muted">

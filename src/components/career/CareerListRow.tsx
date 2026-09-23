@@ -5,12 +5,12 @@ type Props = {
 }
 export const CareerListRow = ({ career }: Props) => {
   return (
-    <div className="border-t border-border py-6 first:border-0 first:pt-0 last:pb-0 sm:flex sm:gap-8">
+    <div className="border-t border-border py-8 first:border-0 first:pt-0 last:pb-0 sm:flex sm:gap-8 sm:py-6">
       <div className="sm:w-80 sm:shrink-0">
         <p className="text-body-sm tracking-date text-text-muted">{career.term}</p>
-        <h3 className="mt-1 text-h3 font-bold">{career.companyName}</h3>
+        <h3 className="mt-1 text-h4 font-bold sm:text-h3">{career.companyName}</h3>
       </div>
-      <p className="mt-2 sm:mt-0">{career.description}</p>
+      <p className="mt-3 sm:mt-0">{career.description}</p>
     </div>
   )
 }

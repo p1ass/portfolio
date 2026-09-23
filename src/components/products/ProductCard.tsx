@@ -22,7 +22,7 @@ export const ProductCard = ({ product }: Props) => {
         className="aspect-[2/1] w-full border-b border-border object-cover"
         alt=""
       />
-      <div className="flex flex-1 flex-col gap-3 p-4">
+      <div className="flex flex-1 flex-col gap-3 p-6">
         <h3 className="text-body font-bold">{product.title}</h3>
         <p className="text-body-sm">{product.description}</p>
         <div className="mt-auto">

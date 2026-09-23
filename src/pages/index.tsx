@@ -14,7 +14,7 @@ export default function Index() {
       <Head>
         <title>p1ass&apos;s portfolio</title>
       </Head>
-      <main className="mx-auto max-w-5xl px-4">
+      <main className="mx-auto max-w-5xl px-6">
         <AboutSection />
         <CareerSection />
         <CertificatesSection />

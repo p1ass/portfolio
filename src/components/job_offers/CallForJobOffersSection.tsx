@@ -8,7 +8,7 @@ export const CallForJobOffersSection = () => {
   return (
     <SectionWrapper>
       <SectionTitle title="Call for Job Offers" inverted />
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2 sm:gap-6">
         <MotivationCard />
         <InterestsCard />
       </div>
