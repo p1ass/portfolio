@@ -6,7 +6,7 @@ export const MotivationCard = () => {
   return (
     <WhiteBlock>
       <h3 className="text-h4 font-bold">現在の転職意思</h3>
-      <p className="mt-1 text-body-sm text-text-muted">2023/12/06 更新</p>
+      <p className="mt-1 text-body-sm text-text-muted">2026/09/25 更新</p>
       <ul className="mt-4 flex flex-col gap-2">
         {jobChangeMotivation.statusDescriptions.map((status) => {
           const isCurrent = status.status === jobChangeMotivation.currentStatus
