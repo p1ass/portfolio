@@ -10,7 +10,7 @@ type JobChangeMotivation = {
 type MotivationStatus = 'negative' | 'normal' | 'positive'
 
 export const jobChangeMotivation: JobChangeMotivation = {
-  currentStatus: 'negative',
+  currentStatus: 'normal',
   statusDescriptions: [
     {
       status: 'negative',
