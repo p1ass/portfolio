@@ -1,5 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
+  // 公開リポジトリなので account_id やシークレットはここに書かない。
+  // account_id は wrangler login の状態か CLOUDFLARE_ACCOUNT_ID で渡す。
   "name": "restricted",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-01",

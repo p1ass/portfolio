@@ -9,6 +9,7 @@ import {
 } from './auth'
 import { contentPage, loginPage } from './html'
 import { escapeHtml, renderMarkdown } from './markdown'
+import { rateLimitKey } from './rate-limit'
 
 type Env = AuthEnv & {
   BUCKET: R2Bucket
@@ -47,7 +48,7 @@ const redirect = (location: string, cookie?: string) =>
 const handleLogin = async (request: Request, env: Env) => {
   // 同じ IP からの試行を 1 分に 5 回までにして、総当たりを防ぐ。
   const ip = request.headers.get('CF-Connecting-IP') ?? 'unknown'
-  const { success } = await env.LOGIN_LIMITER.limit({ key: ip })
+  const { success } = await env.LOGIN_LIMITER.limit({ key: rateLimitKey(ip) })
   if (!success) {
     return redirect('/?error=rate-limit')
   }

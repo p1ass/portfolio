@@ -1,3 +1,9 @@
 node_modules
+# ローカルの R2 には本文が入るのでコミットしない。
 .wrangler
-.dev.vars
+# 秘密の値。
+.dev.vars*
+.env*
+# 本文をうっかりコミットしないよう、README 以外の Markdown は置けないようにする。
+*.md
+!README.md
