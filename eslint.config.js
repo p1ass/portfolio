@@ -31,7 +31,7 @@ module.exports = [
     },
   },
   {
-    files: ['src/pages/**/*.{ts,tsx}'],
+    files: ['src/pages/**/*.tsx'],
     rules: {
       'import/no-default-export': 'off',
     },
