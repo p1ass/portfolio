@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "restricted",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  // 独自ドメインで公開するときはコメントを外す (p1ass.com のゾーンが Cloudflare にある必要がある)。
+  // "routes": [{ "pattern": "restricted.p1ass.com", "custom_domain": true }],
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "restricted" }],
+  "ratelimits": [
+    {
+      "name": "LOGIN_LIMITER",
+      // アカウント内の rate limit binding ごとに一意な正の整数。
+      "namespace_id": "1001",
+      "simple": { "limit": 5, "period": 60 }
+    }
+  ]
+}
