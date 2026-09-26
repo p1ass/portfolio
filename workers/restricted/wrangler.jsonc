@@ -2,13 +2,13 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // 公開リポジトリなので account_id やシークレットはここに書かない。
   // account_id は wrangler login の状態か CLOUDFLARE_ACCOUNT_ID で渡す。
-  "name": "restricted",
+  "name": "portfolio-restricted",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-01",
   "workers_dev": true,
   // 独自ドメインで公開するときはコメントを外す (p1ass.com のゾーンが Cloudflare にある必要がある)。
   // "routes": [{ "pattern": "restricted.p1ass.com", "custom_domain": true }],
-  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "restricted" }],
+  "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "portfolio-restricted" }],
   "ratelimits": [
     {
       "name": "LOGIN_LIMITER",

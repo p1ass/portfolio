@@ -1,5 +1,5 @@
 {
-  "name": "restricted",
+  "name": "portfolio-restricted",
   "private": true,
   "type": "module",
   "scripts": {

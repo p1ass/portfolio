@@ -2,7 +2,7 @@
 
 パスワードを知っている人だけに Markdown を表示する Cloudflare Worker。
 
-- 本文は非公開の R2 バケット `restricted` の `index.md` から読む。リポジトリには置かない。
+- 本文は非公開の R2 バケット `portfolio-restricted` の `index.md` から読む。リポジトリには置かない。
 - パスワードが合うと、署名付きの Cookie (7 日間有効) を発行する。
 - ログインの試行は同じ IP (IPv6 は /64) から 1 分に 5 回まで。
 
@@ -26,7 +26,7 @@
 
 ```sh
 pnpm install
-pnpm wrangler r2 bucket create restricted
+pnpm wrangler r2 bucket create portfolio-restricted
 
 pnpm hash-password  # PASSWORD_HASH と SESSION_SECRET が出る
 pnpm wrangler secret put PASSWORD_HASH
@@ -42,7 +42,7 @@ pnpm run deploy
 本文はリポジトリの外で管理し、そこから R2 に上げる。
 
 ```sh
-pnpm wrangler r2 object put restricted/index.md --file ~/path/to/index.md --remote
+pnpm wrangler r2 object put portfolio-restricted/index.md --file ~/path/to/index.md --remote
 ```
 
 R2 から毎回読むので、デプロイし直さなくてもすぐ反映される。
@@ -53,6 +53,6 @@ R2 から毎回読むので、デプロイし直さなくてもすぐ反映さ�
 
 ```sh
 node scripts/hash-password.mjs > .dev.vars  # .dev.vars は .gitignore 済み
-pnpm wrangler r2 object put restricted/index.md --file ~/path/to/index.md --local
+pnpm wrangler r2 object put portfolio-restricted/index.md --file ~/path/to/index.md --local
 pnpm dev
 ```
