@@ -1,58 +1,54 @@
 # restricted
 
-パスワードを知っている人だけに Markdown を表示する Cloudflare Worker。
+パスワードを知っている人だけが読めるページを配信する Cloudflare Worker。
 
-- 本文は非公開の R2 バケット `portfolio-restricted` の `index.md` から読む。リポジトリには置かない。
-- パスワードが合うと、署名付きの Cookie (7 日間有効) を発行する。
-- ログインの試行は同じ IP (IPv6 は /64) から 1 分に 5 回まで。
+表示する Markdown は、非公開の R2 バケット `portfolio-restricted` に置いた `index.md` をリクエストのたびに読み込む。正しいパスワードを入力すると 7 日間有効な Cookie を発行するので、その間はパスワードを入力し直さなくても読める。総当たりを防ぐため、ログインは同じ IP アドレスから 1 分に 5 回までに制限している。IPv6 はアドレスではなく /64 ごとに数える。
 
-## 公開リポジトリでの前提
+## 公開リポジトリで扱ううえでの注意
 
-このリポジトリは公開しているので、コードや設定は読まれる前提で作っている。守りはコードを隠すことではなく、次の値を外に置くことに頼る。
+このリポジトリは公開しているので、コードや設定は誰でも読める。そのため、次のものはリポジトリに入れず、別の場所で管理する。
 
-| 何を | どこに置くか |
-| --- | --- |
-| 本文 (Markdown) | 非公開の R2 バケット。リポジトリの外で管理する |
-| パスワードのハッシュ、Cookie の署名鍵 | Worker のシークレット (`wrangler secret put`) |
-| Cloudflare の account_id、API トークン | `wrangler login` の状態か環境変数。リポジトリには書かない |
+- 本文の Markdown は R2 バケットに置く。
+- パスワードのハッシュと Cookie の署名鍵は、`wrangler secret put` で Worker のシークレットに登録する。
+- Cloudflare のアカウント ID と API トークンは `wrangler login` か環境変数で渡し、`wrangler.jsonc` には書かない。
 
-気をつけること:
+本文をこのディレクトリに置くと、うっかりコミットしてしまうおそれがある。`.gitignore` で README 以外の `*.md` と `.dev.vars`、ローカルの R2 のデータ (`.wrangler`) を除外してはいるが、本文はリポジトリの外で管理すること。
 
-- **本文をこのディレクトリに置かない。** 誤ってコミットしないよう、`.gitignore` で README 以外の `*.md`、`.dev.vars`、ローカルの R2 (`.wrangler`) を除外している。
-- **パスワードは長くする。** レート制限は IP を変えれば回避できるので、実際の守りはパスワードの強さになる。`pnpm hash-password` は 16 文字未満を受け付けず、空のまま Enter を押すと 24 文字のランダムなパスワードを作る。
-- **GitHub Actions からデプロイする場合は `push` (main) だけを契機にする。** `pull_request_target` などフォークの PR でシークレットが使える契機にすると、他人のコードで API トークンを使われる。
+IP アドレスを変えればレート制限は回避できるので、安全性は最終的にパスワードの強さで決まる。そのため `pnpm hash-password` は 16 文字未満のパスワードを受け付けない。何も入力せずに Enter を押すと、24 文字のランダムなパスワードを生成する。
 
-## 初回のセットアップ
+GitHub Actions でデプロイするなら、トリガーは main ブランチへの push だけにする。`pull_request_target` のようにフォークからの PR でもシークレットを使えるトリガーにすると、第三者のコードに API トークンを使われてしまう。
+
+## セットアップ
 
 ```sh
 pnpm install
 pnpm wrangler r2 bucket create portfolio-restricted
 
-pnpm hash-password  # PASSWORD_HASH と SESSION_SECRET が出る
+pnpm hash-password  # PASSWORD_HASH と SESSION_SECRET を出力する
 pnpm wrangler secret put PASSWORD_HASH
 pnpm wrangler secret put SESSION_SECRET
 
 pnpm run deploy
 ```
 
-独自ドメインで公開するときは、`wrangler.jsonc` の `routes` のコメントを外す。
+独自ドメインで公開する場合は、`wrangler.jsonc` の `routes` のコメントを外す。
 
-## 本文の更新
+## 本文を更新する
 
-本文はリポジトリの外で管理し、そこから R2 に上げる。
+リポジトリの外で管理している Markdown を R2 にアップロードする。Worker は毎回 R2 から読み込むので、デプロイし直さなくてもすぐに反映される。
 
 ```sh
 pnpm wrangler r2 object put portfolio-restricted/index.md --file ~/path/to/index.md --remote
 ```
 
-R2 から毎回読むので、デプロイし直さなくてもすぐ反映される。
+## パスワードを変更する
 
-パスワードを変えるときは `pnpm hash-password` の `PASSWORD_HASH` を入れ直す。ログイン中の人は全員ログアウトになる。
+`pnpm hash-password` で新しい `PASSWORD_HASH` を作り、`pnpm wrangler secret put PASSWORD_HASH` で登録し直す。パスワードを変えると、ログイン中の人は全員ログアウトされる。
 
 ## ローカルで動かす
 
 ```sh
-node scripts/hash-password.mjs > .dev.vars  # .dev.vars は .gitignore 済み
+node scripts/hash-password.mjs > .dev.vars  # .dev.vars は .gitignore で除外している
 pnpm wrangler r2 object put portfolio-restricted/index.md --file ~/path/to/index.md --local
 pnpm dev
 ```
