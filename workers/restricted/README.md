@@ -1,6 +1,6 @@
 # restricted
 
-パスワードを知っている人だけが読めるページを配信する Cloudflare Worker。
+パスワードを知っている人だけが読めるページを配信する Cloudflare Worker。https://restricted.p1ass.com で公開する。
 
 表示する Markdown は、非公開の R2 バケット `portfolio-restricted` に置いた `index.md` をリクエストのたびに読み込む。正しいパスワードを入力すると 7 日間有効な Cookie を発行するので、その間はパスワードを入力し直さなくても読める。総当たりを防ぐため、ログインは同じ IP アドレスから 1 分に 5 回までに制限している。IPv6 はアドレスではなく /64 ごとに数える。
 
@@ -31,7 +31,7 @@ pnpm wrangler secret put SESSION_SECRET
 pnpm run deploy
 ```
 
-独自ドメインで公開する場合は、`wrangler.jsonc` の `routes` のコメントを外す。
+デプロイすると、`restricted.p1ass.com` の DNS レコードと証明書を Cloudflare が自動で作る。同じ名前のレコードがすでにあるとデプロイに失敗するので、そのときは先に消しておく。`workers.dev` の URL は無効にしているので、アクセスできるのはこのドメインだけになる。
 
 ## 本文を更新する
 

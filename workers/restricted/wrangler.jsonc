@@ -5,9 +5,11 @@
   "name": "portfolio-restricted",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-01",
-  "workers_dev": true,
-  // 独自ドメインで公開するときはコメントを外す (p1ass.com のゾーンが Cloudflare にある必要がある)。
-  // "routes": [{ "pattern": "restricted.p1ass.com", "custom_domain": true }],
+  // 入口を restricted.p1ass.com だけにするため、workers.dev とプレビュー用の URL は使わない。
+  "workers_dev": false,
+  "preview_urls": false,
+  // DNS レコードと証明書はデプロイ時に Cloudflare が作る。
+  "routes": [{ "pattern": "restricted.p1ass.com", "custom_domain": true }],
   "r2_buckets": [{ "binding": "BUCKET", "bucket_name": "portfolio-restricted" }],
   "ratelimits": [
     {
