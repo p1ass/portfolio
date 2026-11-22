@@ -2,7 +2,7 @@
 # ホストが macOS だとヒラギノで描画されて CI と一致しないので、CI と同じイメージの中でビルドから撮影までを行う。
 set -euo pipefail
 
-IMAGE="mcr.microsoft.com/playwright:v1.63.0-noble"
+IMAGE="mcr.microsoft.com/playwright:v1.65.0-noble"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # node_modules と .next はプラットフォーム依存のバイナリを含むので、コンテナ用のボリュームに分ける。arm64 だと基準画像と一致しないことがあるので、CI と同じ amd64 で動かす。
