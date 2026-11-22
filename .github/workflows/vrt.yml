@@ -4,11 +4,25 @@ on:
   pull_request:
 
 jobs:
-  vrt:
+  playwright-version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+      # イメージの版を @playwright/test に追従させる。ずれるとブラウザが起動しない。
+      - id: version
+        run: echo "version=$(jq -r '.devDependencies["@playwright/test"]' package.json)" >> "$GITHUB_OUTPUT"
+
+  vrt:
+    needs: playwright-version
+    # Apple Silicon の手元とアーキテクチャを揃える。amd64 だと手元では qemu のエミュレーションになり、遅いうえに落ちる。
+    runs-on: ubuntu-24.04-arm
     # 基準画像はこのイメージの中で撮る。ローカルからは vrt/docker-run.sh が同じイメージを使うので、フォントのレンダリングが一致する。
     container:
-      image: mcr.microsoft.com/playwright:v1.65.0-noble
+      image: mcr.microsoft.com/playwright:v${{ needs.playwright-version.outputs.version }}-noble
     permissions:
       contents: read
     env:
