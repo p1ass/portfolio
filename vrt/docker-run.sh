@@ -20,7 +20,7 @@ docker run --rm --platform linux/arm64 \
   "${IMAGE}" \
   bash -c "
     set -euo pipefail
-    # 別の版の pnpm で入れると pnpm-lock.yaml が書き換わる。
+    # 別のバージョンの pnpm で入れると pnpm-lock.yaml が書き換わる。
     npm install -g --silent pnpm@10.8.0
     pnpm config set store-dir /pnpm-store
     pnpm install --frozen-lockfile
