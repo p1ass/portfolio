@@ -37,4 +37,5 @@ jobs:
         with:
           name: vrt-diff
           path: vrt/.results
+          include-hidden-files: true
           retention-days: 7
