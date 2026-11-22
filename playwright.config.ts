@@ -12,8 +12,6 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   // 再試行があると、撮影の揺れとデザインの変更を区別できない。
   retries: 0,
-  // CI と揃えるため Apple Silicon でも amd64 のエミュレーションで動かすので、既定の 30 秒では足りない。
-  timeout: 60_000,
   reporter: process.env.CI ? 'github' : 'list',
 
   use: {

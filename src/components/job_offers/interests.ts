@@ -18,6 +18,6 @@ export const interests: Interest[] = [
   },
   {
     field: '雇用条件',
-    contents: ['年収1,500万円以上', 'フルリモートかどうかは問わない']
+    contents: ['年収1,500万〜2,000万円', 'フルリモートかどうかは問わない']
   }
 ]

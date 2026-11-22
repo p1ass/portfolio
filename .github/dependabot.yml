@@ -9,6 +9,10 @@ updates:
       timezone: Asia/Tokyo
     open-pull-requests-limit: 5
     groups:
+      # ブラウザのバージョンが上がると描画が変わり、基準画像の更新が要ることがある。ほかの更新を巻き込んで止めないよう分ける。先に一致したグループに入るので先頭に置く。
+      playwright:
+        patterns:
+          - "@playwright/*"
       production-dependencies:
         dependency-type: production
         update-types:
